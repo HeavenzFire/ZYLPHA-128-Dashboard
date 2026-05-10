@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZYLPHA-128 Dashboard</title>
+    <script>
+      // Safe btoa polyfill for non-Latin1 characters
+      const originalBtoa = window.btoa;
+      window.btoa = function(str) {
+        try {
+          return originalBtoa(str);
+        } catch (e) {
+          return originalBtoa(unescape(encodeURIComponent(str)));
+        }
+      };
+
+      // Unregister all ServiceWorkers to fix blob protocol issues from previous sessions
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          for(let registration of registrations) {
+            registration.unregister();
+          }
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
