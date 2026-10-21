@@ -19,7 +19,7 @@ const evidence: EvidenceItem[] = [
     agency: 'Texas State Auditor’s Office',
     subject: 'Regional Security Operations Center at Angelo State University',
     status: 'PRIMARY SOURCE',
-    note: 'Official report listing confirms this audit exists. Read the report before asserting any specific deficiency.',
+    note: 'September 2026 report: SAO found incomplete detection records, inconsistent client contract terms, some inappropriate external access, and missing staff training/certification compliance. These are findings about the RSOC audit scope, not proof of unrelated allegations.',
     url: 'https://sao.texas.gov/SAOReports/ReportNumber?id=27-001',
     urlLabel: 'Open report record'
   },
@@ -28,9 +28,9 @@ const evidence: EvidenceItem[] = [
     agency: 'Texas State Auditor’s Office',
     subject: 'On-site financial audits of selected residential foster care contractors',
     status: 'PRIMARY SOURCE',
-    note: 'Official report listing confirms this audit exists. Contractor-specific findings must be tied to the report text.',
-    url: 'https://sao.texas.gov/SAOReports/',
-    urlLabel: 'Search official reports'
+    note: 'September 2026 report: SAO reported financial-process and foster-home monitoring deficiencies at Ascension Child and Family Services and Faith 2 Faith. DFPS terminated Ascension’s contract effective September 2026. See the report for scope and specific findings.',
+    url: 'https://sao.texas.gov/SAOReports/ReportNumber?id=27-002',
+    urlLabel: 'Open report 27-002'
   },
   {
     id: 'TX-SAO-27-003',
