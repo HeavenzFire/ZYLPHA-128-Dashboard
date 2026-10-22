@@ -21,7 +21,8 @@ import {
   Maximize2,
   RefreshCw,
   Fingerprint,
-  Music
+  Music,
+  FileCheck2
 } from 'lucide-react';
 import { PowerPlant } from './components/PowerPlant';
 import { NexusCrawler } from './components/NexusCrawler';
@@ -49,6 +50,7 @@ import { AetherisEngine } from './components/AetherisEngine';
 import { ReconciliationEngine } from './components/ReconciliationEngine';
 import { SovereignCore } from './components/SovereignCore';
 import { GapLog } from './components/GapLog';
+import { AuditEvidenceRegister } from './components/AuditEvidenceRegister';
 import { generateHash } from './lib/cryptography';
 import { cn } from './lib/utils';
 import { CustodyStatusVerification } from './types';
@@ -207,6 +209,12 @@ export default function App() {
             label="Global Gap Log" 
             active={activeTab === 'gaplog'} 
             onClick={() => setActiveTab('gaplog')} 
+          />
+          <SidebarItem 
+            icon={<FileCheck2 />} 
+            label="Agency Evidence Audit" 
+            active={activeTab === 'evidence'} 
+            onClick={() => setActiveTab('evidence')} 
           />
           <SidebarItem 
             icon={<Database />} 
@@ -388,6 +396,12 @@ export default function App() {
             {activeTab === 'gaplog' && (
               <div className="animate-in fade-in slide-in-from-bottom-4 duration-700 h-[600px]">
                 <GapLog records={gapLog} isFinalized={isFinalized} />
+              </div>
+            )}
+
+            {activeTab === 'evidence' && (
+              <div className="animate-in fade-in slide-in-from-bottom-4 duration-700">
+                <AuditEvidenceRegister />
               </div>
             )}
 
