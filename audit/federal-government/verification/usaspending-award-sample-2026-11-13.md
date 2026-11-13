@@ -85,7 +85,7 @@ The same documentation explains that records can be unlinked between agency fina
 
 ## 7. Next audit steps
 
-1. Retrieve the complete top-tier agency reference list and preserve its agency codes.
+1. Use the dated top-tier agency reference CSV (111 unique agency IDs and codes as of 2026-11-13) as the current code seed; reconstruct historical code/name and reporting coverage for each fiscal year before treating it as a denominator.
 2. Build an agency × fiscal-year matrix for FY2010–FY2025 using the agency endpoint; record missing agencies, API failures, source vintage, and transaction counts.
 3. Separate award families (contracts, IDVs, grants, loans, direct payments, other) rather than comparing an undifferentiated award total.
 4. For selected high-value and risk-indicated awards, capture award detail, transaction/modification history, and reported subawards; preserve negative de-obligations.
