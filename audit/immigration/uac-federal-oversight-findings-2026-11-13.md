@@ -181,3 +181,14 @@ The audit is not an independent law-enforcement investigation and cannot determi
 5. Build a cohort reconciliation only after the agencies provide underlying definitions and records.
 
 **No FOIA request has been submitted in this audit.** The requests must be submitted by a requester with accurate identity/contact details and an explicit fee limit. Do not place private requester details in this public repository.
+
+
+## 10. Official family channel and privacy limitation
+
+HHS's public Unaccompanied Children information page says parents or guardians seeking to determine whether their child is in HHS custody should contact the ORR National Call Center at **1-800-203-7001** or **information@ORRNCC.com**. The page says the call center forwards information to the shelter and that location/personal information may not be disclosed until the caller's identity and relationship are verified. It also says outside entities seeking UAC case-file information should use ORR's case-file request procedures rather than FOIA.
+
+This is a family reunification/safety channel, not a public search database. The audit's FOIA requests therefore remain limited to program-level records, aggregate data, policies, and redacted material.
+
+Official source: https://www.hhs.gov/programs/social-services/unaccompanied-children/index.html
+
+The linked public ORR "Current Data" endpoint was not retrievable in this review session (HTTP 403). This is a research-access limitation, not evidence that the data do not exist. A later pass should obtain the current ORR fact sheet and data through accessible official documents or a direct records request.
