@@ -108,3 +108,10 @@ For each HHS raw download, the ingestion CLI writes two new artifacts:
 - a sibling `.receipt.json` containing source ID, agency, source URL, retrieval timestamp, byte length, publication date (null when not established), and SHA-256 of the exact raw bytes.
 
 Both output paths use exclusive-create mode and refuse overwrite. Retain the original raw download separately; the normalized artifact and receipt do not replace it.
+
+
+## Observed source-quality conditions in the 2026-11-13 acquisition
+
+The downloaded HHS JSON contained 1,390 rows across 1,380 distinct dates. Ten dates had duplicate source rows. The first three CBP-related measures had non-null values in 689 rows each, while the two ORR custody/discharge measures had non-null values in all 1,390 rows. These are source-structure facts, not child counts.
+
+The duplicates are retained with their source record IDs and versions. Null/missing cells are omitted as observations and remain visible through metric coverage counts. The summarizer blocks any metric/date combination with duplicate values; it does not select a "latest" row, average, or sum duplicate records. The acquisition receipt and exact raw-file hash are the controlling evidence for this snapshot.
