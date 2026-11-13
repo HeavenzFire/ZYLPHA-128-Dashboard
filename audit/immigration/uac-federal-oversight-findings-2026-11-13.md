@@ -640,3 +640,46 @@ Primary sources:
 - Pending UAC Cases, FY2026 Q3: https://www.justice.gov/eoir/media/1344946/dl?inline
 - UAC Statistics, FY2026 Q3: https://www.justice.gov/eoir/media/1344956/dl?inline
 - Median UAC case completion/pending time, FY2026 Q3: https://www.justice.gov/eoir/media/1344951/dl?inline
+
+
+## 30. EOIR's published UAC count diverges sharply from research estimates using the same court database
+
+A new comparison identifies a major population-definition and data-quality issue.
+
+### Official EOIR series
+
+EOIR's FY2026 third-quarter public UAC statistics report **16,560 pending UAC cases**. EOIR's general Workload and Adjudication Statistics page describes these as dedicated UAC statistics, but the public page does not provide enough methodological detail to treat this number as a complete count of every person who entered the system as an unaccompanied child.
+
+### Independent research-based estimates
+
+The Acacia Center for Justice's October 15, 2026 fact sheet, using an updated method based on Galli and Padilla (2025), estimates **more than 110,000 unaccompanied children's cases still pending as of August 31, 2026**. Acacia states that it updated the research method through August 2026 and manually categorized new hearing locations as Juvenile, Family, and Detained Adult.
+
+The peer-reviewed Galli and Padilla article, *New Data on Unaccompanied Minors in US Immigration Court (2009–2023)*, explains why the dedicated EOIR identification field became unreliable:
+- EOIR changed its juvenile-history J-codes in 2017.
+- TRAC found that accompanied and unaccompanied children were no longer properly disaggregated.
+- Many people who were under 18 at arrival were excluded.
+- 79% of post-2017 juvenile-history records were assigned a new "not applicable" code; 40% of those records were adults.
+- The researchers therefore used a multipronged method incorporating age at arrival, docket, and family-unit information, identifying 483,432 cases from 2009 through March 2023.
+
+Vera's October 2026 dashboard independently states that EOIR data do not disaggregate unaccompanied children and that researchers must use identification methodologies. Vera's method is adapted from Galli and Padilla and includes children in immigration detention as well as children released to sponsors.
+
+### How to interpret the discrepancy
+
+The difference between 16,560 official EOIR pending UAC cases and Acacia's estimate of more than 110,000 pending unaccompanied-child cases is substantial—more than 6.6 times—but the figures are not a direct like-for-like comparison. The methods, classification rules, case populations, and reporting dates differ. The evidence supports a serious concern that the official dedicated UAC field may omit a large share of cases involving people who were unaccompanied children at entry. It does **not** yet establish an exact undercount or a single corrected number.
+
+**Audit significance:** EOIR's official UAC statistic cannot be used as a complete denominator or independent validation of ICE's 145,000 location claim without examining the classification method. The court data must be reconciled using an explicit cohort definition that preserves age-at-entry and unaccompanied status, not merely the current J-code or EOIR's UAC reporting flag.
+
+### Required verification
+
+1. Obtain the EOIR codebook and source-system definition for the UAC/J-code fields used in its published statistics, including all 2017 and later changes.
+2. Obtain TRAC's original 2021 analysis and the EOIR response confirming what source(s) the agency uses to identify UACs.
+3. Obtain the Galli/Padilla replication code and the Acacia 2026 docket-categorization updates; test whether their method can be reproduced on the public EOIR FOIA dataset.
+4. Compare the EOIR dedicated UAC flag with the age-at-arrival/docket/family-unit method and quantify false negatives, false positives, and missing-age records.
+5. Request a government-validated aggregate count using a documented, reproducible definition and explain why it differs from the published 16,560.
+
+Sources:
+- EOIR official UAC statistics, FY2026 Q3: https://www.justice.gov/eoir/media/1344946/dl?inline
+- Acacia Center for Justice, October 15, 2026: https://acaciajustice.org/research-data/fact-sheets/the-data-behind-a-due-process-crisis-new-estimates-of-unaccompanied-children-in-immigration-court/
+- Galli & Padilla, *International Migration Review* (2025/2026 issue): https://journals.sagepub.com/doi/full/10.1177/01979183251316528
+- Vera Institute of Justice, Immigration Court Legal Representation Dashboard (updated October 14, 2026): https://www.vera.org/ending-mass-incarceration/reducing-incarceration/detention-of-immigrants/advancing-universal-representation-initiative/immigration-court-legal-representation-dashboard
+- TRAC, *Immigration Court's Data on Minors Facing Deportation is Too Faulty to Be Trusted*: https://tracreports.org/immigration/reports/669/
