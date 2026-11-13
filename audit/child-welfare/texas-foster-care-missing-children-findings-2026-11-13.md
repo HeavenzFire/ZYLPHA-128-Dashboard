@@ -132,7 +132,7 @@ DFPS's November 2025 Missing Children Protocol provides the agency's current pro
 Source: https://www.dfps.texas.gov/handbooks/CPS/Resource_Guides/Missing_Children_Protocol.pdf
 
 ### Texas Child Welfare Bench Book — September 2025
-The Texas Children's Commission's 2025 Bench Book summarizes the DFPS duties to report missing foster youth to law enforcement and NCMEC within 24 hours, notify specified parties, continue locating efforts (including monthly law-enforcement and former-caregiver contacts), conduct quarterly supervisory reviews for children age 15 and older, and complete a recovery interview after return. The audit should compare these stated controls with actual timestamped case records and applicable statutory/policy versions.
+The Texas Children's Commission's 2025 Bench Book summarizes DFPS duties to report missing foster youth to law enforcement and NCMEC within 24 hours, notify specified parties, continue locating efforts (including monthly law-enforcement and former-caregiver contacts), conduct quarterly supervisory reviews for children age 15 or younger, and complete a recovery interview after return. The quarterly-review age threshold is explicit in Texas Family Code §264.123(d)(2): 15 years of age or younger. The earlier draft's “15 and older” wording was incorrect and is superseded here. The audit should compare these controls with actual timestamped case records and applicable statutory/policy versions.
 
 Source: https://www.texaschildrenscommission.gov/media/4sahodqj/2025-texas-child-welfare-bench-book-online.pdf
 
@@ -140,5 +140,5 @@ Source: https://www.texaschildrenscommission.gov/media/4sahodqj/2025-texas-child
 1. Determine whether Texas's 2025 two-hour law-enforcement-to-NCMEC requirement is being met for foster-care missing-child reports, and reconcile timestamps among local law enforcement, TLETS, NCIC, NCMEC, and DFPS.
 2. Test Article 63.0091 enhanced response for foster-care children with at least two missing reports in 24 months.
 3. Verify the November 2025 DFPS Missing Children Protocol was distributed, trained, version-controlled, and operationalized statewide.
-4. Test whether every missing episode has required party notifications, monthly law-enforcement/former-caregiver contacts, quarterly supervisory reviews where applicable, and a recovery interview.
+4. Test whether every missing episode has required party notifications, monthly law-enforcement/relative/former-caregiver/social-service contacts, quarterly supervisory reviews for children age 15 or younger, and a recovery interview (subject to the statutory abduction-investigation exception).
 5. Reconcile NCMEC's 23,348 missing-from-care reports and 17% likely trafficking indicator with state data without treating reports as unique children or likely trafficking as confirmed victimization.
