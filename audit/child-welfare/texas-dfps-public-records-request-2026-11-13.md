@@ -52,3 +52,12 @@ Separately consider FOIA requests to HHS/ACF and HHS OIG for:
 - HHS OIG Alaska 2026 review: https://www.oig.hhs.gov/reports/all/2026/alaska-missed-opportunities-to-protect-american-indian-and-alaska-native-children-missing-from-foster-care/
 
 **Safety note:** This request seeks systemic oversight data only. It does not attempt to identify or locate individual children. Active missing-child reports must be handled through law enforcement and NCMEC, not public spreadsheets or crowdsourced investigation.
+
+
+## Additional request items — 2025 statutory and policy changes
+
+11. Records showing DFPS and local law-enforcement implementation of Texas Code of Criminal Procedure Article 63.00905 as amended effective September 1, 2025, including guidance, training, interagency agreements, system workflows, timestamped compliance reports, exceptions, late submissions, and corrective actions for required NCMEC/TLETS/NCIC entries within two hours.
+12. Records concerning implementation of Article 63.0091 enhanced response for foster-care/DFPS-conservatorship children reported missing at least twice in the prior 24 months, including risk designation criteria, escalation protocols, notifications to nearby law-enforcement agencies, and aggregate compliance outcomes.
+13. The November 2025 DFPS Missing Children Protocol, all prior versions during FY2023–FY2025, approval/change history, implementation date, training records, and statewide distribution evidence.
+14. Aggregate compliance data for continuing locating efforts, monthly contacts with law enforcement and former caregivers, quarterly supervisory reviews for youth age 15 and older, and recovery interviews after return, as described in the Texas Child Welfare Bench Book and applicable DFPS policy.
+15. DFPS reconciliation of its missing-from-care counts to NCMEC's 2025 Impact Report count of 23,348 reports nationally and the 17% likely sex-trafficking indicator. Request methodology and definitions only; do not request identifiable child records.
