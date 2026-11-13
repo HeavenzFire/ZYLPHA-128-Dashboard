@@ -617,3 +617,26 @@ OIG recommendation 1 specifically asks ICE to review and revise, as needed, the 
 
 Primary source: DHS OIG OIG-25-21, especially Background, pp. 2–3; information-sharing findings, pp. 9–10; methodology, pp. 15–16; management comments, pp. 13–14:
 https://www.oig.dhs.gov/sites/default/files/assets/2025-03/OIG-25-21-Mar25.pdf
+
+
+## 29. Current EOIR UAC court statistics — an independent, bounded cross-check
+
+DOJ's Executive Office for Immigration Review (EOIR) publishes a dedicated UAC adjudication series on its Workload and Adjudication Statistics page, last updated October 20, 2026. The FY2026 third-quarter files report:
+
+- **16,560 pending UAC cases**.
+- **8,610 initial case decisions/completions** in the UAC statistics table.
+- Of those decisions: 4,838 removal decisions (4,023 in absentia), 3,065 dismissals/terminations, 654 voluntary departures, 49 relief grants, 4 withdrawn, and 0 other.
+- Median pending time: **2,398 days** (approximately 6.6 years).
+- Median completion time: **1,084 days** (approximately 3.0 years).
+
+The UAC statistics file states that it covers **I-862 initial case completions only** and excludes mental competency/Franco litigation, the Institutional Hearing Program, Migration Protection Protocol cases, and cases with a 7A adjournment. EOIR also warns that its case database is frequently updated and statistics may change.
+
+**Audit interpretation:** these are court-case measures, not a child-location or welfare dataset. A pending case is not proof that a child is missing; an in-absentia removal order is not by itself proof of trafficking or physical disappearance. The 16,560 pending UAC cases are not directly comparable to the 145,000 located claim or to the 233,000/291,000 unserved-NTA figures without a cohort/date/identity crosswalk. The long median pending time is a court-process indicator that makes case-status reconciliation important; it does not establish current child safety.
+
+**Why this matters to the 145,000 audit:** ICE's testimony links its location campaign to the historical court-notice and missed-hearing issue. EOIR's published series supplies a current, independent aggregate view of the court pipeline, but it does not identify which cases correspond to children ICE counted as located. Request a privacy-protected aggregate crosswalk between the 145,000 initiative cohort and EOIR case status, hearing attendance, in-absentia orders, case completion, and appeal/reopening status.
+
+Primary sources:
+- EOIR Workload and Adjudication Statistics (updated Oct. 20, 2026): https://www.justice.gov/eoir/workload-and-adjudication-statistics
+- Pending UAC Cases, FY2026 Q3: https://www.justice.gov/eoir/media/1344946/dl?inline
+- UAC Statistics, FY2026 Q3: https://www.justice.gov/eoir/media/1344956/dl?inline
+- Median UAC case completion/pending time, FY2026 Q3: https://www.justice.gov/eoir/media/1344951/dl?inline
