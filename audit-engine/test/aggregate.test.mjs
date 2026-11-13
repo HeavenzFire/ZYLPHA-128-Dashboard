@@ -1,0 +1,76 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import { normalizeHhsUacRows, validateEoirTableImport, compareAggregateObservations } from "../src/aggregate.mjs";
+
+const provenance = { raw_sha256: "a".repeat(64), retrieved_at: "2026-11-13T12:00:00Z" };
+const row = {
+  date: "2026-10-28T00:00:00.000",
+  children_placed_in_cbp_custody_: 10,
+  children_in_cbp_custody: 4,
+  children_transferred_out_of_cbp_custody: 6,
+  children_in_hhs_care: 100,
+  children_discharged_from: 8
+};
+
+test("normalizes HHS daily aggregates while preserving distinct stock and flow measures", () => {
+  const result = normalizeHhsUacRows([row], provenance);
+  assert.equal(result.row_count, 1);
+  assert.equal(result.observation_count, 5);
+  assert.equal(result.observations.find(x => x.metric_id === "children_in_hhs_care").measure_type, "daily_stock");
+  assert.equal(result.observations.find(x => x.metric_id === "children_discharged_from").measure_type, "daily_flow");
+});
+
+test("rejects missing source columns rather than silently substituting zero", () => {
+  const bad = { ...row };
+  delete bad.children_in_hhs_care;
+  assert.throws(() => normalizeHhsUacRows([bad], provenance), /Missing HHS metric field/);
+});
+
+test("rejects duplicate dates in daily series", () => {
+  assert.throws(() => normalizeHhsUacRows([row, row], provenance), /Duplicate HHS date/);
+});
+
+test("rejects negative or fractional counts", () => {
+  assert.throws(() => normalizeHhsUacRows([{ ...row, children_in_hhs_care: -1 }], provenance), /Invalid non-negative integer/);
+  assert.throws(() => normalizeHhsUacRows([{ ...row, children_in_hhs_care: 1.5 }], provenance), /Invalid non-negative integer/);
+});
+
+test("requires a raw-source content hash", () => {
+  assert.throws(() => normalizeHhsUacRows([row], { ...provenance, raw_sha256: "nope" }), /SHA-256/);
+});
+
+test("validates EOIR PDF transcription provenance and page-level references", () => {
+  const input = {
+    schema_version: "1.0",
+    source_id: "DOJ-EOIR-UAC-STATISTICS",
+    source_url: "https://www.justice.gov/eoir/media/1345076/dl",
+    table_title: "Pending Unaccompanied Alien Child Cases",
+    document_generated: "2026-07-24",
+    source_file_sha256: "b".repeat(64),
+    observations: [{ metric_id: "pending_uac_cases", period_label: "FY2026 Q3", value: 16560, unit: "cases", measure_type: "period_end_stock", geography: "US", page: 1, table_or_chart: "Table 1" }]
+  };
+  assert.equal(validateEoirTableImport(input).observation_count, 1);
+});
+
+test("rejects EOIR transcription without page reference", () => {
+  const input = {
+    schema_version: "1.0", source_id: "DOJ-EOIR-UAC-STATISTICS",
+    source_url: "https://www.justice.gov/eoir/media/1345076/dl",
+    table_title: "Pending UAC", document_generated: "2026-07-24",
+    source_file_sha256: "b".repeat(64),
+    observations: [{ metric_id: "pending", period_label: "FY2026 Q3", value: 1, unit: "cases", measure_type: "stock", geography: "US", table_or_chart: "Table 1" }]
+  };
+  assert.throws(() => validateEoirTableImport(input), /page reference/);
+});
+
+test("does not compare different measure types or periods", () => {
+  const a = { metric_id: "pending", period_label: "FY2026 Q3", unit: "cases", measure_type: "period_end_stock", geography: "US", value: 16560 };
+  const b = { ...a, measure_type: "annual_flow", value: 8610 };
+  assert.deepEqual(compareAggregateObservations(a, b), { comparable: false, mismatches: ["measure_type"] });
+});
+
+test("compares only identical metric, period, unit, measure type, and geography", () => {
+  const a = { metric_id: "pending", period_label: "FY2026 Q3", unit: "cases", measure_type: "period_end_stock", geography: "US", value: 16560 };
+  const b = { ...a, value: 16000 };
+  assert.deepEqual(compareAggregateObservations(a, b), { comparable: true, difference: 560, left_value: 16560, right_value: 16000 });
+});
