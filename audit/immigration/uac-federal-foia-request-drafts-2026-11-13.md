@@ -346,3 +346,21 @@ Sources:
 - https://acf.gov/media/14300
 - https://acf.gov/sites/default/files/documents/i_datadictionaryandniemmapping_d01_0.xlsx
 - https://catalog.data.gov/dataset/data-dictionary-and-niem-mapping
+
+
+### A-K. Closeout and evidence package for OIG-25-21 recommendation 1; current ICE–HHS data-sharing controls
+
+DHS OIG OIG-25-21 states that its audit was limited to ICE/DHS, that it did not obtain HHS records, and that it did not assess the reliability of external HHS ORR or DOJ EOIR source data. The report describes the 2021 DHS–HHS MOA as operative, notes that HHS did not provide ICE with results of safety-and-well-being checks/post-release services, and says a new MOA was in draft as of December 2024. ICE estimated September 30, 2025 completion for recommendation 1; OIG said it would remain open and resolved pending receipt of updated information-sharing agreements.
+
+Please provide:
+1. The signed current DHS–HHS/ICE–ORR MOA and Joint Concept of Operations, including effective date, all amendments, superseded versions, appendices, and data-sharing schedules.
+2. The final approved agreement version that was in draft as of December 2024, its approval and implementation records, and any subsequent revisions.
+3. A field-level data-sharing matrix identifying which UAC identity, sponsor, household, address, placement, status, contact, safety-and-well-being, post-release-service, NTA, missed-hearing, referral, and disposition fields are transmitted between ICE, HHS/ORR, and DOJ/EOIR; include frequency, responsible office, system of record, and failure/exception handling.
+4. Existing aggregate monthly counts since January 2025 of records exchanged, rejected, delayed, duplicated, incomplete, unmatched, manually reconciled, and corrected across the interfaces.
+5. The signed DHS OIG recommendation 1 closeout request and determination, the evidence package ICE submitted, OIG follow-up questions, and any validation or monitoring plan.
+6. Records showing whether HHS post-release safety/well-being check results and updated sponsor/address data are now shared with ICE, and if not, the documented legal/policy basis and the alternative process used to ensure child safety and location information reaches the responsible agency.
+7. Any independent testing of the accuracy and completeness of cross-agency matching, including sample methodology, exception rates, false-match/missed-match controls, and corrective actions.
+
+Please provide existing records in aggregate or redacted form only. Do not disclose child-level identifiers, sponsor identities or addresses, biometric records, credentials, or active investigative information.
+
+Official source: https://www.oig.dhs.gov/sites/default/files/assets/2025-03/OIG-25-21-Mar25.pdf
