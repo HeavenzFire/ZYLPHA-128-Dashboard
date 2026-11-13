@@ -15,7 +15,10 @@ try {
       retrieved_at: new Date().toISOString()
     });
     await writeFile(arg3, JSON.stringify(result, null, 2) + "\n", { flag: "wx" });
-    console.log(JSON.stringify({ status: "ingested", output: arg3, source_rows: result.row_count, observations: result.observation_count, raw_sha256: result.source.raw_sha256 }, null, 2));
+    const receiptPath = arg3 + ".receipt.json";
+    const receipt = createAcquisitionReceipt(getPublicSource("hhs_uac_daily"), raw, result.source.retrieved_at, null);
+    await writeFile(receiptPath, JSON.stringify(receipt, null, 2) + "\n", { flag: "wx" });
+    console.log(JSON.stringify({ status: "ingested", output: arg3, receipt: receiptPath, source_rows: result.row_count, observations: result.observation_count, raw_sha256: result.source.raw_sha256 }, null, 2));
   } else if (command === "hhs-summarize" && inputPath && arg3 && arg4 && arg5) {
     const normalized = JSON.parse(await readFile(inputPath, "utf8"));
     const result = summarizeHhsWindow(normalized, arg3, arg4);
