@@ -5,6 +5,7 @@ These are official starting points. A portal's existence does not mean its full 
 | Source | Purpose | URL | Required capture |
 |---|---|---|---|
 | GAO reports and testimonies | Audits, recommendations, follow-up | https://www.gao.gov/reports-testimonies | Report number/title/date/pages/recommendation IDs |
+| VA Office of Inspector General | VA audit reports, monetary benefits, recommendation status | https://www.vaoig.gov/reports | Report number, PDF, recommendation status/closure dates, questioned costs, funds for better use, retrieval date |
 | GAO priority recommendations | Dated priority snapshots | https://www.gao.gov/priority-recommendations | Agency, snapshot date, ID/status, comparison |
 | GAO-24-107146 | Historical recommendation snapshot | https://www.gao.gov/assets/880/871005.pdf | Scope, report date, status definitions, page references |
 | Oversight.gov | Inspector-general reports and recommendations | https://www.oversight.gov/reports/recommendations | OIG, report/recommendation ID, dates, filters |
