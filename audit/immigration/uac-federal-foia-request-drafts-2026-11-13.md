@@ -112,3 +112,29 @@ I do not seek names, A-numbers, dates of birth, addresses, sponsor identities, o
 - Calendar the statutory response/appeal milestones after receipt; do not treat acknowledgement as production.
 - If an agency invokes exemptions, ask for segregable aggregate/redacted records and a Vaughn-style explanation where applicable; appeal denials within the stated deadline.
 - Do not publish any unredacted child/sponsor data received inadvertently. Quarantine it and seek a lawful redacted release.
+
+
+---
+
+## D. Supplemental ICE initiative records — UAC Joint Initiative / Field Implementation
+
+A publicly accessible copy of a four-page ICE document titled **"Unaccompanied Alien Children Joint Initiative — Field Implementation"**, document identifier **2025-ICFO-22246-000001 through 000004**, describes the February 2025 initiative. The copy is marked "For Official Use Only / Law Enforcement Sensitive" and is hosted by the Center for Progressive Reform. Treat it as a lead; request the official releasable record and any subsequent revisions directly from ICE.
+
+Public copy: https://wp-cpr.s3.amazonaws.com/uploads/2025/05/ICE-HSI-Cooperation-2025-Unaccompanied-Children.pdf
+
+The document identifies a multi-source UAC dashboard, a daily field-contact documentation form, HSI/ERO coordination, and a leadership progress dashboard. The FOIA request should seek the releasable program-level records, not child-specific operational target packets or live investigative information.
+
+**Supplemental request language to add to Request A:**
+
+Please include records associated with the ICE "Unaccompanied Alien Children Joint Initiative — Field Implementation" (document identifier 2025-ICFO-22246), including:
+
+1. The final approved version, all releasable revisions, superseding guidance, implementation memoranda, and records identifying the responsible ICE components and offices.
+2. The data dictionary, population definitions, source-system inventory, cohort selection criteria, deduplication rules, and quality-control procedures for the UAC Power BI application or successor dashboard used by this initiative.
+3. The field-contact documentation form schema/data dictionary, blank form template, completion instructions, and aggregate monthly counts of records submitted, unique children represented, repeat contacts, attempted contacts, successful direct contacts, sponsor-only contacts, address verifications, and unresolved outcomes.
+4. Aggregate monthly and cumulative initiative outcome reports, including the definitions used for "located," "contacted," "field engagement," and "welfare check"; the number of unique children in each category; and the documented disposition categories.
+5. Existing records showing how initiative cases were reconciled with ORR UAC Portal records, HHS National Call Center safety reports, EOIR case data, and the OIG OIG-25-21 cohort. Aggregate or redacted crosswalk documentation only.
+6. Existing oversight, audit, quality assurance, and supervisory review records testing whether a "located" designation reflected direct child contact and a documented safety assessment, as distinct from a door knock, sponsor contact, or address verification.
+7. Existing closeout, transfer, or follow-up procedures for children whose status remained unknown after an attempted field engagement.
+
+I do not request target packets, child-level records, sponsor identities or addresses, location histories, facial-recognition queries, investigative leads, undercover methods, or details that would compromise active law-enforcement operations. Please provide only program-level methodology, blank templates, aggregate statistics, and reasonably segregable records.
+
