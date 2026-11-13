@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { normalizeHhsUacRows, validateEoirTableImport, compareAggregateObservations } from "../src/aggregate.mjs";
+import { normalizeHhsUacRows, validateEoirTableImport, compareAggregateObservations, summarizeHhsWindow } from "../src/aggregate.mjs";
 
 const provenance = { raw_sha256: "a".repeat(64), retrieved_at: "2026-11-13T12:00:00Z" };
 const row = {
@@ -73,4 +73,47 @@ test("compares only identical metric, period, unit, measure type, and geography"
   const a = { metric_id: "pending", period_label: "FY2026 Q3", unit: "cases", measure_type: "period_end_stock", geography: "US", value: 16560 };
   const b = { ...a, value: 16000 };
   assert.deepEqual(compareAggregateObservations(a, b), { comparable: true, difference: 560, left_value: 16560, right_value: 16000 });
+});
+
+function normalizedObservations(observations) {
+  return {
+    dataset_kind: "public_aggregate_observations",
+    source: {
+      retrieved_at: "2026-11-13T12:00:00Z",
+      raw_sha256: "c".repeat(64)
+    },
+    observations
+  };
+}
+
+test("sums a flow only when every calendar date in the requested window exists", () => {
+  const base = { source_id: "HHS-ORR-UAC-DAILY", metric_id: "children_placed_in_cbp_custody_", metric_label: "CBP placements", measure_type: "daily_flow", unit: "children", geography: "US" };
+  const normalized = normalizedObservations([
+    { ...base, observed_date: "2026-10-01", value: 10 },
+    { ...base, observed_date: "2026-10-02", value: 15 }
+  ]);
+  const result = summarizeHhsWindow(normalized, "2026-10-01", "2026-10-02");
+  assert.equal(result.measures[0].status, "READY");
+  assert.equal(result.measures[0].measure.value, 25);
+  assert.equal(result.measures[0].measure.time_window.calendar_type, "CUSTOM");
+});
+
+test("blocks flow totals when a reporting date is missing", () => {
+  const normalized = normalizedObservations([
+    { source_id: "HHS-ORR-UAC-DAILY", metric_id: "children_placed_in_cbp_custody_", metric_label: "CBP placements", measure_type: "daily_flow", unit: "children", geography: "US", observed_date: "2026-10-01", value: 10 }
+  ]);
+  const result = summarizeHhsWindow(normalized, "2026-10-01", "2026-10-02");
+  assert.equal(result.measures[0].status, "BLOCKED_INCOMPLETE_DAILY_COVERAGE");
+  assert.equal(result.measures[0].measure, undefined);
+});
+
+test("uses the requested endpoint only for stock snapshots and never sums stock days", () => {
+  const base = { source_id: "HHS-ORR-UAC-DAILY", metric_id: "children_in_hhs_care", metric_label: "Children in HHS care", measure_type: "daily_stock", unit: "children", geography: "US" };
+  const normalized = normalizedObservations([
+    { ...base, observed_date: "2026-10-01", value: 100 },
+    { ...base, observed_date: "2026-10-02", value: 80 }
+  ]);
+  const result = summarizeHhsWindow(normalized, "2026-10-01", "2026-10-02");
+  assert.equal(result.measures[0].measure.value, 80);
+  assert.deepEqual(result.measures[0].measure.time_window, { start_date: "2026-10-02", end_date: "2026-10-02", calendar_type: "POINT_IN_TIME" });
 });
