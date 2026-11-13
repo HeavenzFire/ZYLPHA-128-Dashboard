@@ -26,22 +26,25 @@ export function normalizeHhsUacRows(rows, provenance) {
   requireValue(rows.length > 0, "HHS source payload is empty.");
   requireValue(provenance && SHA_RE.test(provenance.raw_sha256 || ""), "A SHA-256 hash of the exact raw source payload is required.");
   requireValue(typeof provenance.retrieved_at === "string" && !Number.isNaN(Date.parse(provenance.retrieved_at)), "retrieved_at must be an ISO timestamp.");
-  const seenDates = new Set();
+  const dateCounts = new Map();
   const observations = [];
 
   rows.forEach((row, index) => {
     const rawDate = row.date;
     const date = typeof rawDate === "string" ? rawDate.slice(0, 10) : "";
     requireValue(DATE_RE.test(date) && !Number.isNaN(Date.parse(date + "T00:00:00Z")), "Invalid HHS date at row " + index);
-    requireValue(!seenDates.has(date), "Duplicate HHS date: " + date);
-    seenDates.add(date);
+    dateCounts.set(date, (dateCounts.get(date) || 0) + 1);
 
     for (const [field, definition] of Object.entries(source.metrics)) {
-      if (!Object.hasOwn(row, field)) continue;
+      if (!Object.hasOwn(row, field) || row[field] === null || row[field] === undefined || row[field] === "") continue;
       observations.push({
         source_id: source.source_id,
         dataset_id: source.dataset_id,
         observed_date: date,
+        source_record_id: row[":id"] || null,
+        source_record_version: row[":version"] || null,
+        source_created_at: row[":created_at"] || null,
+        source_updated_at: row[":updated_at"] || null,
         metric_id: field,
         metric_label: definition.label,
         measure_type: definition.measure,
@@ -69,11 +72,13 @@ export function normalizeHhsUacRows(rows, provenance) {
       retrieved_at: provenance.retrieved_at
     },
     row_count: rows.length,
+    unique_date_count: dateCounts.size,
+    duplicate_dates: [...dateCounts.entries()].filter(([, count]) => count > 1).map(([date, count]) => ({ date, row_count: count })),
     observation_count: observations.length,
     metric_field_coverage: Object.fromEntries(Object.keys(source.metrics).map(metricId => [
       metricId, observations.filter(observation => observation.metric_id === metricId).length
     ])),
-    schema_variants: [...new Set(rows.map(row => Object.keys(source.metrics).filter(field => Object.hasOwn(row, field)).sort().join(",")))],
+    schema_variants: [...new Set(rows.map(row => Object.keys(source.metrics).filter(field => Object.hasOwn(row, field) && row[field] !== null && row[field] !== undefined && row[field] !== "").sort().join(",")))],
     observations
   };
 }
@@ -171,21 +176,32 @@ export function summarizeHhsWindow(normalized, startDate, endDate) {
     const metricRows = selected.filter(row => row.metric_id === metricId);
     const metricDates = new Set(metricRows.map(row => row.observed_date));
     const metricMissingDates = expectedDates.filter(date => !metricDates.has(date));
+    const metricDateCounts = new Map();
+    for (const row of metricRows) metricDateCounts.set(row.observed_date, (metricDateCounts.get(row.observed_date) || 0) + 1);
+    const duplicateMetricDates = [...metricDateCounts.entries()].filter(([, count]) => count > 1).map(([date, count]) => ({ date, row_count: count }));
     const isStock = definition.measurement_class === "administrative_snapshot";
     let value;
     let measureWindow;
     let status = "READY";
     if (isStock) {
-      const endpoint = metricRows.find(row => row.observed_date === endDate);
-      if (!endpoint) {
+      const endpoints = metricRows.filter(row => row.observed_date === endDate);
+      if (endpoints.length === 0) {
         results.push({ metric_id: metricId, status: "BLOCKED_MISSING_ENDPOINT_SNAPSHOT", required_snapshot_date: endDate });
         continue;
       }
-      value = endpoint.value;
+      if (endpoints.length > 1) {
+        results.push({ metric_id: metricId, status: "BLOCKED_AMBIGUOUS_ENDPOINT_SNAPSHOT", required_snapshot_date: endDate, source_record_ids: endpoints.map(row => row.source_record_id) });
+        continue;
+      }
+      value = endpoints[0].value;
       measureWindow = { start_date: endDate, end_date: endDate, calendar_type: "POINT_IN_TIME" };
     } else {
       if (metricMissingDates.length) {
         results.push({ metric_id: metricId, status: "BLOCKED_INCOMPLETE_DAILY_COVERAGE", missing_dates: metricMissingDates, observed_date_count: metricDates.size, expected_date_count: expectedDates.length });
+        continue;
+      }
+      if (duplicateMetricDates.length) {
+        results.push({ metric_id: metricId, status: "BLOCKED_DUPLICATE_DAILY_OBSERVATIONS", duplicate_dates: duplicateMetricDates });
         continue;
       }
       value = metricRows.reduce((sum, row) => sum + row.value, 0);
@@ -232,6 +248,7 @@ export function summarizeHhsWindow(normalized, startDate, endDate) {
     requested_window: { start_date: startDate, end_date: endDate, expected_date_count: expectedDates.length },
     observed_date_count: observedDates.size,
     missing_dates: [...new Set([...missingDates, ...metricGapDates])].sort(),
+    duplicate_dates: normalized.duplicate_dates || [],
     measures: results,
     coverage_note: "Date coverage is assessed at calendar-day granularity. Missing dates block flow summation; stock metrics use only the explicitly requested end-date snapshot."
   };
