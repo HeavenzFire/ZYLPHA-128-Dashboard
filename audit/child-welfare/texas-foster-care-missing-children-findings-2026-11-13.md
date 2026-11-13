@@ -142,3 +142,37 @@ Source: https://www.texaschildrenscommission.gov/media/4sahodqj/2025-texas-child
 3. Verify the November 2025 DFPS Missing Children Protocol was distributed, trained, version-controlled, and operationalized statewide.
 4. Test whether every missing episode has required party notifications, monthly law-enforcement/relative/former-caregiver/social-service contacts, quarterly supervisory reviews for children age 15 or younger, and a recovery interview (subject to the statutory abduction-investigation exception).
 5. Reconcile NCMEC's 23,348 missing-from-care reports and 17% likely trafficking indicator with state data without treating reports as unique children or likely trafficking as confirmed victimization.
+
+
+## 9. September 2026 legal-practice update and confidentiality constraint
+
+The Supreme Court of Texas Permanent Judicial Commission for Children, Youth and Families published the **September 2026 Texas Child Welfare Law Bench Book**. Its current summary of Texas Family Code §264.123 confirms:
+- DFPS must continue locating efforts until a child returns to substitute care.
+- Monthly contacts include law enforcement, relatives, former caregivers, and relevant state/local social-service agencies.
+- Quarterly supervisory reviews apply when the child is **15 years old or younger**.
+- DFPS must document locating actions and required supervisory determinations.
+- A post-return interview is required to establish why the child was missing, where the child stayed, and whether specified trafficking-related victimization occurred, subject to the statutory exception where DFPS knows the child was abducted and another agency is investigating.
+
+This September 2026 Bench Book supersedes the September 2025 practice-guide reference for current audit design. It is a judicial practice resource, not a court ruling in an individual case; the statute remains controlling.
+
+Source: https://texaschildrenscommission.gov/media/wtki3g3l/2026-bench-book-final-online.pdf (September 2026, section “Children Who are Missing or Victims of Sex Trafficking”).
+
+### Public roster limitation — NCMEC confidentiality
+
+NCMEC's current “Children Missing From Care” guidance states that it coordinates directly with child-welfare staff and law enforcement, protects missing children's privacy, and generally does not publicly disclose that a missing child was in foster care or state custody. It also says a law-enforcement NCIC entry does not automatically create an NCMEC report. Therefore, public missing-child posters cannot be treated as a complete or reliable roster of children missing from foster care. A lawful case-level reconciliation requires authorized agency/law-enforcement access; public audit work must stay de-identified.
+
+Source: https://connect.ncmec.org/theissues/missingfromcare
+
+### Current DFPS public data endpoint
+
+DFPS maintains a public “HTCE Children Missing” Data Book page. The page retrieved for this audit displayed its heading but did not expose a current downloadable table or case roster in the page content available to the public retrieval. This is a retrieval limitation, not proof that DFPS has no underlying data. Request the underlying published table, export, update cadence, definitions, and archived versions through the records process.
+
+Source: https://www.dfps.texas.gov/About_DFPS/Data_Book/Human_Trafficking/children_missing.asp
+
+## 10. Immediate next acquisition priorities
+
+1. Request the latest DFPS HTCE Children Missing Data Book source table/export, definitions, refresh date, and archived versions.
+2. Request FY2023–FY2025 missing-episode totals and cohort definitions, with end-of-period status and exits while missing.
+3. Request de-identified timestamp fields and aggregate compliance for each applicable §264.123 control and the separate law-enforcement reporting deadlines.
+4. Request authorized independent review by the Texas Office of Inspector General, court-appointed child advocates, or another properly authorized oversight body where de-identified public records cannot answer case-level safety questions.
+5. Do not infer the identity or location of any child from public fragments. Route an actual current missing-child lead directly to law enforcement and NCMEC.
