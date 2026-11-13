@@ -9,6 +9,12 @@ export function sha256Text(value) {
   return createHash("sha256").update(value).digest("hex");
 }
 
+function validDateOnly(value) {
+  if (typeof value !== "string" || !DATE_RE.test(value)) return false;
+  const parsed = new Date(value + "T00:00:00Z");
+  return !Number.isNaN(parsed.getTime()) && parsed.toISOString().slice(0, 10) === value;
+}
+
 function requireValue(ok, message) {
   if (!ok) throw new TypeError(message);
 }
@@ -32,7 +38,7 @@ export function normalizeHhsUacRows(rows, provenance) {
   rows.forEach((row, index) => {
     const rawDate = row.date;
     const date = typeof rawDate === "string" ? rawDate.slice(0, 10) : "";
-    requireValue(DATE_RE.test(date) && !Number.isNaN(Date.parse(date + "T00:00:00Z")), "Invalid HHS date at row " + index);
+    requireValue(validDateOnly(date), "Invalid HHS date at row " + index);
     dateCounts.set(date, (dateCounts.get(date) || 0) + 1);
 
     for (const [field, definition] of Object.entries(source.metrics)) {
@@ -157,7 +163,7 @@ const HHS_MEASURE_DEFINITIONS = {
 
 export function summarizeHhsWindow(normalized, startDate, endDate) {
   requireValue(normalized && normalized.dataset_kind === "public_aggregate_observations", "Normalized public aggregate dataset required.");
-  requireValue(DATE_RE.test(startDate) && DATE_RE.test(endDate) && startDate <= endDate, "Valid inclusive startDate/endDate required.");
+  requireValue(validDateOnly(startDate) && validDateOnly(endDate) && startDate <= endDate, "Valid inclusive startDate/endDate required.");
   const source = getPublicSource("hhs_uac_daily");
   const rows = normalized.observations || [];
   const selected = rows.filter(row => row.observed_date >= startDate && row.observed_date <= endDate);
