@@ -45,13 +45,18 @@ Official statistics page: https://www.justice.gov/eoir/workload-and-adjudication
 
 EOIR publishes UAC tables as PDFs. v0.1 does not pretend to OCR those documents or silently infer values from chart pixels. A transcription must cite the exact PDF URL, PDF SHA-256, generated date, page, table/chart, unit, period, and measure type.
 
-Validate a prepared transcription:
+The EOIR importer now verifies the transcription against the exact downloaded PDF bytes, registered official artifact URL, publication/generated date, fiscal-period label, metric/unit definition, and page/table reference. It rejects duplicate metric-period rows. It emits a separate receipt and normalized observations.
 
 ~~~sh
-node src/public-ingest-cli.mjs eoir-validate ./imports/eoir-uac.json
+node src/public-ingest-cli.mjs eoir-import ./acquisitions/2026-11-13/eoir-uac-pending-transcription.json ./downloads/eoir-uac-pending.pdf ./derived/eoir-uac-pending.normalized.json
+node src/public-ingest-cli.mjs eoir-import ./acquisitions/2026-11-13/eoir-uac-outcomes-transcription.json ./downloads/eoir-uac-outcomes.pdf ./derived/eoir-uac-outcomes.normalized.json
 ~~~
 
-The template includes one previously published FY2026 Q3 pending-case value for pipeline testing. Verify it against the cited PDF before treating it as a current observation.
+Two official PDFs have been acquired and transcribed with page-1/Table-1 references:
+- Pending UAC cases: generated July 24, 2026; FY2016–FY2025 plus FY2026 Third Quarter.
+- UAC outcomes: generated July 24, 2026; FY2026 Third Quarter only.
+
+The checked-in transcription JSONs include the exact PDF hashes and retrieval timestamps. The original PDF bytes are archived on the authorized Windows machine under `C:\\Users\\rucke\\HeavenzFire\\PublicEvidence\\EOIR-UAC\\2026-11-13\\`, not committed as binary files. The importer refuses to normalize if the supplied PDF bytes do not match the hash in the transcription. Transcription review remains pending a second-person check; hash matching alone does not verify manually entered cells.
 
 ## Comparability contract
 
@@ -120,3 +125,25 @@ Both output paths use exclusive-create mode and refuse overwrite. The fetch comm
 The downloaded HHS JSON contained 1,390 rows across 1,380 distinct dates. Ten dates had duplicate source rows. The first three CBP-related measures had non-null values in 689 rows each, while the two ORR custody/discharge measures had non-null values in all 1,390 rows. These are source-structure facts, not child counts.
 
 The duplicates are retained with their source record IDs and versions. Null/missing cells are omitted as observations and remain visible through metric coverage counts. The summarizer blocks any metric/date combination with duplicate values; it does not select a "latest" row, average, or sum duplicate records. The acquisition receipt and exact raw-file hash are the controlling evidence for this snapshot.
+
+
+## EOIR UAC acquisition — 2026-11-13
+
+The current EOIR page links two one-page official PDFs, both generated July 24, 2026. The source page itself says the statistics are subject to change as EOIR staff update the case database.
+
+### Pending UAC case stock
+
+The pending table reports FY2016–FY2025 and FY2026 Third Quarter. For each period, it reports four age bands and total pending cases. The FY2026 Q3 row is 1,165 pending less than six months, 2,209 pending 6 months–2 years, 3,280 pending 2–5 years, and 9,906 pending more than five years, totaling 16,560. The importer checks that the four age bands sum exactly to the published total for each period.
+
+### UAC initial case-completion outcomes
+
+For FY2026 Third Quarter, the table reports 8,610 initial case decisions: 49 relief grants, 4,838 removals, 3,065 dismissals/terminations, 654 voluntary departures, 4 withdrawn, and 0 other. The 4,023 removal-in-absentia count is a subset of the 4,838 removals; it is explicitly typed as a subset and is never added again to total decisions. The importer checks both the outcome subtotal and subset bound.
+
+### Interpretation limits
+
+- Pending cases are a point-in-time court-case stock, not a count of children physically missing.
+- Decisions are FY-to-date initial case completions, not a point-in-time child population.
+- EOIR's footnote limits outcomes to I-862 initial case completions.
+- The PDFs exclude mental competency/Franco litigation, Institutional Hearing Program, Migration Protection Protocol cases, and cases with a 7A adjournment.
+- These court statistics do not establish location, post-release safety, trafficking, sponsor contact, or unique-child outcomes.
+- The transcriptions remain `PENDING_SECOND_PERSON_TRANSCRIPTION_REVIEW`; automated arithmetic checks do not certify transcription accuracy.

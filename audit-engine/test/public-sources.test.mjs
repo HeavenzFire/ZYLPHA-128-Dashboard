@@ -13,7 +13,12 @@ test("source registry has unique IDs and required public provenance metadata", (
     assert.ok(source.title);
     assert.match(source.url, /^https:\/\//);
     assert.ok(source.format);
-    assert.equal(source.retrieval_required, true);
+    if (source.acquisition_receipt) {
+      assert.equal(source.retrieval_required, false);
+      assert.ok(source.transcription);
+    } else {
+      assert.equal(source.retrieval_required, true);
+    }
   }
 });
 
