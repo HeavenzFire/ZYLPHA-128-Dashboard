@@ -26,7 +26,7 @@ function nonempty(value) {
 
 export function validateAggregateMeasure(m) {
   assert(m && typeof m === "object", "AggregateMeasure must be an object.");
-  for (const key of ["measure_id","source_id","agency","metric_name","unit_of_analysis","denominator_definition"]) {
+  for (const key of ["measure_id","source_id","agency","metric_name","unit_of_analysis","unit","denominator_definition"]) {
     assert(nonempty(m[key]), key + " is required.");
   }
   assert(typeof m.is_unique_person_count === "boolean", "is_unique_person_count must be explicit.");
@@ -41,7 +41,7 @@ export function validateAggregateMeasure(m) {
   assert(m.provenance && /^https:\/\//.test(m.provenance.url || ""), "provenance.url must be HTTPS.");
   assert(typeof m.provenance.retrieved_at === "string" && !Number.isNaN(Date.parse(m.provenance.retrieved_at)), "provenance.retrieved_at is required.");
   assert(SHA_RE.test(m.provenance.artifact_sha256 || ""), "provenance.artifact_sha256 must be SHA-256.");
-  assert(nonempty(m.provenance.publication_date) || m.provenance.publication_date === null, "publication_date must be an ISO date or explicit null.");
+  assert(m.provenance.publication_date === null || dateOk(m.provenance.publication_date), "publication_date must be a valid ISO date or explicit null.");
   if (m.measurement_class === "audit_sample" || m.measurement_class === "statistical_projection" || m.measurement_class === "research_estimate") {
     assert(m.uncertainty && (Number.isFinite(m.uncertainty.confidence_level) || m.uncertainty.confidence_level === null),
       "Sample/projection/estimate requires an explicit uncertainty object and confidence_level (or null with explanation).");
@@ -56,6 +56,7 @@ export function comparableMeasure(a, b) {
   const blockers = [];
   const warnings = [];
   if (a.unit_of_analysis !== b.unit_of_analysis) blockers.push("UNIT_OF_ANALYSIS_MISMATCH");
+  if (a.unit !== b.unit) blockers.push("MEASURE_UNIT_MISMATCH");
   if (a.time_window.start_date !== b.time_window.start_date || a.time_window.end_date !== b.time_window.end_date ||
       a.time_window.calendar_type !== b.time_window.calendar_type) blockers.push("TEMPORAL_MISMATCH");
   if (a.population_scope.cohort_definition !== b.population_scope.cohort_definition ||
