@@ -5,16 +5,15 @@ import { normalizeHhsUacRows, validateEoirTableImport, summarizeHhsWindow } from
 const [command, inputPath, arg3, arg4, arg5] = process.argv.slice(2);
 
 try {
-  if (command === "hhs-json" && inputPath && outputPath) {
+  if (command === "hhs-json" && inputPath && arg3) {
     const raw = await readFile(inputPath);
-    const rawText = raw.toString("utf8");
-    const payload = JSON.parse(rawText);
+    const payload = JSON.parse(raw.toString("utf8"));
     const result = normalizeHhsUacRows(payload, {
       raw_sha256: createHash("sha256").update(raw).digest("hex"),
       retrieved_at: new Date().toISOString()
     });
-    await writeFile(outputPath, JSON.stringify(result, null, 2) + "\n", { flag: "wx" });
-    console.log(JSON.stringify({ status: "ingested", output: outputPath, source_rows: result.row_count, observations: result.observation_count, raw_sha256: result.source.raw_sha256 }, null, 2));
+    await writeFile(arg3, JSON.stringify(result, null, 2) + "\n", { flag: "wx" });
+    console.log(JSON.stringify({ status: "ingested", output: arg3, source_rows: result.row_count, observations: result.observation_count, raw_sha256: result.source.raw_sha256 }, null, 2));
   } else if (command === "hhs-summarize" && inputPath && arg3 && arg4 && arg5) {
     const normalized = JSON.parse(await readFile(inputPath, "utf8"));
     const result = summarizeHhsWindow(normalized, arg3, arg4);
