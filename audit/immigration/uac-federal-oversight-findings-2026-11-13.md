@@ -377,3 +377,35 @@ The full report clarifies several denominators that should accompany any use of 
 Primary source: full HHS OIG report, OEI-07-24-00370, methodology and Appendix A, especially PDF pages 4–14: https://oig.hhs.gov/documents/evaluation/11910/OEI-07-24-00370.pdf
 
 **Interpretation boundary:** The 1,944 reports are an administrative signal of potential safety concerns, including inability to contact and runaway concerns. OIG did not verify the underlying safety concerns, did not evaluate whether each response was appropriate, and did not establish a current nationwide prevalence rate for abuse or trafficking. The report does establish that in the selected 250-case sample, direct contact, screenings, referrals, and follow-up were separate and variably documented actions; it does not establish ultimate safety outcomes for all children.
+
+
+## 20. June 2026 HHS OIG audit — unlicensed care-provider background checks in Texas and Florida
+
+A second 2026 HHS OIG report materially expands the safety audit beyond post-release tracing: **A-06-24-07001**, *The Office of Refugee Resettlement Needs To Improve Its Monitoring of Unlicensed Unaccompanied Alien Children Program Care Providers' Compliance With Background Check Requirements*, issued June 5, 2026.
+
+### Verified findings
+
+For the period September 2021 through August 2024, OIG reviewed 58 unlicensed ORR care-provider facilities in Texas and Florida. It found ORR conducted only **176 of 256 required monitoring visits**:
+- **80 of 198** required quarterly abbreviated visits were not conducted.
+- **43 of 58** required comprehensive visits were not conducted on time (required every two years).
+
+OIG said missed or late monitoring visits meant missed opportunities to identify background-check noncompliance. New staff may have had access to children before providers verified that the staff member did not have a criminal history or other history indicating risk to children. OIG also noted a Florida obstacle to required background checks arising after the audit period.
+
+The report explains that in January 2024 ORR officials disclosed that an unlicensed provider had not conducted required national FBI fingerprint-based background checks and had conducted only state-level checks. This is a documented control failure disclosure; it is not a finding that every facility or employee lacked checks, nor proof that a particular child was harmed.
+
+### Corrective action status
+
+HHS OIG lists both recommendations as **Open Unimplemented** in its tracker as of the current report page:
+1. ORR should conduct required abbreviated monitoring visits approximately every 90 days.
+2. ORR should put mechanisms in place to verify that all required background checks at unlicensed care providers are conducted.
+
+The tracker lists the next update expected **December 4, 2026**. ACF partially concurred with recommendation 1 and concurred with recommendation 2.
+
+### Audit significance and limitations
+
+This report concerns children while in ORR-funded care, not the later ICE post-release field initiative. It is a separate stage of the custody chain and must not be combined with the 448,000 transfer cohort or the 1,800 children represented in National Call Center safety reports. It does establish that federal oversight of staff screening and provider monitoring had measurable gaps at 58 unlicensed facilities in two states during the stated period. The next audit question is whether corrective actions have been implemented and verified since August 2024, and whether the post-audit Florida background-check obstacle was resolved.
+
+Primary sources:
+- HHS OIG report and recommendation status: https://www.oig.hhs.gov/reports/all/2026/the-office-of-refugee-resettlement-needs-to-improve-its-monitoring-of-unlicensed-unaccompanied-alien-children-program-care-providers-compliance-with-background-check-requirements/
+- HHS OIG recommendation tracker: https://www.oig.hhs.gov/reports/recommendations/tracker/?hhs-agency=all&search=A-06-24-07001&view-mode=report-grouped
+- HHS OIG report highlights PDF: https://oig.hhs.gov/documents/audit/11690/A-06-24-07001_highlights.pdf
