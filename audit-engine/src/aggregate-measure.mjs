@@ -17,8 +17,9 @@ function assert(ok, message) {
   if (!ok) throw new TypeError(message);
 }
 function dateOk(value) {
-  return typeof value === "string" && ISO_DATE_RE.test(value) &&
-    !Number.isNaN(Date.parse(value + "T00:00:00Z"));
+  if (typeof value !== "string" || !ISO_DATE_RE.test(value)) return false;
+  const parsed = new Date(value + "T00:00:00Z");
+  return !Number.isNaN(parsed.getTime()) && parsed.toISOString().slice(0, 10) === value;
 }
 function nonempty(value) {
   return typeof value === "string" && value.trim().length > 0;
