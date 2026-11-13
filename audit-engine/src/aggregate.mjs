@@ -165,6 +165,8 @@ export function summarizeHhsWindow(normalized, startDate, endDate) {
       continue;
     }
     const metricRows = selected.filter(row => row.metric_id === metricId);
+    const metricDates = new Set(metricRows.map(row => row.observed_date));
+    const metricMissingDates = expectedDates.filter(date => !metricDates.has(date));
     const isStock = definition.measurement_class === "administrative_snapshot";
     let value;
     let measureWindow;
@@ -178,8 +180,8 @@ export function summarizeHhsWindow(normalized, startDate, endDate) {
       value = endpoint.value;
       measureWindow = { start_date: endDate, end_date: endDate, calendar_type: "POINT_IN_TIME" };
     } else {
-      if (missingDates.length) {
-        results.push({ metric_id: metricId, status: "BLOCKED_INCOMPLETE_DAILY_COVERAGE", missing_dates: missingDates, observed_date_count: observedDates.size, expected_date_count: expectedDates.length });
+      if (metricMissingDates.length) {
+        results.push({ metric_id: metricId, status: "BLOCKED_INCOMPLETE_DAILY_COVERAGE", missing_dates: metricMissingDates, observed_date_count: metricDates.size, expected_date_count: expectedDates.length });
         continue;
       }
       value = metricRows.reduce((sum, row) => sum + row.value, 0);
