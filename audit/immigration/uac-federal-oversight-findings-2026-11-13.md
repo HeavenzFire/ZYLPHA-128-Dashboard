@@ -409,3 +409,39 @@ Primary sources:
 - HHS OIG report and recommendation status: https://www.oig.hhs.gov/reports/all/2026/the-office-of-refugee-resettlement-needs-to-improve-its-monitoring-of-unlicensed-unaccompanied-alien-children-program-care-providers-compliance-with-background-check-requirements/
 - HHS OIG recommendation tracker: https://www.oig.hhs.gov/reports/recommendations/tracker/?hhs-agency=all&search=A-06-24-07001&view-mode=report-grouped
 - HHS OIG report highlights PDF: https://oig.hhs.gov/documents/audit/11690/A-06-24-07001_highlights.pdf
+
+
+## 21. Contracting and provider oversight — 2021 emergency intake contracts
+
+Two additional HHS OIG audits show that oversight gaps extended to the procurement and monitoring of emergency shelter capacity. These are relevant to the care system but are distinct from post-release child tracing.
+
+### A-06-22-07000 — five emergency intake contracts (September 3, 2025)
+
+In FY2021, ACF awarded **62 contracts totaling $4.8 billion** without competitive bidding for emergency intake sites. OIG selected five contracts totaling more than **$2.8 billion** for review and found noncompliance across contract award, monitoring, and closeout requirements:
+- All five reviewed contracts lacked compliant planning for full and open competition.
+- All five lacked a compliant pre-award determination that prices were fair and reasonable.
+- Four of five had statements of work that did not align with performance outcomes.
+- All five lacked required contract clauses.
+- Four of five did not appropriately rely on quality-assurance surveillance plans.
+- All five failed to comply with requirements to accept or reject contract deliverables.
+- Three of five had applicable excess funds not properly deobligated; all five failed to obtain required releases of liabilities/obligations/claims before final payment.
+
+OIG made four recommendations. HHS OIG's tracker lists all four as **Closed Unimplemented** (closed February 25, 2026). That label is not the same as "Implemented and Closed." It means the recommendations were administratively closed without being recorded as implemented in the tracker; do not describe these corrective actions as successfully implemented based on the closure date alone.
+
+Sources:
+- Official report page: https://www.oig.hhs.gov/reports/all/2025/acf-did-not-award-monitor-and-close-selected-contracts-for-the-unaccompanied-alien-children-program-in-accordance-with-federal-requirements/
+- Recommendation tracker: https://oig.hhs.gov/reports/recommendations/tracker/?hhs-agency=all&search=A-06-22-07000&view-mode=report-grouped
+- Highlights: https://oig.hhs.gov/documents/audit/10934/A-06-22-07000-highlights.pdf
+
+### A-03-22-00353 — $529 million Family Endeavors emergency intake site contract (February 10, 2026)
+
+OIG found that ACF awarded a **$529 million sole-source contract** to Family Endeavors, Inc. for an emergency intake site in Pecos, Texas, three days after receiving an unsolicited proposal. ACF had anticipated the need for additional beds for months but did not adequately plan for competition. It could not document a pre-award price analysis; an analysis completed three months after award put ACF's total estimated cost at **$245 million**, less than half the awarded amount. ACF also did not evaluate whether the contractor was responsible before award. OIG concluded other, more qualified contractors may have been available at lower cost.
+
+The report's single recommendation to use the findings to improve future contract planning is listed **Closed Implemented** on August 4, 2026. This closure concerns the forward-looking planning recommendation; it does not retroactively cure the original award deficiencies or establish that the $529 million contract was reasonable.
+
+Sources:
+- Official report page: https://www.oig.hhs.gov/reports/all/2026/acfs-529-million-sole-source-contract-award-for-unaccompanied-alien-children-services-was-based-on-an-unsolicited-proposal-double-the-cost-estimate-and-noncompliant-with-pre-award-requirements/
+- Recommendation tracker: https://oig.hhs.gov/reports/recommendations/tracker/?hhs-agency=all&search=A-03-22-00353&view-mode=report-grouped
+- HHS OIG Spring 2026 Semiannual Report: https://oig.hhs.gov/documents/sar/11794/Spring_2026_SAR.pdf
+
+**Audit significance:** procurement and contract-control failures can affect capacity, staffing, shelter conditions, and the quality of care available to children. These reports do not prove that a child was harmed, that all contractors were noncompliant, or that the full $4.8 billion was misspent. They identify documented deficiencies in selected awards and monitoring. Further review should trace the specific contracts/facilities, performance deliverables, quality-assurance records, corrective-action status, and whether services were delivered as paid.
