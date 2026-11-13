@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { computeMetrics, evaluateLocatedClaim, sha256, validateDataset } from "../src/verify.mjs";
+import { buildEvidenceManifest, computeMetrics, evaluateLocatedClaim, sha256, validateDataset } from "../src/verify.mjs";
 
 const tokenA = "a".repeat(64);
 const tokenB = "b".repeat(64);
@@ -99,4 +99,9 @@ test("events outside declared coverage do not enter metrics", () => {
     { event_id: "E-1", source_id: "SRC-1", subject_token: tokenA, event_type: "direct_child_contact", observed_at: "2025-01-01T00:00:00Z", outcome: "successful" }
   ]});
   assert.equal(computeMetrics(data).unique_children_with_successful_direct_contact, 0);
+});
+
+test("evidence manifest is reproducible for identical dataset content", () => {
+  const data = fixture();
+  assert.deepEqual(buildEvidenceManifest(data), buildEvidenceManifest(data));
 });
