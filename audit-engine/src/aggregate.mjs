@@ -37,7 +37,7 @@ export function normalizeHhsUacRows(rows, provenance) {
     seenDates.add(date);
 
     for (const [field, definition] of Object.entries(source.metrics)) {
-      requireValue(Object.hasOwn(row, field), "Missing HHS metric field: " + field);
+      if (!Object.hasOwn(row, field)) continue;
       observations.push({
         source_id: source.source_id,
         dataset_id: source.dataset_id,
@@ -70,6 +70,10 @@ export function normalizeHhsUacRows(rows, provenance) {
     },
     row_count: rows.length,
     observation_count: observations.length,
+    metric_field_coverage: Object.fromEntries(Object.keys(source.metrics).map(metricId => [
+      metricId, observations.filter(observation => observation.metric_id === metricId).length
+    ])),
+    schema_variants: [...new Set(rows.map(row => Object.keys(source.metrics).filter(field => Object.hasOwn(row, field)).sort().join(",")))],
     observations
   };
 }
@@ -155,7 +159,7 @@ export function summarizeHhsWindow(normalized, startDate, endDate) {
   const observedDates = new Set(selected.map(row => row.observed_date));
   const expectedDates = enumerateDates(startDate, endDate);
   const missingDates = expectedDates.filter(date => !observedDates.has(date));
-  const metricIds = [...new Set(selected.map(row => row.metric_id))];
+  const metricIds = Object.keys(source.metrics);
   const results = [];
 
   for (const metricId of metricIds) {
@@ -221,11 +225,13 @@ export function summarizeHhsWindow(normalized, startDate, endDate) {
     results.push({ metric_id: metricId, status, measure });
   }
 
+  const metricGapDates = [...new Set(results.flatMap(result => result.missing_dates || []))].sort();
+  const hasBlockedMetric = results.some(result => result.status.startsWith("BLOCKED"));
   return {
-    status: missingDates.length ? "PARTIAL_COVERAGE" : "COMPLETE_DATE_COVERAGE",
+    status: missingDates.length || hasBlockedMetric ? "PARTIAL_COVERAGE" : "COMPLETE_DATE_COVERAGE",
     requested_window: { start_date: startDate, end_date: endDate, expected_date_count: expectedDates.length },
     observed_date_count: observedDates.size,
-    missing_dates: missingDates,
+    missing_dates: [...new Set([...missingDates, ...metricGapDates])].sort(),
     measures: results,
     coverage_note: "Date coverage is assessed at calendar-day granularity. Missing dates block flow summation; stock metrics use only the explicitly requested end-date snapshot."
   };
