@@ -57,3 +57,27 @@ The system will not derive unique children from daily aggregate flows, infer mis
 ## Integrity limitations
 
 SHA-256 proves only that the bytes used later match the bytes originally hashed. It does not prove the publisher's data are accurate, that the extraction is complete, or that the PDF transcription is correct. Manual PDF transcription requires a second-person check against the cited page before publication.
+
+
+## AggregateMeasure contract and comparability gate
+
+Each normalized measure is validated against `src/aggregate-measure.mjs`. In addition to the schema fields, v0.1 requires:
+- explicit `unit` and `unit_of_analysis` (e.g. "children" vs "events", and "unique_child" vs "discharge_event");
+- an explicit `is_unique_person_count` boolean;
+- a defined denominator and cohort;
+- exact start/end dates and calendar type;
+- a measurement class: administrative census, snapshot, event count, audit sample, projection, research estimate, or unknown;
+- source URL, retrieval timestamp, raw-artifact SHA-256, and known publication date (or explicit null).
+
+The source registry is a catalog, not an assertion that we have already retrieved every artifact. Each retrieval creates an acquisition receipt containing the timestamp, byte count, SHA-256, and publication date. We do not fabricate retrieval timestamps or file hashes for sources not yet downloaded.
+
+Run:
+
+~~~sh
+node src/claim-audit.mjs validate fixtures/aggregate-measure.synthetic.json
+node src/claim-audit.mjs compare measure-a.json measure-b.json
+~~~
+
+The comparison gate blocks arithmetic if unit, period, cohort/geography, measurement class, unique-person semantics, or denominator differ. It also blocks direct point arithmetic for audit samples and projections until an uncertainty-propagation implementation exists. Temporal mismatch is a hard blocker, not a warning.
+
+The sample and projection gate is intentionally conservative: v0.1 records confidence metadata but does not yet implement statistical interval propagation. It therefore refuses subtraction/ratios for those classes rather than producing false precision.
