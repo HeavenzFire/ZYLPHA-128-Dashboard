@@ -110,3 +110,35 @@ Primary source: https://www.oig.hhs.gov/reports/work-plan/browse-work-plan-proje
 The highest-value Texas records are: the complete FY2024 and FY2025 missing-youth episode extracts with definitions; the FY2023 109 still-missing and 23 court-terminated-under-18 dispositions; all de-identified records of conservatorship termination while missing; and timestamped proof of NCMEC/law-enforcement notifications and search actions.
 
 **No current missing-child roster was accessed. No individual child has been identified or located through this audit.** This repository work is a public-accountability audit, not a substitute for law enforcement or NCMEC recovery operations.
+
+
+## 7. Updated 2025–2026 evidence and Texas legal control tests
+
+### NCMEC 2025 Impact Report — national missing-from-care reports
+NCMEC reports **23,348 reports of children missing from foster care in 2025**. Of the children missing from care who were reported to NCMEC in 2025, **17% were identified as likely victims of child sex trafficking**. These are NCMEC report counts, not necessarily unique children, not a census of every child missing from care nationwide, and not confirmed trafficking victim counts. NCMEC separately reports 4,215 instances of support for children missing from child welfare who were likely victims of sex trafficking.
+
+NCMEC says Texas saw the largest single-year volume increase in missing-child reports in 2025, driven by new reporting legislation; this should not be interpreted as proof that more children went missing. It is at least partly a reporting-volume effect.
+
+Source: https://www.missingkids.org/ourwork/impact (2025 Impact Report, sections “Children Missing from Foster Care” and “Emerging Trend | Texas Reporting Legislation Increases Reporting of Missing Children”).
+
+### Texas law effective September 1, 2025
+Texas Code of Criminal Procedure Article 63.00905, as amended by HB 908, requires a law-enforcement agency receiving a missing-child report to immediately investigate and, within two hours, enter applicable information into the Texas clearinghouse/TLETS, NCIC (if criteria are met), and NCMEC. Article 63.0091 establishes enhanced response procedures for certain repeat-missing children, including a child in foster care or DFPS conservatorship reported missing at least twice in the preceding 24 months. The audit must test actual operational compliance with these provisions, not infer compliance from the existence of the statute.
+
+Official statute: https://statutes.capitol.texas.gov/Docs/CR/htm/CR.63.htm
+
+### DFPS Missing Children Protocol — November 2025
+DFPS's November 2025 Missing Children Protocol provides the agency's current process rules, including escalation when law enforcement declines to file a missing-child report. The protocol directs the caseworker to immediately notify the chain of command and include the Special Investigations program director; the director must request that Texas DPS place the child on the Child Safety Check Alert List. The protocol also includes special handling for youth parents and their children.
+
+Source: https://www.dfps.texas.gov/handbooks/CPS/Resource_Guides/Missing_Children_Protocol.pdf
+
+### Texas Child Welfare Bench Book — September 2025
+The Texas Children's Commission's 2025 Bench Book summarizes the DFPS duties to report missing foster youth to law enforcement and NCMEC within 24 hours, notify specified parties, continue locating efforts (including monthly law-enforcement and former-caregiver contacts), conduct quarterly supervisory reviews for children age 15 and older, and complete a recovery interview after return. The audit should compare these stated controls with actual timestamped case records and applicable statutory/policy versions.
+
+Source: https://www.texaschildrenscommission.gov/media/4sahodqj/2025-texas-child-welfare-bench-book-online.pdf
+
+## 8. New highest-priority tests
+1. Determine whether Texas's 2025 two-hour law-enforcement-to-NCMEC requirement is being met for foster-care missing-child reports, and reconcile timestamps among local law enforcement, TLETS, NCIC, NCMEC, and DFPS.
+2. Test Article 63.0091 enhanced response for foster-care children with at least two missing reports in 24 months.
+3. Verify the November 2025 DFPS Missing Children Protocol was distributed, trained, version-controlled, and operationalized statewide.
+4. Test whether every missing episode has required party notifications, monthly law-enforcement/former-caregiver contacts, quarterly supervisory reviews where applicable, and a recovery interview.
+5. Reconcile NCMEC's 23,348 missing-from-care reports and 17% likely trafficking indicator with state data without treating reports as unique children or likely trafficking as confirmed victimization.
