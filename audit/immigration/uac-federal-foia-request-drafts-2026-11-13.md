@@ -332,3 +332,17 @@ Please provide existing records from January 1, 2025 through the date this reque
 This request is limited to aggregate and redacted methodology/quality-control records. It does not seek child identities or case-level narratives.
 
 Source: https://acf.gov/orr/programs-services/unaccompanied-children/reports/separated-children/february-2026
+
+
+### J-1. Current production schema request — do not substitute the 2011 draft NIEM workbook
+
+ACF's publicly catalogued *Data Dictionary and NIEM Mapping* links to a workbook whose own Notes tab dates the Information Viewpoint to October 3, 2011 and says it is a work in progress, not vetted, and representative rather than complete. Please do not treat that workbook as the current UC Portal schema.
+
+Please provide the current production UC Portal data dictionary, database/API schema, entity-relationship model, interface-control documents, version history, field-level data lineage, and current NIEM or other exchange mappings. For each field, please identify whether it is implemented in production, required, optional, deprecated, or not implemented; its source system; authoritative owner; validation rules; last-updated timestamp; and the agency interfaces to which it is transmitted. Include the actual field definitions for person/child identity matching, case/person identifiers, sponsor and household relationship, address pedigree and verification, contact attempts, direct child contact, safety/risk assessment, screening, referral, investigation result, outcome/disposition, and record closure.
+
+Please provide aggregate documentation only and do not disclose child-level records, identifiers, sponsor addresses, credentials, or exploitable system details.
+
+Sources:
+- https://acf.gov/media/14300
+- https://acf.gov/sites/default/files/documents/i_datadictionaryandniemmapping_d01_0.xlsx
+- https://catalog.data.gov/dataset/data-dictionary-and-niem-mapping
