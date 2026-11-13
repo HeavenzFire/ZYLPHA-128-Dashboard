@@ -38,7 +38,7 @@ const DEFINITIONS = Object.freeze({
 });
 
 function expectedPeriod(periodLabel) {
-  const annual = /^FY(20\\d{2})$/.exec(periodLabel);
+  const annual = /^FY(20\d{2})$/.exec(periodLabel);
   if (annual) {
     const year = Number(annual[1]);
     return { start_date: (year - 1) + "-10-01", end_date: year + "-09-30", calendar_type: "US_FEDERAL_FY" };
@@ -53,7 +53,7 @@ function validatePeriod(row, index) {
   assert(["US_FEDERAL_FY", "US_FEDERAL_FY_QUARTER"].includes(row.period.calendar_type), "Unsupported EOIR calendar type at observation " + index);
   assert(typeof row.period_label === "string" && row.period_label.trim(), "period_label required at observation " + index);
   const expected = expectedPeriod(row.period_label);
-  assert(expected && JSON.stringify(row.period) === JSON.stringify(expected), "Period label/date contract mismatch at observation " + index);
+  assert(expected && row.period.start_date === expected.start_date && row.period.end_date === expected.end_date && row.period.calendar_type === expected.calendar_type, "Period label/date contract mismatch at observation " + index);
 }
 
 export function normalizeEoirTranscription(input, pdfBytes) {
