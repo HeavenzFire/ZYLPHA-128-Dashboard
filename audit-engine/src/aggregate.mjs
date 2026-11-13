@@ -248,7 +248,7 @@ export function summarizeHhsWindow(normalized, startDate, endDate) {
     requested_window: { start_date: startDate, end_date: endDate, expected_date_count: expectedDates.length },
     observed_date_count: observedDates.size,
     missing_dates: [...new Set([...missingDates, ...metricGapDates])].sort(),
-    duplicate_dates: normalized.duplicate_dates || [],
+    duplicate_dates: (normalized.duplicate_dates || []).filter(item => item.date >= startDate && item.date <= endDate),
     measures: results,
     coverage_note: "Date coverage is assessed at calendar-day granularity. Missing dates block flow summation; stock metrics use only the explicitly requested end-date snapshot."
   };
