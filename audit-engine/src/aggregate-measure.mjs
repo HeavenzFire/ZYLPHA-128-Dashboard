@@ -34,7 +34,7 @@ export function validateAggregateMeasure(m) {
   assert(Number.isSafeInteger(m.value) && m.value >= 0, "value must be a non-negative safe integer.");
   assert(m.time_window && dateOk(m.time_window.start_date) && dateOk(m.time_window.end_date), "Valid time_window dates are required.");
   assert(m.time_window.start_date <= m.time_window.end_date, "time_window start_date must not exceed end_date.");
-  assert(new Set(["US_FEDERAL_FY","CALENDAR_YEAR","CUSTOM","POINT_IN_TIME"]).has(m.time_window.calendar_type), "Unsupported calendar_type.");
+  assert(new Set(["US_FEDERAL_FY","US_FEDERAL_FY_QUARTER","CALENDAR_YEAR","CUSTOM","POINT_IN_TIME"]).has(m.time_window.calendar_type), "Unsupported calendar_type.");
   assert(MEASUREMENT_CLASSES.has(m.measurement_class), "measurement_class is required and must be recognized.");
   assert(Array.isArray(m.known_limitations), "known_limitations must be an array.");
   assert(m.population_scope && nonempty(m.population_scope.cohort_definition), "population_scope.cohort_definition is required.");
