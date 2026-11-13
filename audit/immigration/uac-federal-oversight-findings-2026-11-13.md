@@ -445,3 +445,51 @@ Sources:
 - HHS OIG Spring 2026 Semiannual Report: https://oig.hhs.gov/documents/sar/11794/Spring_2026_SAR.pdf
 
 **Audit significance:** procurement and contract-control failures can affect capacity, staffing, shelter conditions, and the quality of care available to children. These reports do not prove that a child was harmed, that all contractors were noncompliant, or that the full $4.8 billion was misspent. They identify documented deficiencies in selected awards and monitoring. Further review should trace the specific contracts/facilities, performance deliverables, quality-assurance records, corrective-action status, and whether services were delivered as paid.
+
+
+## 22. Data-system integrity and interagency interoperability — DHS OIG OIG-22-66 and HHS OIG A-18-22-03200
+
+The audit record shows that child tracking is not only a field-contact problem. The underlying data systems and agency handoffs have a documented history of limited interoperability and incomplete security controls.
+
+### DHS OIG OIG-22-66 (September 9, 2022)
+
+DHS OIG found that DHS IT systems did not effectively support migrant tracking from apprehension to release or transfer. The systems were separately funded and maintained, and staff relied on manual and ad hoc workarounds. For unaccompanied children, the report identified:
+- CBP's e3, ICE's EARM/EID, HHS/ORR's UC Portal, and CBP's Unified Immigration Portal (UIP) as separate systems.
+- Only limited UC Portal data were shared into UIP; DOJ systems were not interoperable with DHS systems at the time of the audit.
+- Transfer coordination between USBP, ICE, and ORR was conducted almost entirely through individual emails for each transfer action. In FY2021, more than 125,000 UACs were transferred to HHS; some field officials reported receiving 500–600 emails daily.
+- In a judgmental sample of 100 child files (October 2019–April 2021), USBP placement requests were not made within the required 48 hours in **71 of 100** cases. ORR did not provide placement locations within the required 24 hours in **72 of 100** cases.
+- The report described a five-year-old child whose placement request took three days and whose placement location took ten days, requiring more than ten emails to coordinate.
+
+These are historical audit-period findings and cannot be assumed to describe today's systems. They establish why current records must identify the authoritative system of record, the handoff event, timestamps, failure queues, and reconciliation controls.
+
+Source: DHS OIG OIG-22-66, *DHS Technology Systems Do Not Effectively Support Migrant Tracking at the Southwest Border*: https://www.oig.dhs.gov/sites/default/files/assets/2022-09/OIG-22-66-Sep22.pdf
+
+### HHS OIG A-18-22-03200 (March 29, 2024)
+
+HHS OIG found that ACF had implemented 119 of 159 minimum cybersecurity controls for the UC Portal. Of the remaining 40, **30 were not fully implemented** and 10 were designated not applicable. ACF also did not consistently perform user-account reviews under its access-control policy. The UC Portal contains sensitive child and potential-sponsor data and is a key source for reunification work.
+
+The HHS OIG recommendation tracker, last updated October 26, 2026, still lists both recommendations as **Open Unimplemented**:
+1. Consistently perform user-account reviews.
+2. Fully implement the 30 required minimum controls identified in the system security plan.
+
+The tracker shows the last update received June 17, 2025, with a next update expected December 27, 2025. The stale expected-update date is a follow-up lead; it does not prove that no technical remediation occurred, but public evidence of closure was not located in this pass.
+
+Sources:
+- Official report: https://www.oig.hhs.gov/reports/all/2024/acf-has-enhanced-some-cybersecurity-controls-over-the-unaccompanied-children-portal-and-data-but-improvements-are-needed/
+- HHS OIG recommendation tracker: https://www.oig.hhs.gov/reports/recommendations/tracker/?hhs-agency=all&search=A-18-22-03200&view-mode=report-grouped
+
+### Audit conclusion
+
+A child-location result is only as reliable as the identity resolution, timestamps, data-sharing interfaces, and source-system controls behind it. The investigation must establish whether current ICE/HHS/EOIR records can be matched accurately and whether changes, transfers, sponsor moves, court outcomes, and welfare referrals propagate across systems. A system showing a record or address is not proof of current physical presence or safety.
+
+## 23. Records priorities for data lineage and system control testing
+
+Request current, existing records that show:
+1. The authoritative system of record for each child status event (apprehension, transfer, ORR placement, sponsor release, address change, runaway, direct contact, NTA service, court appearance, referral, and closure).
+2. Current interface specifications and data-sharing agreements among CBP e3/UIP, ICE EARM/EID/EAGLE/ICM, ORR UC Portal, EOIR, and the National Call Center.
+3. Aggregate interface failure, rejected-record, duplicate-record, missing-field, delayed-update, and reconciliation counts by month since 2024.
+4. Current UC Portal system security plan, control implementation status, account-review completion rates, privileged-access reviews, and any independent security assessment; release redacted system-control records, not exploitable technical details.
+5. Evidence that the 30 minimum controls in A-18-22-03200 were implemented and tested, and the signed HHS OIG closeout determination if closed.
+6. Evidence that child/sponsor records are updated when a child changes placement, address, sponsor, or legal status, including audit-log retention and exception handling.
+
+Do not request or publish child identifiers, credentials, access tokens, network diagrams exposing vulnerabilities, exploit details, or live operational access information.
