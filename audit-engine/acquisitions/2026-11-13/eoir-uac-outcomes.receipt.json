@@ -1,0 +1,13 @@
+{
+  "receipt_version": "1.0",
+  "source_id": "DOJ-EOIR-UAC-OUTCOMES",
+  "agency": "DOJ/EOIR",
+  "source_url": "https://www.justice.gov/eoir/workload-and-adjudication-statistics",
+  "artifact_url": "https://www.justice.gov/eoir/media/1344956/dl?inline=",
+  "artifact_sha256": "b2d98bdf136314b7d9d3652fd8711e1a08f1d164b34dec5abecf021663783d65",
+  "artifact_bytes": 48605,
+  "retrieved_at": "2026-11-13T21:54:40.497Z",
+  "publication_date": "2026-07-24",
+  "local_archive_path": "C:\\\\Users\\\\rucke\\\\HeavenzFire\\\\PublicEvidence\\\\EOIR-UAC\\\\2026-11-13\\\\eoir-uac-outcomes.pdf",
+  "integrity_note": "SHA-256 identifies the exact downloaded PDF bytes; it does not validate manual transcription or the accuracy/completeness of EOIR administrative data."
+}
