@@ -9,7 +9,7 @@
 
 FOIA.gov's official dataset-download page lists governmentwide, all-agency CSV ZIP archives for each year from 2008 through 2025. The FY2010–FY2025 portion therefore has a listed archive for all 16 fiscal years in the audit's historical window. The same page lists annual full XML archives for 2008–2025.
 
-The page, as retrieved on 2026-11-13, does **not** list an FY2026 all-agency CSV or XML archive. This is a publication-availability gap in the captured download page, not evidence that agencies failed to report or that FY2026 data do not exist elsewhere. Keep FY2026 marked pending until an official archive or agency report is located.
+The page was live-captured on 2026-11-13 (HTTP 200); the extraction returned 69 links, including all 16 exact all-agency CSV ZIP URLs for FY2010–FY2025. The page, as captured, does **not** list an FY2026 all-agency CSV or XML archive. This is a publication-availability gap in the captured download page, not evidence that agencies failed to report or that FY2026 data do not exist elsewhere. Keep FY2026 marked pending until an official archive or agency report is located.
 
 Primary source: [FOIA.gov — Dataset Downloads](https://www.foia.gov/foia-dataset-download.html). The page returned HTTP 200 in the capture. The archive URLs in the companion CSV are transcribed from links on that page.
 
