@@ -15,6 +15,8 @@
 7. Use lawful public sources and authorized records-access pathways only.
 
 ## Work products
+- [USAspending award-obligation validation sample (Phase D)](verification/usaspending-award-sample-2026-11-13.md)
+- [USAspending FY2010/FY2025 agency sample CSV](verification/usaspending-agency-sample-2010-2025.csv)
 - [Evidence register](evidence-register.csv)
 - [Workstream plan](workstreams.md)
 - [Records-request drafts](records-requests.md)
