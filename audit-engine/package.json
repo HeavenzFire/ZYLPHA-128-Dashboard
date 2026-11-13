@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node --test",
     "verify:fixture": "node src/cli.mjs fixtures/uac-synthetic.json",
-    "ingest:hhs": "node src/public-ingest-cli.mjs hhs-json",
+    "ingest:hhs": "node src/public-ingest-cli.mjs hhs-fetch",
     "validate:eoir": "node src/public-ingest-cli.mjs eoir-validate",
     "validate:measure": "node src/claim-audit.mjs validate",
     "compare:measures": "node src/claim-audit.mjs compare",
