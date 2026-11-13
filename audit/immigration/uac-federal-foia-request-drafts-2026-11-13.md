@@ -384,3 +384,26 @@ Official sources:
 - https://www.justice.gov/eoir/media/1344946/dl?inline
 - https://www.justice.gov/eoir/media/1344956/dl?inline
 - https://www.justice.gov/eoir/media/1344951/dl?inline
+
+
+### C-2. EOIR UAC/J-code classification reliability and validation
+
+Peer-reviewed research by Galli and Padilla (2025) reports that EOIR's juvenile-history J-codes became unreliable after changes in 2017. The researchers state that accompanied and unaccompanied children were no longer properly disaggregated, many cases of people under 18 at arrival were excluded, and 79% of post-2017 juvenile-history records were assigned a new "not applicable" code (40% of those records were adults). They developed an alternate method using age at arrival, docket type, and family-unit information. Acacia's October 2026 update using that method estimates more than 110,000 unaccompanied-child cases pending as of August 31, 2026, compared with EOIR's published 16,560 pending UAC cases in FY2026 Q3. These estimates are not directly comparable without matching definitions and dates, but the gap warrants validation.
+
+Please provide:
+1. The full EOIR codebook and data dictionary for juvenile-history fields, J-codes, UAC indicators, age-at-arrival, docket type, family-unit, and related case classification fields.
+2. All versions of the J-code definitions and implementation/change logs from 2016 through the present, including the 2017 changes and any subsequent correction or remediation.
+3. Existing analyses, audits, validation studies, error reports, and quality-control records assessing whether the UAC/J-code field correctly identifies children who were unaccompanied at entry.
+4. The source system, logic, and query used to generate EOIR's published FY2026 Q3 count of 16,560 pending UAC cases and the associated UAC adjudication statistics.
+5. Any comparison, validation, or reconciliation of EOIR's dedicated UAC flag against age-at-arrival, juvenile docket, family-unit, or other methods used by researchers.
+6. Existing records addressing known false negatives, false positives, missing age/birth-date fields, misclassified juvenile/family dockets, and the treatment of respondents who turn 18 after entry.
+7. Whether EOIR has adopted, tested, or rejected the Galli/Padilla method or any similar alternative for official UAC statistics; provide the written decision and supporting analysis.
+8. Existing aggregate counts and quality metrics that would allow a researcher to quantify the difference between the dedicated UAC field and a broader age-at-entry/docket-based identification method.
+
+Please provide codebooks, data dictionaries, change logs, validation reports, and aggregate data only. Do not provide child identities, A-numbers, dates of birth, sponsor information, or individual case histories.
+
+Sources:
+- https://journals.sagepub.com/doi/full/10.1177/01979183251316528
+- https://acaciajustice.org/research-data/fact-sheets/the-data-behind-a-due-process-crisis-new-estimates-of-unaccompanied-children-in-immigration-court/
+- https://tracreports.org/immigration/reports/669/
+- https://www.justice.gov/eoir/workload-and-adjudication-statistics
