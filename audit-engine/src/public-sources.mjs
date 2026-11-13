@@ -17,6 +17,31 @@ export const PUBLIC_SOURCES = Object.freeze({
       children_discharged_from: { label: "Children discharged from HHS care to vetted sponsors", unit: "children", measure: "daily_flow" }
     }
   },
+  eoir_uac_pending: {
+    source_id: "DOJ-EOIR-UAC-PENDING",
+    publisher: "DOJ/EOIR",
+    title: "Pending Unaccompanied Alien Child (UAC) Cases",
+    landing_url: "https://www.justice.gov/eoir/workload-and-adjudication-statistics",
+    download_url: "https://www.justice.gov/eoir/media/1344946/dl?inline=",
+    document_generated: "2026-07-24",
+    format: "pdf",
+    grain: "fiscal_year_end_or_quarter_end_case_stock",
+    contains_person_level_records: false,
+    exclusions: "Excludes mental competency/Franco litigation, Institutional Hearing Program, Migration Protection Protocol cases, and cases with a 7A adjournment."
+  },
+  eoir_uac_outcomes: {
+    source_id: "DOJ-EOIR-UAC-OUTCOMES",
+    publisher: "DOJ/EOIR",
+    title: "Unaccompanied Alien Child Statistics",
+    landing_url: "https://www.justice.gov/eoir/workload-and-adjudication-statistics",
+    download_url: "https://www.justice.gov/eoir/media/1344956/dl?inline=",
+    document_generated: "2026-07-24",
+    format: "pdf",
+    grain: "fiscal_year_to_date_initial_case_completions",
+    contains_person_level_records: false,
+    footnote: "I-862 initial case completions only.",
+    exclusions: "Excludes mental competency/Franco litigation, Institutional Hearing Program, Migration Protection Protocol cases, and cases with a 7A adjournment."
+  },
   eoir_uac_statistics: {
     source_id: "DOJ-EOIR-UAC-STATISTICS",
     publisher: "U.S. Department of Justice — Executive Office for Immigration Review",
