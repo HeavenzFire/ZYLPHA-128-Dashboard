@@ -7,7 +7,7 @@ if (!path) {
   process.exitCode = 2;
 } else {
   try {
-    const dataset = JSON.parse(await readFile(new URL(path, import.meta.url).href, "utf8"));
+    const dataset = JSON.parse(await readFile(path, "utf8"));
     const claimedCount = Number(process.argv[3] ?? dataset.claim?.claimed_count);
     const result = evaluateLocatedClaim(dataset, claimedCount);
     console.log(JSON.stringify({ result, manifest: buildEvidenceManifest(dataset) }, null, 2));
