@@ -21,6 +21,10 @@
 - [Source registry](source-registry.md)
 - [Methodology and limitations](methodology.md)
 
+## Phase B — GAO snapshot verification (2026-11-13)
+
+The historical GAO-24-107146 aggregate and five 2026 agency priority-open snapshots have been checked against official GAO product pages and the full accessible GAO-24-107146 PDF. See [verification memo](verification/gao-priority-snapshot-2026-11-13.md) and [machine-readable snapshot table](verification/gao-priority-snapshot.csv). This verifies summary counts and the published list movements only; recommendation-level extraction and independent closure testing remain pending.
+
 ## Phase A initial findings
 - GAO report GAO-24-107146 reported 5,480 open recommendations as of March 2024, from a population of recommendations issued since FY2001. This is a historical snapshot, not a 2010–2026 count.
 - Oversight.gov provides a live inspector-general recommendations database. Its total must be timestamped and must not be added to GAO totals because populations and status systems differ.
