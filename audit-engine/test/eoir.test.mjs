@@ -99,3 +99,9 @@ test("checks decision subtotals and keeps in-absentia as a nested subset", () =>
   assert.equal(result.integrity_checks[1].status, "PASS");
   assert.equal(result.integrity_checks[1].subset, 4023);
 });
+
+test("rejects period labels that do not match exact federal-fiscal dates", () => {
+  const input = pendingInput();
+  input.observations[0].period = { start_date: "2026-01-01", end_date: "2026-09-30", calendar_type: "US_FEDERAL_FY" };
+  assert.throws(() => normalizeEoirTranscription(input, pdf), /Period label\/date contract mismatch/);
+});
