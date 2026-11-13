@@ -52,8 +52,8 @@
     }
   ],
   "validation": {
-    "node_test_count": 57,
-    "node_tests_passed": 57,
+    "node_test_count": 55,
+    "node_tests_passed": 55,
     "node_tests_failed": 0,
     "actual_pdf_imports_passed": 2,
     "event_fixture": "PASS",
