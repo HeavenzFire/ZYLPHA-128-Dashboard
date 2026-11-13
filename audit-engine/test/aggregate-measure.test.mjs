@@ -123,3 +123,8 @@ test("acquisition receipts retain publisher and both source URLs", () => {
   assert.equal(receipt.source_url, "https://example.gov/dataset");
   assert.equal(receipt.artifact_url, "https://example.gov/data.json");
 });
+
+test("blocks differently named metric definitions", () => {
+  const result = comparableMeasure(measure(), measure({ metric_name: "Different administrative event" }));
+  assert.ok(result.blockers.includes("METRIC_DEFINITION_MISMATCH"));
+});
