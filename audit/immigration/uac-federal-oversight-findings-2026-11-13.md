@@ -356,3 +356,24 @@ The HHS OIG evaluation narrows the next records requests. In addition to raw agg
 6. Whether the 2024 call-center cohort or any subsequent cohort is linked, through an authorized protected crosswalk, to ICE's 2025 Joint Initiative and the 145,000 located claim. Publish only aggregate reconciliations.
 
 This creates a testable distinction between **report received**, **child reached**, **risk assessed**, **referral made**, **referral accepted**, and **safety outcome verified**. Those are separate events and must not be collapsed into a single "located" or "resolved" metric.
+
+
+### 17A. Full-report denominator and referral details (verified against the HHS OIG PDF)
+
+The full report clarifies several denominators that should accompany any use of the rounded highlights:
+
+- The 1,944 figure is **unique reports**, not 1,944 phone calls and not 1,944 unique children. Those reports represented approximately 1,800 children. The call center handled more than **64,000 total contacts** (inbound/outbound calls, emails, and texts) during the same six-month period; one inquiry/report could involve multiple contacts.
+- The 250-case random sample covered reports involving runaway, abuse/neglect, or trafficking concerns. These three categories represented 48% of all potential safety concerns in the six-month review.
+- The call center spoke directly with children in **125 of 250 sampled cases (50%)**, including 33 cases in which the child initiated the call.
+- For the other 217 cases where the initial caller was not the child, staff attempted to contact the child in **152 (70%)** and reached the child in **92 of those 152 attempts (60.5%)**.
+- In the 65 cases without an attempted outgoing child contact, **40** records cited lack of contact information and **25** gave no reason. Staff were not required to document the reason for not contacting the child; therefore the 25 are a documentation gap, not proof that staff violated a contact requirement.
+- Among the 125 cases in which staff spoke with a child, they conducted risk assessments in **100 (80%)**, trafficking screenings in **62 (49.6%)**, and provided personal safety plans in **38 (30.4%)**.
+- Referrals were made in **205 of 250 cases (82%)**: 136 to local law enforcement, 111 to child protective services, 74 to NCMEC, and 61 to the Office on Trafficking in Persons. These referral categories overlap; they must not be summed as unique children or cases.
+- Some receiving entities declined referrals because of jurisdiction, eligibility, or a requirement that referrals be made in person. An outbound referral is not proof that an investigation was opened or that the concern was resolved.
+- Follow-up calls were made in **104 of 250 cases (41.6%)**. During the period reviewed, follow-up calls were not required by ORR policy. OIG did not assess whether the call center's individual response actions were appropriate and warned that actions not documented in the case-management system could cause undercounting.
+
+**Current-policy development:** An endnote in the September 2026 report states that, as of August 2026, the then-current National Call Center contractor (Hendall) was required to conduct follow-up calls with a sponsor and/or child when notified that a child missed immigration court, and to create and execute follow-up procedures for any caller for whom a safety plan had been created. This is a material policy change from the 2024 review period. Request the current written policy, effective date, implementation evidence, and compliance data. Do not describe the 2024 41.6% follow-up rate as the current rate.
+
+Primary source: full HHS OIG report, OEI-07-24-00370, methodology and Appendix A, especially PDF pages 4–14: https://oig.hhs.gov/documents/evaluation/11910/OEI-07-24-00370.pdf
+
+**Interpretation boundary:** The 1,944 reports are an administrative signal of potential safety concerns, including inability to contact and runaway concerns. OIG did not verify the underlying safety concerns, did not evaluate whether each response was appropriate, and did not establish a current nationwide prevalence rate for abuse or trafficking. The report does establish that in the selected 250-case sample, direct contact, screenings, referrals, and follow-up were separate and variably documented actions; it does not establish ultimate safety outcomes for all children.
