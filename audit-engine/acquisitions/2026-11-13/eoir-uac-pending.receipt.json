@@ -1,0 +1,13 @@
+{
+  "receipt_version": "1.0",
+  "source_id": "DOJ-EOIR-UAC-PENDING",
+  "agency": "DOJ/EOIR",
+  "source_url": "https://www.justice.gov/eoir/workload-and-adjudication-statistics",
+  "artifact_url": "https://www.justice.gov/eoir/media/1344946/dl?inline=",
+  "artifact_sha256": "bfd09e76537f500f50c2af87fefdc2c507eac5a1f2ab41ee4ecba22203e32182",
+  "artifact_bytes": 55838,
+  "retrieved_at": "2026-11-13T21:54:39.998Z",
+  "publication_date": "2026-07-24",
+  "local_archive_path": "C:\\\\Users\\\\rucke\\\\HeavenzFire\\\\PublicEvidence\\\\EOIR-UAC\\\\2026-11-13\\\\eoir-uac-pending.pdf",
+  "integrity_note": "SHA-256 identifies the exact downloaded PDF bytes; it does not validate manual transcription or the accuracy/completeness of EOIR administrative data."
+}
