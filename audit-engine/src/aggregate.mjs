@@ -89,26 +89,6 @@ export function normalizeHhsUacRows(rows, provenance) {
   };
 }
 
-export function validateEoirTableImport(input) {
-  requireValue(input && input.schema_version === "1.0", "EOIR import schema_version must be 1.0.");
-  requireValue(input.source_id === "DOJ-EOIR-UAC-STATISTICS", "EOIR source_id mismatch.");
-  requireValue(typeof input.source_url === "string" && input.source_url.startsWith("https://www.justice.gov/eoir/"), "EOIR source must be an official justice.gov URL.");
-  requireValue(typeof input.table_title === "string" && input.table_title.length > 0, "EOIR table_title is required.");
-  requireValue(typeof input.document_generated === "string" && DATE_RE.test(input.document_generated), "EOIR document_generated date is required.");
-  requireValue(SHA_RE.test(input.source_file_sha256 || ""), "EOIR source PDF SHA-256 is required.");
-  requireValue(Array.isArray(input.observations) && input.observations.length > 0, "EOIR observations are required.");
-  for (const [i, row] of input.observations.entries()) {
-    requireValue(typeof row.metric_id === "string" && row.metric_id.length > 0, "EOIR metric_id missing at row " + i);
-    requireValue(typeof row.period_label === "string" && row.period_label.length > 0, "EOIR period_label missing at row " + i);
-    requireValue(Number.isSafeInteger(row.value) && row.value >= 0, "EOIR value invalid at row " + i);
-    requireValue(typeof row.unit === "string" && row.unit.length > 0, "EOIR unit missing at row " + i);
-    requireValue(typeof row.measure_type === "string" && row.measure_type.length > 0, "EOIR measure_type missing at row " + i);
-    requireValue(Number.isInteger(row.page) && row.page >= 1, "EOIR PDF page reference required at row " + i);
-    requireValue(typeof row.table_or_chart === "string" && row.table_or_chart.length > 0, "EOIR table/chart reference required at row " + i);
-  }
-  return { observation_count: input.observations.length, status: "validated_transcription_metadata_not_source_authenticity" };
-}
-
 export function compareAggregateObservations(a, b) {
   const keys = ["metric_id", "period_label", "unit", "measure_type", "geography"];
   const mismatches = keys.filter(key => (a[key] ?? null) !== (b[key] ?? null));
