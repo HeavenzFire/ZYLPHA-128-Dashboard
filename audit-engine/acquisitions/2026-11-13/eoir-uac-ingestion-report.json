@@ -52,12 +52,13 @@
     }
   ],
   "validation": {
-    "node_test_count": 56,
-    "node_tests_passed": 56,
+    "node_test_count": 57,
+    "node_tests_passed": 57,
     "node_tests_failed": 0,
     "actual_pdf_imports_passed": 2,
     "event_fixture": "PASS",
-    "aggregate_measure_fixture": "PASS"
+    "aggregate_measure_fixture": "PASS",
+    "cross_source_comparability_test": "PASS — ORR discharge events and EOIR pending cases are blocked from direct arithmetic"
   },
   "review_status": "PENDING_SECOND_PERSON_TRANSCRIPTION_REVIEW",
   "interpretation_limits": [
