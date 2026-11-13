@@ -192,3 +192,28 @@ This is a family reunification/safety channel, not a public search database. The
 Official source: https://www.hhs.gov/programs/social-services/unaccompanied-children/index.html
 
 The linked public ORR "Current Data" endpoint was not retrievable in this review session (HTTP 403). This is a research-access limitation, not evidence that the data do not exist. A later pass should obtain the current ORR fact sheet and data through accessible official documents or a direct records request.
+
+
+## 11. New documentary lead: ICE UAC Joint Initiative field implementation
+
+A publicly accessible four-page copy of an ICE document titled **"Unaccompanied Alien Children Joint Initiative — Field Implementation"**, identifier **2025-ICFO-22246-000001 through 000004**, is hosted by the Center for Progressive Reform. The document is marked "For Official Use Only / Law Enforcement Sensitive." It describes a February 2025 initiative involving ICE/HSI/ERO and HHS/ORR to locate children after ORR release.
+
+The document indicates that ICE assembled information from multiple sources into a Power BI application, used a field-contact documentation form, and maintained leadership progress reporting. It describes coordination between HSI and ERO and the role of ORR's UAC Portal. It is a significant audit lead because it identifies concrete records and systems that can substantiate or challenge later public claims about field engagements and children located.
+
+**Source copy:** https://wp-cpr.s3.amazonaws.com/uploads/2025/05/ICE-HSI-Cooperation-2025-Unaccompanied-Children.pdf
+
+**Authentication limitation:** This is a publicly accessible copy, not a certified ICE production retrieved directly from ICE in this audit. Request the official releasable version, revisions, definitions, and records-retention/closeout guidance.
+
+**Records to demand:** dashboard data dictionary and cohort rules; field-contact form schema and aggregate submission counts; monthly outcome reports; definition of "located," "contacted," "field engagement," and "welfare check"; deduplication rules; quality assurance testing; and aggregate reconciliation with ORR, EOIR, and OIG cohorts.
+
+**Safety restriction:** Do not seek or publish target packets, child-level location histories, sponsor addresses, facial-recognition queries, or live investigative leads. The audit requires program-level controls and aggregate results, not operational details that could expose children.
+
+## 12. Family route for a specific child
+
+HHS instructs parents or guardians trying to determine whether their child is in ORR custody to contact the ORR National Call Center at **1-800-203-7001** or **information@ORRNCC.com**. The shelter verifies whether communication is safe and appropriate before disclosing placement or personal information. This is not a public lookup service.
+
+Official HHS page: https://www.hhs.gov/programs/social-services/unaccompanied-children/index.html
+
+If a specific child is currently missing outside ORR custody or is believed to be in immediate danger, report to local law enforcement immediately and contact NCMEC at **1-800-843-5678**. NCMEC says there is no waiting period for law enforcement to take a missing-child report; law-enforcement entry into NCIC does not automatically create an NCMEC report.
+
+NCMEC guidance: https://ncmec.org/theissues/cmfc and https://ncmec.org/gethelpnow/isyourchildmissing
