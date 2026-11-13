@@ -91,3 +91,9 @@ test("rejects malformed publication dates", () => {
   m.provenance.publication_date = "2024-99-99";
   assert.throws(() => validateAggregateMeasure(m), /publication_date/);
 });
+
+test("rejects impossible calendar dates", () => {
+  const m = measure();
+  m.time_window.start_date = "2024-02-31";
+  assert.throws(() => validateAggregateMeasure(m), /time_window dates/);
+});
