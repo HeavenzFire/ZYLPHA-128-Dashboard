@@ -20,10 +20,14 @@ test("normalizes HHS daily aggregates while preserving distinct stock and flow m
   assert.equal(result.observations.find(x => x.metric_id === "children_discharged_from").measure_type, "daily_flow");
 });
 
-test("rejects missing source columns rather than silently substituting zero", () => {
-  const bad = { ...row };
-  delete bad.children_in_hhs_care;
-  assert.throws(() => normalizeHhsUacRows([bad], provenance), /Missing HHS metric field/);
+test("preserves sparse historical schemas and records missing metric coverage", () => {
+  const sparse = { date: "2021-04-01T00:00:00.000", children_in_hhs_care: 100, children_discharged_from: 5 };
+  const result = normalizeHhsUacRows([sparse], provenance);
+  assert.equal(result.observation_count, 2);
+  assert.equal(result.metric_field_coverage.children_in_hhs_care, 1);
+  assert.equal(result.metric_field_coverage.children_placed_in_cbp_custody_, 0);
+  assert.ok(result.schema_variants.includes("children_discharged_from,children_in_hhs_care"));
+  assert.equal(result.observations.some(x => x.metric_id === "children_placed_in_cbp_custody_"), false);
 });
 
 test("rejects duplicate dates in daily series", () => {
