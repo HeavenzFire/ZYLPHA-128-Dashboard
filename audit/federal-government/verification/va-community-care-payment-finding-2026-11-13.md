@@ -69,11 +69,24 @@ Recommendations **#3 and #5 remain open** on the VA OIG page:
 
 Recommendation #6 is described as exploring potential recovery of dental payments to Optum and is marked closed/implemented on 2025-11-26. That closure status does **not** disclose the amount recovered. Do not report the $648.7 million or $910.7 million as recovered, nor as still entirely outstanding, without a recovery ledger or closure documentation specifying amounts.
 
+## Contract identifiers located
+
+VA's current Strategic Acquisition Center page identifies the Optum CCN IDIQs:
+- Region 1: **36C79119D0004**
+- Region 2: **36C79119D0005**
+- Region 3: **36C79119D0006**
+
+Official VA source: https://department.va.gov/procurement-acquisition-and-logistics/strategic-acquisition-center/sac-the-va-community-care-network/
+
+A secondary contract-history listing identifies a Region 1 transaction **P00118**, dated May 24, 2023, described as “Modification to update CDT codes.” This is a plausible document lead because the OIG says a May 2023 modification restored existing dental-code rates, but the OIG report does not state the modification number. **Do not treat P00118 as the confirmed corrective modification until the signed modification and attachments are obtained and matched.**
+
+Secondary lead: https://govtribe.com/award/federal-idv-award/indefinite-delivery-contract-36c79119d0004
+
 ## Follow-up evidence required to close the loop
 
 Open [Issue #9](https://github.com/HeavenzFire/ZYLPHA-128-Dashboard/issues/9) for the next records and reconciliation work:
 
-1. Obtain the full Optum contract and all dental fee-schedule modifications for CCN regions 1–3, including the March 2021 proposal and the May 2023 corrective modification. Capture contract numbers, modification numbers, effective dates, CLIN/code-level rates, and signatures.
+1. Obtain the full Optum contracts **36C79119D0004**, **36C79119D0005**, and **36C79119D0006** and all dental fee-schedule modifications for regions 1–3, including the March 2021 proposal and the May 2023 corrective modification. Check Region 1 P00118 as a candidate only. Capture contract numbers, modification numbers, effective dates, CLIN/code-level rates, and signatures.
 2. Obtain VA's underlying payment-level data and calculate paid-vs-contracted-vs-provider-paid deltas by dental code, region, claim, and payment date for June 2021–May 2024.
 3. Obtain the VA/OALC/IVC recovery ledger, correspondence with Optum, credit memos, offsets, refunds, settlement terms, and recommendation #6 closure package. Quantify dollars demanded, disputed, credited, recovered, waived, and unresolved separately.
 4. Verify recommendation #5 closure status and inspect the evidence supporting the closure if status changes.
