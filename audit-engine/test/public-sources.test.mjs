@@ -19,7 +19,7 @@ test("source registry has unique IDs and required public provenance metadata", (
 
 test("registry separates known publication date from future acquisition receipt", () => {
   for (const source of manifest.sources) {
-    assert.ok(source.publication_date === null || /^\\d{4}-\\d{2}-\\d{2}$/.test(source.publication_date));
+    assert.ok(source.publication_date === null || /^\d{4}-\d{2}-\d{2}$/.test(source.publication_date));
   }
   assert.match(manifest.registry_policy, /acquisition receipt/);
 });
