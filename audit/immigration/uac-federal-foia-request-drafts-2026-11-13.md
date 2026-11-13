@@ -172,3 +172,23 @@ Please do not interpret this request as seeking target packets, operational plan
 HHS/ORR publicly publishes the "HHS Unaccompanied Alien Children Program" daily aggregate dataset (HealthData.gov dataset ID e hpz-xc9n). I am not requesting the agency to recreate those already-public counts. I request any existing internal records that reconcile those aggregate custody/discharge flows with post-release safety follow-up and sponsor/child contact outcomes, using aggregate or redacted information only.
 
 Public dataset: https://healthdata.gov/National/HHS-Unaccompanied-Alien-Children-Program/ehpz-xc9n
+
+
+## G. Supplemental HHS National Call Center records — OEI-07-24-00370 follow-through
+
+HHS OIG's September 22, 2026 evaluation, OEI-07-24-00370, reviewed potential child-safety reports from January 1 through June 30, 2024. It reported nearly 2,000 reports representing approximately 1,800 children and described contact, risk-assessment, referral, and follow-up activity. This supplement requests existing records that distinguish a report from a verified safety outcome.
+
+**Add to Request B:**
+
+1. The data dictionary and coding instructions used for the January–June 2024 population reviewed in OEI-07-24-00370, including definitions for unable to contact, runaway, abuse/neglect, trafficking concern, sponsor-child conflict, and referral.
+2. Existing aggregate counts of unique reports and unique children by category, including duplicate-report handling and any overlap between categories.
+3. Existing aggregate counts distinguishing attempted direct child contact, successful direct child contact, sponsor-only contact, other third-party contact, no contact information, risk assessment completed, referral made, referral accepted/acknowledged (if tracked), follow-up attempted, follow-up completed, and documented case closure.
+4. The case-closure criteria and escalation policies in force during the review period; whether a referral was considered complete when sent or only after the receiving entity acknowledged/acted on it; and any quality-assurance results testing those controls.
+5. Existing management comments or corrective actions taken in response to OEI-07-24-00370, including any decision not to issue formal recommendations and any voluntary improvement plan.
+6. For the December 15, 2025 contractor transition, aggregate counts of open reports/cases transferred, records reconciled, failed or delayed transfers, missing contact fields, and post-transition quality-assurance findings.
+7. Current contract performance measures and aggregate monthly performance reports showing contact attempts, successful direct child contacts, risk assessments, referrals, follow-up, unresolved cases, and data completeness.
+
+Please provide aggregate or redacted records only. I do not request child-level records, identities, contact details, sponsor information, shelter locations, or active investigative details. If a requested disposition field is not maintained, please state that no such record/field is maintained rather than creating a new analysis.
+
+Official evaluation: https://www.oig.hhs.gov/reports/all/2026/in-2024-orrs-national-call-center-connected-children-with-supports-and-services/
+Official work-plan closeout: https://www.oig.hhs.gov/reports/work-plan/browse-work-plan-projects/review-of-the-office-of-refugee-resettlements-national-call-center-response-to-incoming-calls/
