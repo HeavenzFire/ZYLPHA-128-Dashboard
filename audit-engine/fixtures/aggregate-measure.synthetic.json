@@ -1,0 +1,28 @@
+{
+  "measure_id": "SYNTHETIC-FY23-DISCHARGES",
+  "source_id": "SYNTHETIC-SOURCE",
+  "agency": "SYNTHETIC",
+  "metric_name": "Synthetic discharge events",
+  "unit_of_analysis": "discharge_event",
+  "unit": "events",
+  "is_unique_person_count": false,
+  "time_window": {
+    "start_date": "2022-10-01",
+    "end_date": "2023-09-30",
+    "calendar_type": "US_FEDERAL_FY"
+  },
+  "value": 100,
+  "denominator_definition": "Synthetic event population only",
+  "population_scope": {
+    "cohort_definition": "Synthetic test cohort",
+    "geography": "US"
+  },
+  "measurement_class": "administrative_event_count",
+  "known_limitations": ["Synthetic data; not a government observation."],
+  "provenance": {
+    "url": "https://example.invalid/synthetic",
+    "retrieved_at": "2026-11-13T00:00:00Z",
+    "publication_date": null,
+    "artifact_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  }
+}

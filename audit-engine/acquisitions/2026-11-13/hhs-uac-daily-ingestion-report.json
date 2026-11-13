@@ -1,0 +1,102 @@
+{
+  "report_version": "1.0",
+  "source_id": "HHS-ORR-UAC-DAILY",
+  "retrieval_receipt": "2026-11-13/hhs-uac-daily.receipt.json",
+  "raw_artifact_sha256": "38619792093ddd72b25a90eb0f3be50e5bdf64ec1efe39aa79a154da5d1ddddd",
+  "raw_artifact_bytes": 412667,
+  "source_structure": {
+    "row_count": 1390,
+    "unique_date_count": 1380,
+    "date_range": {
+      "start": "2021-01-11",
+      "end": "2026-11-12"
+    },
+    "normalized_observation_count": 4847,
+    "duplicate_date_count": 10,
+    "schema_variant_count": 2,
+    "non_null_metric_rows": {
+      "children_placed_in_cbp_custody_": 689,
+      "children_in_cbp_custody": 689,
+      "children_transferred_out_of_cbp_custody": 689,
+      "children_in_hhs_care": 1390,
+      "children_discharged_from": 1390
+    }
+  },
+  "latest_daily_snapshot": {
+    "date": "2026-11-12",
+    "status": "COMPLETE_DATE_COVERAGE",
+    "measures": [
+      {
+        "metric_id": "children_placed_in_cbp_custody_",
+        "unit": "children",
+        "unit_of_analysis": "cbp_custody_placement_event",
+        "value": 10,
+        "status": "READY"
+      },
+      {
+        "metric_id": "children_in_cbp_custody",
+        "unit": "children",
+        "unit_of_analysis": "cbp_custody_stock_snapshot",
+        "value": 27,
+        "status": "READY"
+      },
+      {
+        "metric_id": "children_transferred_out_of_cbp_custody",
+        "unit": "children",
+        "unit_of_analysis": "cbp_transfer_out_event",
+        "value": 5,
+        "status": "READY"
+      },
+      {
+        "metric_id": "children_in_hhs_care",
+        "unit": "children",
+        "unit_of_analysis": "orr_care_stock_snapshot",
+        "value": 1621,
+        "status": "READY"
+      },
+      {
+        "metric_id": "children_discharged_from",
+        "unit": "children",
+        "unit_of_analysis": "orr_discharge_event",
+        "value": 13,
+        "status": "READY"
+      }
+    ],
+    "interpretation_limit": "These are source-reported daily aggregate measures. Flow values are not deduplicated unique children across days; stock values are point-in-time snapshots. None establishes post-release location, safety, trafficking, or final disposition."
+  },
+  "window_check": {
+    "start_date": "2026-11-01",
+    "end_date": "2026-11-12",
+    "expected_calendar_days": 12,
+    "observed_calendar_days": 9,
+    "missing_dates": [
+      "2026-11-06",
+      "2026-11-07",
+      "2026-11-09"
+    ],
+    "status": "PARTIAL_COVERAGE",
+    "blocked_flow_metrics": [
+      "children_placed_in_cbp_custody_",
+      "children_transferred_out_of_cbp_custody",
+      "children_discharged_from"
+    ],
+    "available_endpoint_stock_snapshots": [
+      {
+        "metric_id": "children_in_cbp_custody",
+        "snapshot_date": "2026-11-12",
+        "value": 27
+      },
+      {
+        "metric_id": "children_in_hhs_care",
+        "snapshot_date": "2026-11-12",
+        "value": 1621
+      }
+    ],
+    "rule": "Missing calendar dates block flow summation. Stock measures use only the explicitly requested endpoint date and are never summed across days."
+  },
+  "claim_145000": {
+    "status": "NOT_TESTABLE_FROM_PUBLIC_DATA",
+    "reason": "This dataset is a daily aggregate custody/discharge series without child-level linkage, direct-contact records, sponsor follow-up outcomes, or an operational definition of the 145,000 figure."
+  },
+  "retrieved_at": "2026-11-13T21:34:27.368Z"
+}

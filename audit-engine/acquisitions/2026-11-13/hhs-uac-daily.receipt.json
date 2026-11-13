@@ -1,0 +1,12 @@
+{
+  "receipt_version": "1.0",
+  "source_id": "HHS-ORR-UAC-DAILY",
+  "agency": "HHS/ACF/ORR",
+  "source_url": "https://healthdata.gov/National/HHS-Unaccompanied-Alien-Children-Program/ehpz-xc9n",
+  "artifact_url": "https://healthdata.gov/api/v3/views/ehpz-xc9n/query.json?accessType=DOWNLOAD",
+  "artifact_sha256": "38619792093ddd72b25a90eb0f3be50e5bdf64ec1efe39aa79a154da5d1ddddd",
+  "artifact_bytes": 412667,
+  "retrieved_at": "2026-11-13T21:34:27.368Z",
+  "publication_date": null,
+  "integrity_note": "The hash identifies the exact downloaded bytes; it does not prove the source data are accurate or complete."
+}

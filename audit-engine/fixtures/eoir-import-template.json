@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "source_id": "DOJ-EOIR-UAC-STATISTICS",
+  "source_url": "https://www.justice.gov/eoir/media/1345076/dl",
+  "table_title": "Pending Unaccompanied Alien Child Cases",
+  "document_generated": "2026-07-24",
+  "source_file_sha256": "REPLACE_WITH_SHA256_OF_DOWNLOADED_PDF",
+  "observations": [
+    {
+      "metric_id": "pending_uac_cases",
+      "period_label": "FY2026 Q3",
+      "value": 16560,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "geography": "US",
+      "page": 1,
+      "table_or_chart": "Table 1"
+    }
+  ]
+}

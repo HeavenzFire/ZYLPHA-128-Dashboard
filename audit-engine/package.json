@@ -1,0 +1,18 @@
+{
+  "name": "@heavenzfire/independent-audit-engine",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "verify:fixture": "node src/cli.mjs fixtures/uac-synthetic.json",
+    "ingest:hhs": "node src/public-ingest-cli.mjs hhs-fetch",
+    "validate:eoir": "node src/public-ingest-cli.mjs eoir-validate",
+    "validate:measure": "node src/claim-audit.mjs validate",
+    "compare:measures": "node src/claim-audit.mjs compare",
+    "verify:aggregate-fixture": "node src/claim-audit.mjs validate fixtures/aggregate-measure.synthetic.json"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
