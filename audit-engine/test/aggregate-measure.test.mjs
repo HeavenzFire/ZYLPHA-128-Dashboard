@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { validateAggregateMeasure, comparableMeasure } from "../src/aggregate-measure.mjs";
+import { validateAggregateMeasure, comparableMeasure, createAcquisitionReceipt } from "../src/aggregate-measure.mjs";
 
 function measure(overrides = {}) {
   return {
@@ -96,4 +96,17 @@ test("rejects impossible calendar dates", () => {
   const m = measure();
   m.time_window.start_date = "2024-02-31";
   assert.throws(() => validateAggregateMeasure(m), /time_window dates/);
+});
+
+test("creates an acquisition receipt from exact raw bytes", () => {
+  const bytes = Buffer.from('{"fixture":true}', "utf8");
+  const receipt = createAcquisitionReceipt(
+    { source_id: "TEST-SOURCE", agency: "TEST", url: "https://example.gov/data" },
+    bytes,
+    "2026-11-13T21:00:00Z",
+    null
+  );
+  assert.equal(receipt.artifact_bytes, bytes.length);
+  assert.equal(receipt.artifact_sha256.length, 64);
+  assert.equal(receipt.publication_date, null);
 });
