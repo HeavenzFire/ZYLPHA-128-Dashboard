@@ -276,3 +276,59 @@ Official sources:
 - https://www.oig.hhs.gov/reports/all/2024/acf-has-enhanced-some-cybersecurity-controls-over-the-unaccompanied-children-portal-and-data-but-improvements-are-needed/
 - https://www.oig.hhs.gov/reports/recommendations/tracker/?hhs-agency=all&search=A-18-22-03200&view-mode=report-grouped
 - https://www.oig.dhs.gov/sites/default/files/assets/2022-09/OIG-22-66-Sep22.pdf
+
+
+## K. Records supporting February 10, 2026 ICE testimony and subsequent DHS claims of 145,000 located/returned children
+
+This supplement targets the exact statements in Todd M. Lyons's February 10, 2026 written testimony before the House Committee on Homeland Security and any subsequent DHS/ICE/HHS testimony or public reports repeating the 145,000 figure.
+
+**Add to Request A (ICE/DHS):**
+
+Please provide existing records created or maintained from February 1, 2025 through the date this request is processed that directly support the following statements in ICE Senior Official Performing the Duties of the Director Todd M. Lyons's February 10, 2026 written testimony:
+- more than 71,000 field engagements;
+- more than 500 criminal sponsor arrests;
+- more than 2,400 human-smuggling operations dismantled and nearly 730 related criminal prosecutions; and
+- more than 145,000 unaccompanied children located.
+
+Please provide:
+1. The exact dated dashboard extracts, query outputs, calculation workpapers, briefing slides, and data certifications used to prepare the testimony.
+2. The written operational definitions and counting rules for "located," "field engagement," "criminal sponsor," "dismantled operation," and "prosecution."
+3. For the 145,000 figure, aggregate unique-child counts by month, source cohort, field office, and disposition; counts of direct child contact, sponsor-only contact, household-member contact, address-only verification, school-record verification, and unsuccessful contact; and the deduplication rules for repeat contacts and cross-agency records.
+4. Existing aggregate records showing whether a child counted as "located" was also safety assessed, screened for trafficking/abuse/neglect, referred to child-protection or law-enforcement authorities, returned to ORR care, reunified with a parent/relative, released to a sponsor, transferred to another authority, or remained unresolved. Provide separate counts and denominators for each outcome.
+5. The source records and substantiation criteria supporting the testimony's statement that many located children were exploited, trafficked, or abused. Distinguish allegations, tips, referrals, open investigations, substantiated findings, charges, convictions, and identified victims.
+6. Existing aggregate crosswalks between the 145,000 cohort and the OIG-24-46/OIG-25-21 populations, including the 448,000+ transfer cohort, the unserved-NTA populations, the missed-hearing populations, and the 31,000+ records with incomplete/undeliverable addresses. Identify which source cohorts overlap and how duplicate identities are resolved.
+7. Existing records showing overlap, if any, between the children counted as located and the more than 500 sponsor arrests, and between those children and the 2,400 operations / nearly 730 prosecutions. Do not provide identities, addresses, target packets, or active investigative details.
+8. The official written questions for the record, agency responses, supplemental testimony, and hearing-record submissions relating to the 145,000 / 71,000 / 500 / 2,400 / 730 figures after the February 10, 2026 House hearing.
+9. Any subsequent DHS or ICE public statement describing the 145,000 children as "returned," "reunified," or "placed with loved ones." Provide the underlying definitions and aggregate evidence distinguishing a location confirmation from a completed reunification or safe placement.
+10. The signed OIG recommendation closeout packages and implementation evidence for OIG-25-21 recommendation 1, and any records supporting the current ICE/HHS agreement and information-sharing arrangements.
+
+**Supplement to Request B (HHS/ACF/ORR):**
+
+Please provide existing aggregate records from February 1, 2025 through the date this request is processed that reconcile ORR's records with the DHS/ICE 145,000 located-children claim. Include:
+1. Counts of children identified by DHS/ICE as located who were matched to an ORR UC Portal record, with match/no-match/ambiguous-match counts and the matching methodology.
+2. Aggregate counts by outcome: currently in ORR care, released to original sponsor, moved to a different sponsor, reunified with parent/relative, returned to country of origin, transferred to another government authority, reached adulthood, or disposition unknown. Use the agency's actual categories and do not create new classifications.
+3. The date and source of the latest verified placement/contact information for each aggregate cohort; counts with stale, missing, or conflicting information.
+4. Existing aggregate records of welfare checks, direct child contact, safety assessments, referrals, and documented case closure for children in the DHS/ICE location initiative.
+5. Any interagency data-sharing agreement, data dictionary, workflow, or written protocol governing how ICE reports a located child to ORR and how ORR verifies or updates the child's status.
+
+Please provide only aggregate or redacted program-level records. Do not provide names, A-numbers, dates of birth, sponsor identities or addresses, shelter locations, case narratives that could identify a child, or active investigative information. If the agency does not maintain a requested field or reconciliation, please state that no such record is maintained rather than creating a new analysis.
+
+Official February 10, 2026 hearing sources:
+- ICE written testimony: https://homeland.house.gov/wp-content/uploads/2026/02/2026-02-10-HRG-Testimony.pdf
+- Full official hearing record: https://www.govinfo.gov/content/pkg/CHRG-119hhrg63777/pdf/CHRG-119hhrg63777.pdf
+- Hearing record metadata: https://www.govinfo.gov/app/details/CHRG-119hhrg63777/CHRG-119hhrg63777
+
+## L. ACF February 2026 separated-children report — reconciliation-methodology records
+
+ACF's February 2026 report states that ORR and DHS reconcile weekly separation lists, that the process generally creates a three-week lag, and that ORR uses referral dates because it does not consistently receive apprehension dates from CBP/ICE. The report covers children separated from parents/legal guardians by DHS and subsequently referred to ORR, not all UACs.
+
+Please provide existing records from January 1, 2025 through the date this request is processed documenting:
+1. The weekly DHS separation-list schema, ORR-generated list schema, reconciliation rules, and master-list data dictionary.
+2. Aggregate counts of matched, unmatched, disputed, corrected, and pending separation records by month, including median and maximum reconciliation delay if already reported.
+3. The proportion of referrals missing apprehension dates and the source-system fields used instead.
+4. Quality-assurance procedures, audit logs, and supervisory review of changes to confirmed separation status.
+5. Whether and how these records are reconciled with the UC Portal and other DHS/ORR systems.
+
+This request is limited to aggregate and redacted methodology/quality-control records. It does not seek child identities or case-level narratives.
+
+Source: https://acf.gov/orr/programs-services/unaccompanied-children/reports/separated-children/february-2026
