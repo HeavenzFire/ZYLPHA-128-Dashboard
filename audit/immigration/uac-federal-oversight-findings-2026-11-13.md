@@ -493,3 +493,86 @@ Request current, existing records that show:
 6. Evidence that child/sponsor records are updated when a child changes placement, address, sponsor, or legal status, including audit-log retention and exception handling.
 
 Do not request or publish child identifiers, credentials, access tokens, network diagrams exposing vulnerabilities, exploit details, or live operational access information.
+
+
+## 24. Audit of ICE's February 10, 2026 congressional testimony — claim decomposition and evidentiary limits
+
+### Primary statement
+
+In written testimony for the House Committee on Homeland Security hearing, *Oversight of the Department of Homeland Security: ICE, CBP, and USCIS* (February 10, 2026), ICE Senior Official Performing the Duties of the Director Todd M. Lyons stated that since February 2025:
+- HSI had conducted more than 71,000 field engagements to locate children, verify sponsor legitimacy, and uncover criminal activity;
+- ICE had arrested more than 500 "criminal sponsors";
+- ICE had dismantled more than 2,400 human-smuggling operations, including nearly 730 criminal prosecutions; and
+- DHS law-enforcement and HHS personnel had located more than 145,000 UACs.
+
+The testimony further characterized "more than 291,000" children as "simply lost" by the prior administration and said many of the children located were exploited, trafficked, and abused.
+
+Primary source: https://homeland.house.gov/wp-content/uploads/2026/02/2026-02-10-HRG-Testimony.pdf
+Official hearing record/transcript: https://www.govinfo.gov/content/pkg/CHRG-119hhrg63777/pdf/CHRG-119hhrg63777.pdf
+Hearing record landing page: https://www.govinfo.gov/app/details/CHRG-119hhrg63777/CHRG-119hhrg63777
+
+### Material qualification: the "291,000 lost" characterization is not what the OIG finding says
+
+DHS OIG's August 2024 management alert OIG-24-46 said that, as of May 2024, ICE had not served Notices to Appear (NTAs) on more than 291,000 UACs. The alert did not conclude that all 291,000 children were physically missing, unaccounted for, or trafficked. It separately reported more than 32,000 missed immigration-court appearances over FY2019–FY2023 and said ICE could not account for the location of all UACs released by HHS who failed to appear.
+
+The final DHS OIG audit OIG-25-21 later reported:
+- 448,000+ UAC transfers from ICE to HHS during FY2019–FY2023;
+- 31,000+ release addresses blank, undeliverable, or missing apartment numbers;
+- 233,000+ UACs without served NTAs as of January 2025; and
+- 43,000+ UACs who had been served NTAs and failed to appear, as reported by ICE as of October 2024.
+
+These are distinct measures, dates, and populations. The OIG did not identify the 291,000 unserved- NTA group as 291,000 missing children. The February 2026 testimony's shorthand materially overstates what the cited OIG finding establishes. It should be corrected in any public-facing audit summary.
+
+Sources:
+- OIG-24-46: https://www.oig.dhs.gov/sites/default/files/assets/2024-08/OIG-24-46-Aug24.pdf
+- OIG-25-21: https://www.oig.dhs.gov/sites/default/files/assets/2025-03/OIG-25-21-Mar25.pdf
+- Oversight.gov OIG-25-21 summary: https://www.oversight.gov/reports/audit/ice-cannot-effectively-monitor-location-and-status-all-unaccompanied-alien-children
+
+### What the testimony does not disclose
+
+The written testimony does not provide the underlying methodology or definitions for "located," "field engagement," "criminal sponsor," "dismantled operation," or "criminal prosecution." It does not disclose:
+- whether 145,000 is a count of unique children, records, cases, households, or successful field outcomes;
+- the source cohort and inclusion/exclusion dates for the 145,000 count;
+- whether multiple engagements with one child are deduplicated;
+- whether "located" requires direct contact with the child or can be satisfied by sponsor/household contact, address confirmation, school-record verification, or another indirect signal;
+- how many of the 145,000 were directly contacted, safety assessed, referred, returned to ORR care, or had a documented disposition;
+- whether "many ... exploited, trafficked, and abused" refers to confirmed victimization, allegations, open investigations, referrals, or a subset with substantiated findings;
+- how the 500 sponsor arrests overlap with the 145,000 children, and whether the arrests resulted in charges, convictions, or findings of child harm;
+- whether the 2,400 operations are unique investigations, enforcement actions, targets, or another count, and how the nearly 730 prosecutions are related to them.
+
+A field engagement is an activity/event, not automatically a unique child. An arrest is not a conviction. A referral or investigation is not a substantiated finding of trafficking or abuse. A location match is not a safety determination. No arithmetic subtraction between 291,000, 233,000, 145,000, 71,000, 43,000, and 31,000 is valid without a source-cohort crosswalk, dates, and deduplication rules.
+
+### Investigative conclusion and test
+
+The 145,000 figure is an official agency claim made in sworn congressional testimony, but the testimony itself is not the underlying case-level or aggregate evidence. The public material reviewed in this audit pass does not independently validate the count or establish the safety outcomes of the children included. This is an evidence gap, not proof that the claim is false.
+
+The test is to obtain:
+1. The exact frozen dashboard extract and query/workpaper used to calculate the figure as of the hearing date.
+2. A data dictionary and written operational definition for "located" and "field engagement."
+3. Unique-child counts after deduplication, broken down by source cohort, month, field office, and outcome.
+4. The proportion with direct child contact versus sponsor-only, household-only, address-only, or school-record-only verification.
+5. Safety assessment, trafficking screening, referral, ORR re-entry, and final disposition counts, with separate denominators and time windows.
+6. A redacted aggregate crosswalk reconciling the 145,000 cohort to OIG-25-21, the 31,000 address-problem records, the unserved NTA population, the missed-hearing population, and ORR's release data.
+7. Definitions and substantiation levels behind the statement that many located children were exploited, trafficked, or abused.
+8. Separate supporting records for sponsor arrests, charges, prosecutions, convictions, and the claimed 2,400 dismantled operations.
+
+## 25. HHS February 2026 monthly separated-children report — useful but non-comparable data stream
+
+ACF's February 2026 *Monthly Report to Congress on Separated Children* is a statutory monthly report under Pub. L. 119-75, Division B, Title II, §234. It covers children separated from a parent or legal guardian by DHS, subsequently classified as UACs, and referred to ORR during the reporting month. It is **not** a monthly report of all UAC transfers, sponsor releases, or ICE's 145,000 location initiative.
+
+The February 2026 report records three confirmed separations for that month. It also describes an ORR/DHS reconciliation process: DHS supplies weekly lists; ORR creates its own list; the agencies reconcile them to a master list; unresolved discrepancies go back to field staff. ACF says the process typically causes a three-week data lag. ORR also says it does not consistently receive apprehension dates from CBP/ICE and therefore uses referral dates as the more reliable reporting basis.
+
+Primary source: https://acf.gov/orr/programs-services/unaccompanied-children/reports/separated-children/february-2026
+
+**Audit relevance:** this is a distinct example of a federal child-data reconciliation process with an acknowledged lag and missing upstream dates. It may help test the quality of agency handoffs, but the three separations must not be compared with or added to the 448,000 transfer cohort, the 145,000 located claim, or the National Call Center safety-report cohort. The report's limited statutory scope and referral-date methodology must be preserved.
+
+## 26. Recommendation status: OIG-25-21 recommendation 1 remains unresolved in public tracker
+
+As of this audit pass, Oversight.gov shows OIG-25-21 recommendations 2, 3, and 4 as Closed. Recommendation 1—revising ICE/HHS agreements and continuing information-sharing arrangements—was not located as a closed recommendation in the public tracker and remains unverified. Separately, the two recommendations in the earlier OIG-24-46 management alert remain Open on Oversight.gov. Do not conflate the earlier management alert's recommendations with the later final-audit recommendations.
+
+Sources:
+- OIG-25-21 recommendation 2: https://www.oversight.gov/reports/audit/ice-cannot-effectively-monitor-location-and-status-all-unaccompanied-alien-children-1
+- Recommendation 3: https://www.oversight.gov/reports/audit/ice-cannot-effectively-monitor-location-and-status-all-unaccompanied-alien-children-2
+- Recommendation 4: https://www.oversight.gov/reports/audit/ice-cannot-effectively-monitor-location-and-status-all-unaccompanied-alien-children-3
+- OIG-24-46 recommendation 1: https://www.oversight.gov/reports/audit/management-alert-ice-cannot-monitor-all-unaccompanied-migrant-children-released-dhs-0
+- OIG-24-46 recommendation 2: https://www.oversight.gov/reports/audit/management-alert-ice-cannot-monitor-all-unaccompanied-migrant-children-released-dhs-1
