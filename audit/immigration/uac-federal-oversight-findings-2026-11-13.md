@@ -299,3 +299,60 @@ The public dataset should be archived and analyzed as a separate custody-flow se
 5. **Independent validation:** DHS OIG's verification of each closed OIG-25-21 recommendation and any follow-up audit testing.
 
 No public dataset or document reviewed here identifies the current location of individual children in the 448,000+ cohort. That requires authorized case-level reconciliation by agencies or guardians and cannot be inferred from public aggregate statistics.
+
+
+## 17. September 2026 HHS OIG National Call Center evaluation — primary-source confirmation
+
+On September 22, 2026, HHS OIG published evaluation **OEI-07-24-00370**, *In 2024, ORR's National Call Center Connected Children with Supports and Services*. This is a new, material source for the post-release safety side of the audit.
+
+The official HHS OIG report page states that approximately **213,000 children were released from ORR care to sponsors during FY2023 and FY2024**. OIG reviewed all potential child-safety concerns reported to the National Call Center from **January 1 through June 30, 2024** and found nearly **2,000 reports representing approximately 1,800 released children**.
+
+For its review of responses to reports concerning runaway, abuse/neglect, or trafficking concerns, OIG examined a **sample of cases** and reported:
+- Contact attempts were made in 70% of cases; children were reached in 61% of those cases.
+- Risk assessments were conducted in 80% of cases in which the call center spoke with children.
+- Referrals for investigation or support were made in 82% of cases.
+- Information about resources/community services was offered in 30% of cases.
+- Follow-up calls occurred in 42% of cases. OIG notes follow-up was not required during the period reviewed.
+
+OIG concluded that the call center took various actions to connect children with potential safety concerns to support, most commonly referrals to law enforcement and other entities. The report page does not state that these potential reports represent confirmed abuse, trafficking, or victimization. Nor does it establish the current whereabouts of children who could not be contacted. The report issued **no recommendations** according to HHS OIG's completed work-plan entry.
+
+**Audit significance:** this is a defined and partially quantified view of reported post-release safety concerns. It does not provide a denominator for all released children who may have experienced harm, because the review begins with concerns reported to the call center. It also does not establish the ultimate disposition or resolution of every referral. The 1,800 children in this report must not be added to, or treated as a subset of, the 448,000+ ICE-to-HHS transfer cohort without a validated cohort crosswalk.
+
+Primary sources:
+- HHS OIG report page and report materials: https://www.oig.hhs.gov/reports/all/2026/in-2024-orrs-national-call-center-connected-children-with-supports-and-services/
+- HHS OIG completed work-plan entry: https://www.oig.hhs.gov/reports/work-plan/browse-work-plan-projects/review-of-the-office-of-refugee-resettlements-national-call-center-response-to-incoming-calls/
+- Report highlights PDF: https://oig.hhs.gov/documents/evaluation/11911/OEI-07-24-00370-highlights.pdf
+
+## 18. DHS OIG final-audit recommendation status — partial public closeout evidence
+
+A current Oversight.gov listing now marks **OIG-25-21 recommendations 2, 3, and 4 as Closed**:
+- Recommendation 2: formal process to identify inaccurate/incomplete addresses in ICE systems and share them with HHS.
+- Recommendation 3: plan and timeframe to address the backlog of unserved NTAs.
+- Recommendation 4: updated field guidance for elevating child-safety/circumstance concerns.
+
+Sources:
+- Recommendation 2: https://www.oversight.gov/reports/audit/ice-cannot-effectively-monitor-location-and-status-all-unaccompanied-alien-children-1
+- Recommendation 3: https://www.oversight.gov/reports/audit/ice-cannot-effectively-monitor-location-and-status-all-unaccompanied-alien-children-2
+- Recommendation 4: https://www.oversight.gov/reports/audit/ice-cannot-effectively-monitor-location-and-status-all-unaccompanied-alien-children-3
+
+**Recommendation 1** concerns revising ICE-HHS memoranda of agreement and the Joint Concept of Operations and continuing information-sharing agreements. Its current closure status was not independently confirmed in this pass. Do not infer that all four recommendations are closed from the three listings above.
+
+The final audit's March 2025 transmittal said all four recommendations were initially considered **open and resolved** pending ICE's submission of evidence of full implementation and a formal closeout request. A June 12, 2025 DHS OIG management-response attachment records ICE's planned completion date of September 30, 2025 for recommendations 1–3. A planned completion date is not proof of implementation.
+
+Sources:
+- March 2025 OIG transmittal / report: https://www.oig.dhs.gov/sites/default/files/assets/2025-03/OIG-25-21-Mar25.pdf
+- June 12, 2025 DHS OIG management response: https://docs.house.gov/meetings/GO/GO00/20250612/118379/HHRG-119-GO00-20250612-SD041.pdf
+
+**Next verification request:** obtain the signed OIG closeout determination and the actual ICE evidence package for each recommendation, including revised agreements, operational address-sharing records, NTA backlog plan and time-series results, and the revised handbook/training dissemination record. Recommendation closure is evidence of a corrective-action milestone, not proof that every affected child was located or that the control has worked consistently in production.
+
+## 19. Revised investigative questions prompted by the HHS OIG findings
+
+The HHS OIG evaluation narrows the next records requests. In addition to raw aggregate report counts, request:
+1. The complete report-category definitions and data dictionary, including whether multiple reports can relate to one child and how duplicate reports are handled.
+2. For each report category, counts of attempted child contact, successful direct child contact, sponsor-only contact, no contact information, risk assessment, referral, follow-up, and documented closure.
+3. Referral destination and disposition categories, with personally identifying information redacted and child-level data withheld from public release.
+4. The policy in force during January–June 2024 explaining when a call-center report was considered resolved, escalated, or referred, and whether the call center verified that a receiving agency accepted the referral.
+5. The December 15, 2025 contractor transition records: continuity of case data, open-case handoff, quality assurance, call scripts, performance standards, and current follow-up requirements.
+6. Whether the 2024 call-center cohort or any subsequent cohort is linked, through an authorized protected crosswalk, to ICE's 2025 Joint Initiative and the 145,000 located claim. Publish only aggregate reconciliations.
+
+This creates a testable distinction between **report received**, **child reached**, **risk assessed**, **referral made**, **referral accepted**, and **safety outcome verified**. Those are separate events and must not be collapsed into a single "located" or "resolved" metric.
