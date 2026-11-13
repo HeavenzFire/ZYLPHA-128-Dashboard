@@ -710,7 +710,7 @@
     },
     {
       "metric_id": "pending_lt_6_months",
-      "period_label": "2026 (Third Quarter)",
+      "period_label": "FY2026 (Third Quarter)",
       "period": {
         "start_date": "2025-10-01",
         "end_date": "2026-06-30",
@@ -724,7 +724,7 @@
     },
     {
       "metric_id": "pending_6_months_to_2_years",
-      "period_label": "2026 (Third Quarter)",
+      "period_label": "FY2026 (Third Quarter)",
       "period": {
         "start_date": "2025-10-01",
         "end_date": "2026-06-30",
@@ -738,7 +738,7 @@
     },
     {
       "metric_id": "pending_2_to_5_years",
-      "period_label": "2026 (Third Quarter)",
+      "period_label": "FY2026 (Third Quarter)",
       "period": {
         "start_date": "2025-10-01",
         "end_date": "2026-06-30",
@@ -752,7 +752,7 @@
     },
     {
       "metric_id": "pending_more_than_5_years",
-      "period_label": "2026 (Third Quarter)",
+      "period_label": "FY2026 (Third Quarter)",
       "period": {
         "start_date": "2025-10-01",
         "end_date": "2026-06-30",
@@ -766,7 +766,7 @@
     },
     {
       "metric_id": "pending_total",
-      "period_label": "2026 (Third Quarter)",
+      "period_label": "FY2026 (Third Quarter)",
       "period": {
         "start_date": "2025-10-01",
         "end_date": "2026-06-30",
