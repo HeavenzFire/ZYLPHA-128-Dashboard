@@ -83,3 +83,34 @@ Request existing records supporting the testimony, not a new agency-created anal
 - An investigation or allegation is not a substantiated finding.
 - An engagement is an event, not a unique child.
 - Never identify children or sponsors in public audit artifacts.
+
+
+## Additional validation findings from the wider audit
+
+### OIG scope limitation
+
+DHS OIG OIG-25-21 did not obtain HHS records and did not assess the reliability of external HHS ORR, DOJ EOIR, or USCIS source data incorporated into ICE dashboards. It did assess ICE EARM data for its own audit findings. Therefore the report supports ICE-side tracking limitations but does not validate end-to-end HHS/ICE/EOIR matching.
+
+### EOIR UAC population-definition problem
+
+EOIR's official FY2026 Q3 UAC table reports 16,560 pending UAC cases. However, peer-reviewed Galli/Padilla research and Acacia's October 2026 update explain that EOIR's dedicated juvenile-history J-codes became unreliable after 2017. Galli/Padilla's alternate method uses age at arrival, docket type, and family-unit information. Acacia estimates more than 110,000 unaccompanied-child cases pending as of August 31, 2026. The 16,560 and >110,000 figures are not directly comparable without aligning definitions and dates, but the difference is large enough to require an official validation and reconciliation.
+
+**Audit test:** request the current EOIR codebook, J-code history, data-quality reports, query for the published 16,560 figure, and an aggregate comparison against a documented age-at-entry/docket method. Do not assume either figure is the correct total until the methods are reconciled.
+
+### Public ORR schema limitation
+
+The publicly catalogued ACF Data Dictionary and NIEM Mapping workbook is not a current production UC Portal schema. The workbook itself dates its Information Viewpoint to October 3, 2011 and says it is work-in-progress, not vetted, and representative rather than complete. The current production UC Portal schema, live fields, data lineage, and ICE/HHS interface mapping remain to be obtained.
+
+### Current EOIR court-pipeline indicators
+
+EOIR's FY2026 Q3 official UAC series reports 16,560 pending cases, 8,610 initial decisions, and 4,023 in-absentia removal decisions among 4,838 removal decisions. It reports median pending time of 2,398 days. These are court-case indicators, not child location or safety outcomes.
+
+## Additional sources
+
+8. DHS OIG OIG-25-21 full report and methodology: https://www.oig.dhs.gov/sites/default/files/assets/2025-03/OIG-25-21-Mar25.pdf
+9. EOIR Workload and Adjudication Statistics, updated Oct. 20, 2026: https://www.justice.gov/eoir/workload-and-adjudication-statistics
+10. Acacia Center for Justice, Oct. 15, 2026: https://acaciajustice.org/research-data/fact-sheets/the-data-behind-a-due-process-crisis-new-estimates-of-unaccompanied-children-in-immigration-court/
+11. Galli & Padilla, *International Migration Review*: https://journals.sagepub.com/doi/full/10.1177/01979183251316528
+12. Vera Institute of Justice, October 2026 dashboard: https://www.vera.org/ending-mass-incarceration/reducing-incarceration/detention-of-immigrants/advancing-universal-representation-initiative/immigration-court-legal-representation-dashboard
+13. TRAC, EOIR juvenile-history/J-code reliability review: https://tracreports.org/immigration/reports/669/
+14. ACF Data Dictionary and NIEM Mapping workbook page: https://acf.gov/media/14300
