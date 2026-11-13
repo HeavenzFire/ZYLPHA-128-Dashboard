@@ -7,7 +7,7 @@ const pdf = Buffer.from("%PDF-1.7\\nsynthetic EOIR test PDF");
 const hash = createHash("sha256").update(pdf).digest("hex");
 const pendingPeriod = { start_date: "2025-10-01", end_date: "2026-06-30", calendar_type: "US_FEDERAL_FY_QUARTER" };
 function pendingInput(observations = [{
-  metric_id: "pending_total", period_label: "FY2026 Q3", period: pendingPeriod,
+  metric_id: "pending_total", period_label: "FY2026 (Third Quarter)", period: pendingPeriod,
   value: 16560, unit: "cases", measure_type: "period_end_stock", page: 1, table_or_chart: "Table 1"
 }]) {
   return {
@@ -85,7 +85,7 @@ test("checks decision subtotals and keeps in-absentia as a nested subset", () =>
       ["total_decisions",8610,"initial_case_completions","Table 1"],
       ["pending_total",16560,"cases","Table 1"]
     ].map(([metric_id,value,unit,table_or_chart]) => ({
-      metric_id, period_label:"FY2026 Q3",
+      metric_id, period_label:"FY2026 (Third Quarter)",
       period:pendingPeriod, value,
       unit: metric_id === "pending_total" ? "cases" : "initial_case_completions",
       measure_type: metric_id === "pending_total" ? "period_end_stock" :
