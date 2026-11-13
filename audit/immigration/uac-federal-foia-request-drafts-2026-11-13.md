@@ -192,3 +192,18 @@ Please provide aggregate or redacted records only. I do not request child-level 
 
 Official evaluation: https://www.oig.hhs.gov/reports/all/2026/in-2024-orrs-national-call-center-connected-children-with-supports-and-services/
 Official work-plan closeout: https://www.oig.hhs.gov/reports/work-plan/browse-work-plan-projects/review-of-the-office-of-refugee-resettlements-national-call-center-response-to-incoming-calls/
+
+
+### G-1. Current follow-up controls identified in HHS OIG's September 2026 report
+
+HHS OIG OEI-07-24-00370 states in an endnote that, as of August 2026, the current National Call Center contractor (Hendall) was required to:
+- conduct follow-up calls with a sponsor and/or child when notified that a child missed immigration court; and
+- create and execute follow-up procedures for any caller for whom a safety plan had been created.
+
+Please provide the current written policy, contract clause or statement-of-work provision establishing these requirements; effective date; implementation/training materials; data fields used to record compliance; and monthly aggregate counts since implementation for missed-court notifications, follow-up attempts/completions, safety plans created, follow-up procedures opened/completed, overdue/unresolved cases, and exceptions. Separate child contact from sponsor-only contact.
+
+Also provide the records showing how ORR/Hendall receives notification that a child missed immigration court, including the data-sharing interface or workflow with ICE/EOIR, timeliness standards, failure handling, and reconciliation of notifications against follow-up records.
+
+The OIG report states that the call center handled more than 64,000 inbound/outbound calls, emails, and texts during January–June 2024, while the 1,944 figure refers to unique potential-safety-concern reports. Please provide existing aggregate reports distinguishing total contacts, inquiries, unique reports, and unique children, together with the deduplication rules. Do not equate these counts.
+
+Official source: https://oig.hhs.gov/documents/evaluation/11910/OEI-07-24-00370.pdf
