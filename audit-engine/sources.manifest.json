@@ -79,6 +79,36 @@
       "grain": "audit_report_and_disclosed_aggregate",
       "known_scope": "Includes case-file sample findings and historical post-release follow-up data reliability limitations.",
       "retrieval_required": true
+    },
+    {
+      "source_id": "DOJ-EOIR-UAC-PENDING",
+      "agency": "DOJ/EOIR",
+      "title": "Pending Unaccompanied Alien Child (UAC) Cases",
+      "url": "https://www.justice.gov/eoir/workload-and-adjudication-statistics",
+      "artifact_url": "https://www.justice.gov/eoir/media/1344946/dl?inline=",
+      "dataset_id": null,
+      "publication_date": "2026-07-24",
+      "format": "pdf",
+      "grain": "fiscal_year_end_or_quarter_end_case_stock",
+      "known_scope": "EOIR court-case stock by pending-duration bands; excludes Franco/mental competency, Institutional Hearing Program, MPP, and 7A-adjourned cases; not a child-location or welfare measure.",
+      "acquisition_receipt": "acquisitions/2026-11-13/eoir-uac-pending.receipt.json",
+      "transcription": "acquisitions/2026-11-13/eoir-uac-pending-transcription.json",
+      "retrieval_required": false
+    },
+    {
+      "source_id": "DOJ-EOIR-UAC-OUTCOMES",
+      "agency": "DOJ/EOIR",
+      "title": "Unaccompanied Alien Child Statistics",
+      "url": "https://www.justice.gov/eoir/workload-and-adjudication-statistics",
+      "artifact_url": "https://www.justice.gov/eoir/media/1344956/dl?inline=",
+      "dataset_id": null,
+      "publication_date": "2026-07-24",
+      "format": "pdf",
+      "grain": "fiscal_year_to_date_initial_case_completions",
+      "known_scope": "I-862 initial case completions only; in-absentia removals are a subset of removals; excludes Franco/mental competency, Institutional Hearing Program, MPP, and 7A-adjourned cases.",
+      "acquisition_receipt": "acquisitions/2026-11-13/eoir-uac-outcomes.receipt.json",
+      "transcription": "acquisitions/2026-11-13/eoir-uac-outcomes-transcription.json",
+      "retrieval_required": false
     }
   ]
 }
