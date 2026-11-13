@@ -595,3 +595,25 @@ Sources:
 - Workbook: https://acf.gov/sites/default/files/documents/i_datadictionaryandniemmapping_d01_0.xlsx
 
 **Evidence limitation:** the Data.gov catalog metadata says the resource was last updated September 6, 2025, while the ACF media page's publication date and workbook's own notes show older source material. This appears to be a metadata refresh or catalog modification, not evidence that the workbook itself was revised in 2025. The original workbook is explicitly marked draft/incomplete. Do not treat metadata modified date as workbook revision date.
+
+
+## 28. Important limitation in DHS OIG OIG-25-21: HHS records and external-source reliability were outside the audit's validation
+
+A full-text review of DHS OIG OIG-25-21 (March 25, 2025) reveals a critical scope limitation that must be carried into every use of its findings:
+
+- OIG states in footnote 7 that the audit was limited to DHS/ICE and that it **did not have or obtain access to HHS records**.
+- In its methodology, OIG says it did **not assess the reliability of data from sources external to ERO**, including DOJ EOIR, HHS ORR, and USCIS. This includes external-source data incorporated into the ERO Workload Remaining Dashboard and Discharge Notification Form Dashboard, and data concerning children who failed to appear in court.
+- OIG did review ICE's own EARM and relevant internal dashboards, and concluded the EARM data it received were reliable for its findings after limited testing. That is not equivalent to validating HHS's underlying source records or the completeness/accuracy of cross-agency matching.
+
+**Audit significance:** OIG-25-21 is strong evidence of ICE's internal tracking limitations and the data gaps ICE faced. It is not an independent audit of the HHS UC Portal, HHS sponsor-release data, or the end-to-end accuracy of ICE/HHS/EOIR child-level matching. The public 145,000 claim requires a separate, documented cross-agency reconciliation and validation exercise.
+
+### Interagency information-sharing problem
+
+OIG describes the 2021 DHS-HHS MOA as the operative agreement and reports that it removed a prior requirement for ORR to provide ICE with biographic and biometric information for all potential sponsors and adult household members. HHS officials said the earlier 2018 arrangement was rescinded to reduce barriers to identifying potential sponsors. Under the process described by OIG, ICE generally received the sponsor's name, relationship to the child, and address at initial release, but did not receive updated sponsor/address information after later changes. HHS did not provide ICE results of its safety-and-well-being checks or post-release services. As of December 2024, a new MOA was in draft.
+
+OIG recommendation 1 specifically asks ICE to review and revise, as needed, the DHS-HHS MOA and Joint Concept of Operations and continue work on information-sharing agreements. ICE's response promised to work with ORR to update the agreements, with a September 30, 2025 estimated completion date. OIG said the recommendation would remain open and resolved until it received the updated agreements. A planned completion date is not evidence of completion.
+
+**Next evidence required:** signed current MOA/JCO, effective dates, amendments, data-sharing schedules, fields actually exchanged, change-notification workflows, audit logs, and evidence that HHS safety/post-release information is transmitted or that a lawful alternative workflow exists. Request the signed OIG closeout letter and evidence package for recommendation 1.
+
+Primary source: DHS OIG OIG-25-21, especially Background, pp. 2–3; information-sharing findings, pp. 9–10; methodology, pp. 15–16; management comments, pp. 13–14:
+https://www.oig.dhs.gov/sites/default/files/assets/2025-03/OIG-25-21-Mar25.pdf
