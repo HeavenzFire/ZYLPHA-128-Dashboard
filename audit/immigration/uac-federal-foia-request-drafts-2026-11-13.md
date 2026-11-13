@@ -229,3 +229,26 @@ Please provide aggregate or redacted program-level records only. Do not disclose
 
 Official report: https://www.oig.hhs.gov/reports/all/2026/the-office-of-refugee-resettlement-needs-to-improve-its-monitoring-of-unlicensed-unaccompanied-alien-children-program-care-providers-compliance-with-background-check-requirements/
 Recommendation tracker: https://www.oig.hhs.gov/reports/recommendations/tracker/?hhs-agency=all&search=A-06-24-07001&view-mode=report-grouped
+
+
+## I. Emergency intake-site contracting, performance, and closeout records
+
+HHS OIG reports A-06-22-07000 and A-03-22-00353 identified deficiencies in ACF's award, monitoring, and closeout of emergency intake-site contracts for unaccompanied children. This request is for records that show whether contracted services were delivered and corrective actions were implemented; it is not a request to recreate OIG's findings.
+
+**Supplemental language to Request B:**
+
+Please provide existing records, in aggregate or redacted form, for the emergency intake-site contracts reviewed in HHS OIG reports A-06-22-07000 and A-03-22-00353, including:
+
+1. Statements of work, performance standards, quality assurance surveillance plans, deliverable acceptance/rejection records, inspection/monitoring reports, corrective-action notices, and final performance evaluations.
+2. Records showing actual shelter capacity, occupied bed-days, staffing levels, service delivery, incidents, complaints, and corrective actions by contract and reporting period, with child identities and facility security details withheld.
+3. Pre-award planning, price analysis, responsibility determinations, competition/sole-source justifications, and contract file completeness records for the reviewed awards.
+4. Contract modifications, invoices, amounts obligated and expended, deobligations, final payments, and closeout records, including releases of liabilities/obligations/claims.
+5. ACF's action plans and implementation evidence for recommendations 25-A-06-115.01 through .04, including the reason each recommendation is listed as Closed Unimplemented in the HHS OIG tracker.
+6. Implementation evidence for recommendation 26-A-03-037.01, listed as Closed Implemented on August 4, 2026, including the specific advance-planning and capacity-management controls adopted and the validation/testing of those controls.
+7. Records identifying any unresolved contract deliverables, questioned performance, unpaid/withheld amounts, outstanding claims, or corrective actions at contract closeout.
+
+Please do not provide child-level personally identifying information, staff personal data, confidential security plans, or protected proprietary information beyond what FOIA requires. Provide segregable contract performance and expenditure records and identify the applicable exemption for any withheld material.
+
+Official sources:
+- https://www.oig.hhs.gov/reports/all/2025/acf-did-not-award-monitor-and-close-selected-contracts-for-the-unaccompanied-alien-children-program-in-accordance-with-federal-requirements/
+- https://www.oig.hhs.gov/reports/all/2026/acfs-529-million-sole-source-contract-award-for-unaccompanied-alien-children-services-was-based-on-an-unsolicited-proposal-double-the-cost-estimate-and-noncompliant-with-pre-award-requirements/
