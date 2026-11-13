@@ -1,0 +1,71 @@
+{
+  "report_version": "1.0",
+  "acquired_at": "2026-11-13T21:54:40.497Z",
+  "sources": [
+    {
+      "source_id": "DOJ-EOIR-UAC-PENDING",
+      "title": "Pending Unaccompanied Alien Child (UAC) Cases",
+      "source_pdf_sha256": "bfd09e76537f500f50c2af87fefdc2c507eac5a1f2ab41ee4ecba22203e32182",
+      "source_pdf_bytes": 55838,
+      "generated_at": "2026-07-24",
+      "normalized_observation_count": 55,
+      "normalized_sha256": "7310bb9e72d70c74ff182f34208aea9039efbafc0be66e489c6a099160106cdc",
+      "reconciliation_checks": {
+        "passed": 11,
+        "failed": 0
+      },
+      "latest_period": {
+        "label": "FY2026 (Third Quarter)",
+        "pending_total_cases": 16560,
+        "age_bands": {
+          "pending_less_than_6_months": 1165,
+          "pending_6_months_to_2_years": 2209,
+          "pending_2_to_5_years": 3280,
+          "pending_more_than_5_years": 9906
+        }
+      }
+    },
+    {
+      "source_id": "DOJ-EOIR-UAC-OUTCOMES",
+      "title": "Unaccompanied Alien Child Statistics",
+      "source_pdf_sha256": "b2d98bdf136314b7d9d3652fd8711e1a08f1d164b34dec5abecf021663783d65",
+      "source_pdf_bytes": 48605,
+      "generated_at": "2026-07-24",
+      "normalized_observation_count": 9,
+      "normalized_sha256": "acf58cddf7b7db6933996a9f90fcee5809bae2514d4fb1ce0bf2b0707d9c3dcd",
+      "reconciliation_checks": {
+        "passed": 2,
+        "failed": 0
+      },
+      "latest_period": {
+        "label": "FY2026 (Third Quarter)",
+        "pending_total_cases": 16560,
+        "total_initial_case_decisions": 8610,
+        "relief_granted": 49,
+        "removal": 4838,
+        "removal_in_absentia_subset": 4023,
+        "dismissal_and_termination": 3065,
+        "voluntary_departure": 654,
+        "withdrawn": 4,
+        "other": 0
+      }
+    }
+  ],
+  "validation": {
+    "node_test_count": 56,
+    "node_tests_passed": 56,
+    "node_tests_failed": 0,
+    "actual_pdf_imports_passed": 2,
+    "event_fixture": "PASS",
+    "aggregate_measure_fixture": "PASS"
+  },
+  "review_status": "PENDING_SECOND_PERSON_TRANSCRIPTION_REVIEW",
+  "interpretation_limits": [
+    "EOIR pending measures are immigration-court case stock, not unique children or child-location outcomes.",
+    "EOIR decision measures are FY-to-date I-862 initial case completions.",
+    "Removal in absentia is a subset of removal and is not additive to total decisions.",
+    "EOIR excludes Franco/mental competency litigation, Institutional Hearing Program, Migration Protection Protocol cases, and cases with a 7A adjournment.",
+    "The PDFs were generated July 24, 2026; the later page update date does not make these figures a November 2026 case-system snapshot.",
+    "PDF hash verification does not certify manual transcription accuracy or the truth/completeness of agency records."
+  ]
+}
