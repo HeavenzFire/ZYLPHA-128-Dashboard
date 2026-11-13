@@ -118,6 +118,8 @@ test("uses the requested endpoint only for stock snapshots and never sums stock 
     { ...base, observed_date: "2026-10-02", value: 80 }
   ]);
   const result = summarizeHhsWindow(normalized, "2026-10-01", "2026-10-02");
-  assert.equal(result.measures[0].measure.value, 80);
-  assert.deepEqual(result.measures[0].measure.time_window, { start_date: "2026-10-02", end_date: "2026-10-02", calendar_type: "POINT_IN_TIME" });
+  const stock = result.measures.find(item => item.metric_id === "children_in_hhs_care");
+  assert.equal(stock.status, "READY");
+  assert.equal(stock.measure.value, 80);
+  assert.deepEqual(stock.measure.time_window, { start_date: "2026-10-02", end_date: "2026-10-02", calendar_type: "POINT_IN_TIME" });
 });
