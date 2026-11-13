@@ -13,7 +13,7 @@ try {
       raw_sha256: createHash("sha256").update(raw).digest("hex"),
       retrieved_at: new Date().toISOString()
     });
-    await writeFile(outputPath, JSON.stringify(result, null, 2) + "\\n", { flag: "wx" });
+    await writeFile(outputPath, JSON.stringify(result, null, 2) + "\n", { flag: "wx" });
     console.log(JSON.stringify({ status: "ingested", output: outputPath, source_rows: result.row_count, observations: result.observation_count, raw_sha256: result.source.raw_sha256 }, null, 2));
   } else if (command === "eoir-validate" && inputPath) {
     const input = JSON.parse(await readFile(inputPath, "utf8"));
