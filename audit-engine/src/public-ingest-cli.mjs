@@ -1,6 +1,8 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import { normalizeHhsUacRows, validateEoirTableImport, summarizeHhsWindow } from "./aggregate.mjs";
+import { createAcquisitionReceipt } from "./aggregate-measure.mjs";
+import { getPublicSource } from "./public-sources.mjs";
 
 const [command, inputPath, arg3, arg4, arg5] = process.argv.slice(2);
 
