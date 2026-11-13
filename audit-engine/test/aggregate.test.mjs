@@ -138,3 +138,16 @@ test("uses the requested endpoint only for stock snapshots and never sums stock 
   assert.equal(stock.measure.value, 80);
   assert.deepEqual(stock.measure.time_window, { start_date: "2026-10-02", end_date: "2026-10-02", calendar_type: "POINT_IN_TIME" });
 });
+
+test("limits duplicate-date report to the requested period", () => {
+  const base = { source_id: "HHS-ORR-UAC-DAILY", metric_id: "children_in_hhs_care", metric_label: "Children in HHS care", measure_type: "daily_stock", unit: "children", geography: "US" };
+  const normalized = normalizedObservations([
+    { ...base, observed_date: "2026-11-12", value: 100 }
+  ]);
+  normalized.duplicate_dates = [
+    { date: "2022-01-26", row_count: 2 },
+    { date: "2026-11-12", row_count: 2 }
+  ];
+  const result = summarizeHhsWindow(normalized, "2026-11-12", "2026-11-12");
+  assert.deepEqual(result.duplicate_dates, [{ date: "2026-11-12", row_count: 2 }]);
+});
