@@ -35,7 +35,7 @@
       "url": "https://www.oig.dhs.gov/sites/default/files/assets/2024-08/OIG-24-46-Aug24.pdf",
       "artifact_url": "https://www.oig.dhs.gov/sites/default/files/assets/2024-08/OIG-24-46-Aug24.pdf",
       "dataset_id": null,
-      "publication_date": "2024-08-19",
+      "publication_date": null,
       "format": "pdf",
       "grain": "audit_report_and_disclosed_aggregate",
       "known_scope": "Audit findings and disclosed administrative counts; keep sample estimates, population counts, and operational events distinct.",
@@ -55,16 +55,29 @@
       "retrieval_required": true
     },
     {
-      "source_id": "GAO-UC-OVERSIGHT",
+      "source_id": "GAO-25-107840",
       "agency": "GAO",
-      "title": "GAO unaccompanied children oversight reports",
-      "url": "https://www.gao.gov/",
-      "artifact_url": null,
+      "title": "Unaccompanied Children: Efforts by ORR to Address GAO Recommendations",
+      "url": "https://www.gao.gov/products/gao-25-107840",
+      "artifact_url": "https://www.gao.gov/assets/gao-25-107840.pdf",
       "dataset_id": null,
-      "publication_date": null,
-      "format": "report",
-      "grain": "report_specific",
-      "known_scope": "Register each individual GAO report and its exact publication date before extracting a measure.",
+      "publication_date": "2024-11-19",
+      "format": "pdf",
+      "grain": "report_and_disclosed_aggregate",
+      "known_scope": "Reviews ORR actions on nine recommendations; discusses post-release check-ins and systematic collection reliability.",
+      "retrieval_required": true
+    },
+    {
+      "source_id": "GAO-16-180",
+      "agency": "GAO",
+      "title": "Unaccompanied Children: HHS Can Take Further Actions to Monitor Their Care",
+      "url": "https://www.gao.gov/products/gao-16-180",
+      "artifact_url": "https://www.gao.gov/assets/gao-16-180.pdf",
+      "dataset_id": null,
+      "publication_date": "2016-02-05",
+      "format": "pdf",
+      "grain": "audit_report_and_disclosed_aggregate",
+      "known_scope": "Includes case-file sample findings and historical post-release follow-up data reliability limitations.",
       "retrieval_required": true
     }
   ]
