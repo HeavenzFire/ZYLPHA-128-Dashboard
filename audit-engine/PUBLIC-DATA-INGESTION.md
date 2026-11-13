@@ -99,3 +99,12 @@ node src/public-ingest-cli.mjs hhs-summarize ./derived/hhs-uac-normalized.json 2
 ~~~
 
 The public series currently has missing calendar dates in its visible daily history. The strict flow gate will therefore block a naive full-month total rather than silently treating missing days as zero.
+
+
+## Acquisition receipts
+
+For each HHS raw download, the ingestion CLI writes two new artifacts:
+- normalized observation JSON;
+- a sibling `.receipt.json` containing source ID, agency, source URL, retrieval timestamp, byte length, publication date (null when not established), and SHA-256 of the exact raw bytes.
+
+Both output paths use exclusive-create mode and refuse overwrite. Retain the original raw download separately; the normalized artifact and receipt do not replace it.
