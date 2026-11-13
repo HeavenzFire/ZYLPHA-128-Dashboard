@@ -151,3 +151,7 @@ test("limits duplicate-date report to the requested period", () => {
   const result = summarizeHhsWindow(normalized, "2026-11-12", "2026-11-12");
   assert.deepEqual(result.duplicate_dates, [{ date: "2026-11-12", row_count: 2 }]);
 });
+
+test("rejects impossible HHS source dates", () => {
+  assert.throws(() => normalizeHhsUacRows([{ ...row, date: "2026-02-31T00:00:00.000" }], provenance), /Invalid HHS date/);
+});
