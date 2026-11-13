@@ -138,3 +138,37 @@ Please include records associated with the ICE "Unaccompanied Alien Children Joi
 
 I do not request target packets, child-level records, sponsor identities or addresses, location histories, facial-recognition queries, investigative leads, undercover methods, or details that would compromise active law-enforcement operations. Please provide only program-level methodology, blank templates, aggregate statistics, and reasonably segregable records.
 
+
+
+## E. ICE initiative-specific implementation records (high-priority supplement to Request A)
+
+The public copy of ICE document 2025-ICFO-22246 describes:
+- Power BI UAC priority-group dashboard;
+- "Flight Risk", "Public Safety", and "Border Security" prioritization;
+- HSI/ERO field-office coordination;
+- UAC Field Contact Documentation Form with daily 5 p.m. reporting;
+- ICM, EAGLE, and EARM system usage;
+- HSI school-registration checks and criminal checks;
+- HSI coordination with U.S. Attorney's Offices and U.S. Marshals;
+- HSI Center for Countering Human Trafficking support, victim-protection expertise, and leadership progress dashboard;
+- possible facial-recognition query support in exigent circumstances.
+
+Request the following specific records, in aggregate or blank-template/redacted form:
+
+1. The Power BI dashboard data dictionary, source-system mapping, priority-group definitions, inclusion/exclusion rules, refresh logs, deduplication logic, data-quality controls, and audit logs documenting changes to cohort membership.
+2. The complete blank UAC Field Contact Documentation Form, data dictionary, instructions, mandatory fields, validation rules, and aggregate counts for each field/contact disposition.
+3. Aggregate counts distinguishing direct contact with child, contact with sponsor only, other household member contact, address-only verification, school-record verification, attempted but unsuccessful contact, and no contact.
+4. The standard used to mark a child "located" and whether the designation requires direct child contact, identity confirmation, current physical presence, a child safety assessment, or only sponsor/address confirmation.
+5. Existing procedures for assessing safety and trafficking risk during field contacts; how children are informed of available independent child advocates, counsel, ORR/child-welfare supports, and safe reporting channels; and how disclosures are referred.
+6. The supervisory approval and review criteria for "Flight Risk," "Public Safety," and "Border Security" classifications; how errors are corrected; and how a non-relative sponsor or "super sponsor" label is prevented from being treated as evidence of criminality or abuse by itself.
+7. Aggregate number of cases in which field contact led to ORR re-entry, child-welfare referral, law-enforcement referral, trafficking investigation, sponsor arrest, immigration arrest/detention, execution of a removal order, or no further action. Separate children, contacts, investigations, arrests, charges, and convictions.
+8. Existing policy and audit records governing HSI school-registration checks, criminal checks, facial-recognition query assistance, data access, retention, and interagency information sharing. Do not provide any child-specific facial-recognition query or operational target packet.
+9. The February 10, 2025 field-office coordination email and all later versions/updates to the initiative guidance, including the responsible office and implementation date.
+
+Please do not interpret this request as seeking target packets, operational plans for individual children, exact locations, personal data, sponsor addresses, or sensitive law-enforcement techniques. Aggregate metrics, blank forms, data dictionaries, policy documents, and redacted quality-assurance records are sufficient.
+
+## F. HHS public daily dataset clarification
+
+HHS/ORR publicly publishes the "HHS Unaccompanied Alien Children Program" daily aggregate dataset (HealthData.gov dataset ID e hpz-xc9n). I am not requesting the agency to recreate those already-public counts. I request any existing internal records that reconcile those aggregate custody/discharge flows with post-release safety follow-up and sponsor/child contact outcomes, using aggregate or redacted information only.
+
+Public dataset: https://healthdata.gov/National/HHS-Unaccompanied-Alien-Children-Program/ehpz-xc9n
