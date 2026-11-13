@@ -252,3 +252,27 @@ Please do not provide child-level personally identifying information, staff pers
 Official sources:
 - https://www.oig.hhs.gov/reports/all/2025/acf-did-not-award-monitor-and-close-selected-contracts-for-the-unaccompanied-alien-children-program-in-accordance-with-federal-requirements/
 - https://www.oig.hhs.gov/reports/all/2026/acfs-529-million-sole-source-contract-award-for-unaccompanied-alien-children-services-was-based-on-an-unsolicited-proposal-double-the-cost-estimate-and-noncompliant-with-pre-award-requirements/
+
+
+## J. ORR UC Portal data integrity, access controls, and interagency reconciliation
+
+HHS OIG A-18-22-03200 found incomplete implementation of required UC Portal cybersecurity controls and inconsistent user-account reviews; the HHS OIG tracker currently lists both recommendations as Open Unimplemented. DHS OIG OIG-22-66 documented historical manual transfer workflows and limited interoperability among CBP, ICE, HHS, and DOJ systems.
+
+**Supplemental language to Request B (HHS/ACF/ORR):**
+
+Please provide existing, non-sensitive records from January 1, 2024 through the date this request is processed showing the current data-integrity, access-control, and interagency-reconciliation controls for the ORR UC Portal and related UAC case data:
+
+1. Current UC Portal system security plan and control implementation status, including evidence that the 30 minimum controls identified as incomplete in HHS OIG A-18-22-03200 were implemented and independently tested.
+2. Aggregate monthly user-account review completion rates, overdue reviews, inactive accounts disabled, privileged-access reviews, and remediation tracking. Do not disclose usernames, credentials, or exploitable technical details.
+3. Current system-of-record definitions and interface/data-exchange agreements with CBP e3/UIP, ICE EARM/EID/EAGLE/ICM, EOIR, and the National Call Center.
+4. Aggregate monthly counts of records rejected, duplicated, missing required fields, delayed in transmission, or requiring manual reconciliation across those interfaces.
+5. Current procedures and aggregate compliance reports for recording transfer, placement, sponsor release, sponsor/address changes, runaway notifications, direct child contact, NTA/court information, safety referrals, and case closure.
+6. Records showing how corrections to a child's identity, placement, sponsor, address, or status propagate across agency systems and how failed updates are detected and resolved.
+7. HHS OIG recommendation response and closeout correspondence for A-18-22-03200, including any signed determination closing recommendations 24-A-18-058.01 and 24-A-18-058.02.
+
+Please provide aggregate and redacted control evidence only. Do not provide child identities, authentication information, credentials, access tokens, exploitable system configurations, network diagrams, or security vulnerabilities.
+
+Official sources:
+- https://www.oig.hhs.gov/reports/all/2024/acf-has-enhanced-some-cybersecurity-controls-over-the-unaccompanied-children-portal-and-data-but-improvements-are-needed/
+- https://www.oig.hhs.gov/reports/recommendations/tracker/?hhs-agency=all&search=A-18-22-03200&view-mode=report-grouped
+- https://www.oig.dhs.gov/sites/default/files/assets/2022-09/OIG-22-66-Sep22.pdf
