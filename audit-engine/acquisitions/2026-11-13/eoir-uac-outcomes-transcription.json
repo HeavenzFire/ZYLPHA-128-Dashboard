@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0",
+  "source_key": "eoir_uac_outcomes",
+  "source_id": "DOJ-EOIR-UAC-OUTCOMES",
+  "source_url": "https://www.justice.gov/eoir/media/1344956/dl?inline=",
+  "document_generated": "2026-07-24",
+  "retrieved_at": "2026-11-13T21:54:40.497Z",
+  "extraction_method": "manual_pdf_transcription",
+  "source_file_sha256": "b2d98bdf136314b7d9d3652fd8711e1a08f1d164b34dec5abecf021663783d65",
+  "observations": [
+    {
+      "metric_id": "pending_total",
+      "period_label": "FY2026 (Third Quarter)",
+      "period": {
+        "start_date": "2025-10-01",
+        "end_date": "2026-06-30",
+        "calendar_type": "US_FEDERAL_FY_QUARTER"
+      },
+      "value": 16560,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Unaccompanied Alien Child Statistics"
+    },
+    {
+      "metric_id": "relief_granted",
+      "period_label": "FY2026 (Third Quarter)",
+      "period": {
+        "start_date": "2025-10-01",
+        "end_date": "2026-06-30",
+        "calendar_type": "US_FEDERAL_FY_QUARTER"
+      },
+      "value": 49,
+      "unit": "initial_case_completions",
+      "measure_type": "fy_to_date_initial_case_completions",
+      "page": 1,
+      "table_or_chart": "Table 1 — Unaccompanied Alien Child Statistics"
+    },
+    {
+      "metric_id": "removal",
+      "period_label": "FY2026 (Third Quarter)",
+      "period": {
+        "start_date": "2025-10-01",
+        "end_date": "2026-06-30",
+        "calendar_type": "US_FEDERAL_FY_QUARTER"
+      },
+      "value": 4838,
+      "unit": "initial_case_completions",
+      "measure_type": "fy_to_date_initial_case_completions",
+      "page": 1,
+      "table_or_chart": "Table 1 — Unaccompanied Alien Child Statistics"
+    },
+    {
+      "metric_id": "removal_in_absentia",
+      "period_label": "FY2026 (Third Quarter)",
+      "period": {
+        "start_date": "2025-10-01",
+        "end_date": "2026-06-30",
+        "calendar_type": "US_FEDERAL_FY_QUARTER"
+      },
+      "value": 4023,
+      "unit": "initial_case_completions",
+      "measure_type": "fy_to_date_initial_case_completions_subset",
+      "page": 1,
+      "table_or_chart": "Table 1 — Unaccompanied Alien Child Statistics"
+    },
+    {
+      "metric_id": "dismissal_termination",
+      "period_label": "FY2026 (Third Quarter)",
+      "period": {
+        "start_date": "2025-10-01",
+        "end_date": "2026-06-30",
+        "calendar_type": "US_FEDERAL_FY_QUARTER"
+      },
+      "value": 3065,
+      "unit": "initial_case_completions",
+      "measure_type": "fy_to_date_initial_case_completions",
+      "page": 1,
+      "table_or_chart": "Table 1 — Unaccompanied Alien Child Statistics"
+    },
+    {
+      "metric_id": "voluntary_departure",
+      "period_label": "FY2026 (Third Quarter)",
+      "period": {
+        "start_date": "2025-10-01",
+        "end_date": "2026-06-30",
+        "calendar_type": "US_FEDERAL_FY_QUARTER"
+      },
+      "value": 654,
+      "unit": "initial_case_completions",
+      "measure_type": "fy_to_date_initial_case_completions",
+      "page": 1,
+      "table_or_chart": "Table 1 — Unaccompanied Alien Child Statistics"
+    },
+    {
+      "metric_id": "withdrawn",
+      "period_label": "FY2026 (Third Quarter)",
+      "period": {
+        "start_date": "2025-10-01",
+        "end_date": "2026-06-30",
+        "calendar_type": "US_FEDERAL_FY_QUARTER"
+      },
+      "value": 4,
+      "unit": "initial_case_completions",
+      "measure_type": "fy_to_date_initial_case_completions",
+      "page": 1,
+      "table_or_chart": "Table 1 — Unaccompanied Alien Child Statistics"
+    },
+    {
+      "metric_id": "other",
+      "period_label": "FY2026 (Third Quarter)",
+      "period": {
+        "start_date": "2025-10-01",
+        "end_date": "2026-06-30",
+        "calendar_type": "US_FEDERAL_FY_QUARTER"
+      },
+      "value": 0,
+      "unit": "initial_case_completions",
+      "measure_type": "fy_to_date_initial_case_completions",
+      "page": 1,
+      "table_or_chart": "Table 1 — Unaccompanied Alien Child Statistics"
+    },
+    {
+      "metric_id": "total_decisions",
+      "period_label": "FY2026 (Third Quarter)",
+      "period": {
+        "start_date": "2025-10-01",
+        "end_date": "2026-06-30",
+        "calendar_type": "US_FEDERAL_FY_QUARTER"
+      },
+      "value": 8610,
+      "unit": "initial_case_completions",
+      "measure_type": "fy_to_date_initial_case_completions",
+      "page": 1,
+      "table_or_chart": "Table 1 — Unaccompanied Alien Child Statistics"
+    }
+  ]
+}
