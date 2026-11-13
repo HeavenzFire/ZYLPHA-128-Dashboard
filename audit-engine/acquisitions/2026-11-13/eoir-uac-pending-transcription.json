@@ -1,0 +1,782 @@
+{
+  "schema_version": "1.0",
+  "source_key": "eoir_uac_pending",
+  "source_id": "DOJ-EOIR-UAC-PENDING",
+  "source_url": "https://www.justice.gov/eoir/media/1344946/dl?inline=",
+  "document_generated": "2026-07-24",
+  "retrieved_at": "2026-11-13T21:54:39.998Z",
+  "extraction_method": "manual_pdf_transcription",
+  "source_file_sha256": "bfd09e76537f500f50c2af87fefdc2c507eac5a1f2ab41ee4ecba22203e32182",
+  "observations": [
+    {
+      "metric_id": "pending_lt_6_months",
+      "period_label": "FY2016",
+      "period": {
+        "start_date": "2015-10-01",
+        "end_date": "2016-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 9044,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_6_months_to_2_years",
+      "period_label": "FY2016",
+      "period": {
+        "start_date": "2015-10-01",
+        "end_date": "2016-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 15192,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_2_to_5_years",
+      "period_label": "FY2016",
+      "period": {
+        "start_date": "2015-10-01",
+        "end_date": "2016-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 4666,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_more_than_5_years",
+      "period_label": "FY2016",
+      "period": {
+        "start_date": "2015-10-01",
+        "end_date": "2016-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 882,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_total",
+      "period_label": "FY2016",
+      "period": {
+        "start_date": "2015-10-01",
+        "end_date": "2016-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 29784,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_lt_6_months",
+      "period_label": "FY2017",
+      "period": {
+        "start_date": "2016-10-01",
+        "end_date": "2017-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 8035,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_6_months_to_2_years",
+      "period_label": "FY2017",
+      "period": {
+        "start_date": "2016-10-01",
+        "end_date": "2017-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 20554,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_2_to_5_years",
+      "period_label": "FY2017",
+      "period": {
+        "start_date": "2016-10-01",
+        "end_date": "2017-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 9195,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_more_than_5_years",
+      "period_label": "FY2017",
+      "period": {
+        "start_date": "2016-10-01",
+        "end_date": "2017-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 1203,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_total",
+      "period_label": "FY2017",
+      "period": {
+        "start_date": "2016-10-01",
+        "end_date": "2017-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 38987,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_lt_6_months",
+      "period_label": "FY2018",
+      "period": {
+        "start_date": "2017-10-01",
+        "end_date": "2018-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 8150,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_6_months_to_2_years",
+      "period_label": "FY2018",
+      "period": {
+        "start_date": "2017-10-01",
+        "end_date": "2018-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 18643,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_2_to_5_years",
+      "period_label": "FY2018",
+      "period": {
+        "start_date": "2017-10-01",
+        "end_date": "2018-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 16112,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_more_than_5_years",
+      "period_label": "FY2018",
+      "period": {
+        "start_date": "2017-10-01",
+        "end_date": "2018-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 1737,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_total",
+      "period_label": "FY2018",
+      "period": {
+        "start_date": "2017-10-01",
+        "end_date": "2018-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 44642,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_lt_6_months",
+      "period_label": "FY2019",
+      "period": {
+        "start_date": "2018-10-01",
+        "end_date": "2019-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 7669,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_6_months_to_2_years",
+      "period_label": "FY2019",
+      "period": {
+        "start_date": "2018-10-01",
+        "end_date": "2019-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 16886,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_2_to_5_years",
+      "period_label": "FY2019",
+      "period": {
+        "start_date": "2018-10-01",
+        "end_date": "2019-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 21309,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_more_than_5_years",
+      "period_label": "FY2019",
+      "period": {
+        "start_date": "2018-10-01",
+        "end_date": "2019-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 3591,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_total",
+      "period_label": "FY2019",
+      "period": {
+        "start_date": "2018-10-01",
+        "end_date": "2019-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 49455,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_lt_6_months",
+      "period_label": "FY2020",
+      "period": {
+        "start_date": "2019-10-01",
+        "end_date": "2020-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 3889,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_6_months_to_2_years",
+      "period_label": "FY2020",
+      "period": {
+        "start_date": "2019-10-01",
+        "end_date": "2020-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 21190,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_2_to_5_years",
+      "period_label": "FY2020",
+      "period": {
+        "start_date": "2019-10-01",
+        "end_date": "2020-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 24164,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_more_than_5_years",
+      "period_label": "FY2020",
+      "period": {
+        "start_date": "2019-10-01",
+        "end_date": "2020-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 6942,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_total",
+      "period_label": "FY2020",
+      "period": {
+        "start_date": "2019-10-01",
+        "end_date": "2020-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 56185,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_lt_6_months",
+      "period_label": "FY2021",
+      "period": {
+        "start_date": "2020-10-01",
+        "end_date": "2021-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 6614,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_6_months_to_2_years",
+      "period_label": "FY2021",
+      "period": {
+        "start_date": "2020-10-01",
+        "end_date": "2021-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 16404,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_2_to_5_years",
+      "period_label": "FY2021",
+      "period": {
+        "start_date": "2020-10-01",
+        "end_date": "2021-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 27259,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_more_than_5_years",
+      "period_label": "FY2021",
+      "period": {
+        "start_date": "2020-10-01",
+        "end_date": "2021-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 11371,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_total",
+      "period_label": "FY2021",
+      "period": {
+        "start_date": "2020-10-01",
+        "end_date": "2021-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 61648,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_lt_6_months",
+      "period_label": "FY2022",
+      "period": {
+        "start_date": "2021-10-01",
+        "end_date": "2022-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 4895,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_6_months_to_2_years",
+      "period_label": "FY2022",
+      "period": {
+        "start_date": "2021-10-01",
+        "end_date": "2022-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 14894,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_2_to_5_years",
+      "period_label": "FY2022",
+      "period": {
+        "start_date": "2021-10-01",
+        "end_date": "2022-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 23915,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_more_than_5_years",
+      "period_label": "FY2022",
+      "period": {
+        "start_date": "2021-10-01",
+        "end_date": "2022-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 14214,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_total",
+      "period_label": "FY2022",
+      "period": {
+        "start_date": "2021-10-01",
+        "end_date": "2022-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 57918,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_lt_6_months",
+      "period_label": "FY2023",
+      "period": {
+        "start_date": "2022-10-01",
+        "end_date": "2023-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 3490,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_6_months_to_2_years",
+      "period_label": "FY2023",
+      "period": {
+        "start_date": "2022-10-01",
+        "end_date": "2023-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 11151,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_2_to_5_years",
+      "period_label": "FY2023",
+      "period": {
+        "start_date": "2022-10-01",
+        "end_date": "2023-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 15881,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_more_than_5_years",
+      "period_label": "FY2023",
+      "period": {
+        "start_date": "2022-10-01",
+        "end_date": "2023-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 13560,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_total",
+      "period_label": "FY2023",
+      "period": {
+        "start_date": "2022-10-01",
+        "end_date": "2023-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 44082,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_lt_6_months",
+      "period_label": "FY2024",
+      "period": {
+        "start_date": "2023-10-01",
+        "end_date": "2024-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 1692,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_6_months_to_2_years",
+      "period_label": "FY2024",
+      "period": {
+        "start_date": "2023-10-01",
+        "end_date": "2024-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 6802,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_2_to_5_years",
+      "period_label": "FY2024",
+      "period": {
+        "start_date": "2023-10-01",
+        "end_date": "2024-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 10069,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_more_than_5_years",
+      "period_label": "FY2024",
+      "period": {
+        "start_date": "2023-10-01",
+        "end_date": "2024-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 12873,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_total",
+      "period_label": "FY2024",
+      "period": {
+        "start_date": "2023-10-01",
+        "end_date": "2024-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 31436,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_lt_6_months",
+      "period_label": "FY2025",
+      "period": {
+        "start_date": "2024-10-01",
+        "end_date": "2025-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 1961,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_6_months_to_2_years",
+      "period_label": "FY2025",
+      "period": {
+        "start_date": "2024-10-01",
+        "end_date": "2025-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 3747,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_2_to_5_years",
+      "period_label": "FY2025",
+      "period": {
+        "start_date": "2024-10-01",
+        "end_date": "2025-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 5521,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_more_than_5_years",
+      "period_label": "FY2025",
+      "period": {
+        "start_date": "2024-10-01",
+        "end_date": "2025-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 11655,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_total",
+      "period_label": "FY2025",
+      "period": {
+        "start_date": "2024-10-01",
+        "end_date": "2025-09-30",
+        "calendar_type": "US_FEDERAL_FY"
+      },
+      "value": 22884,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_lt_6_months",
+      "period_label": "2026 (Third Quarter)",
+      "period": {
+        "start_date": "2025-10-01",
+        "end_date": "2026-06-30",
+        "calendar_type": "US_FEDERAL_FY_QUARTER"
+      },
+      "value": 1165,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_6_months_to_2_years",
+      "period_label": "2026 (Third Quarter)",
+      "period": {
+        "start_date": "2025-10-01",
+        "end_date": "2026-06-30",
+        "calendar_type": "US_FEDERAL_FY_QUARTER"
+      },
+      "value": 2209,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_2_to_5_years",
+      "period_label": "2026 (Third Quarter)",
+      "period": {
+        "start_date": "2025-10-01",
+        "end_date": "2026-06-30",
+        "calendar_type": "US_FEDERAL_FY_QUARTER"
+      },
+      "value": 3280,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_more_than_5_years",
+      "period_label": "2026 (Third Quarter)",
+      "period": {
+        "start_date": "2025-10-01",
+        "end_date": "2026-06-30",
+        "calendar_type": "US_FEDERAL_FY_QUARTER"
+      },
+      "value": 9906,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    },
+    {
+      "metric_id": "pending_total",
+      "period_label": "2026 (Third Quarter)",
+      "period": {
+        "start_date": "2025-10-01",
+        "end_date": "2026-06-30",
+        "calendar_type": "US_FEDERAL_FY_QUARTER"
+      },
+      "value": 16560,
+      "unit": "cases",
+      "measure_type": "period_end_stock",
+      "page": 1,
+      "table_or_chart": "Table 1 — Pending Unaccompanied Alien Child (UAC) Cases"
+    }
+  ]
+}
