@@ -207,3 +207,25 @@ Also provide the records showing how ORR/Hendall receives notification that a ch
 The OIG report states that the call center handled more than 64,000 inbound/outbound calls, emails, and texts during January–June 2024, while the 1,944 figure refers to unique potential-safety-concern reports. Please provide existing aggregate reports distinguishing total contacts, inquiries, unique reports, and unique children, together with the deduplication rules. Do not equate these counts.
 
 Official source: https://oig.hhs.gov/documents/evaluation/11910/OEI-07-24-00370.pdf
+
+
+## H. ORR unlicensed care-provider monitoring and background-check compliance — A-06-24-07001
+
+HHS OIG report A-06-24-07001 (June 5, 2026) found that, from September 2021 through August 2024, ORR did not conduct 80 of 198 required quarterly abbreviated monitoring visits and did not conduct 43 of 58 required comprehensive monitoring visits timely at 58 unlicensed facilities in Texas and Florida. OIG lists two recommendations as Open Unimplemented, with the next update expected December 4, 2026.
+
+**Supplemental request language to add to Request B:**
+
+Please provide existing records from September 1, 2024 through the date this request is processed documenting ORR's implementation of recommendations 26-A-06-070.01 and 26-A-06-070.02 from HHS OIG report A-06-24-07001, including:
+
+1. Aggregate counts of unlicensed UAC care-provider facilities by state and month; required and completed abbreviated monitoring visits; required and completed comprehensive monitoring visits; overdue visits; and reasons for missed/late visits.
+2. The corrective-action plan, implementation milestones, supervisory escalation, and evidence submitted to HHS OIG for each recommendation.
+3. The mechanism used to verify that required national FBI fingerprint-based checks and state child-abuse/neglect registry checks were completed and adjudicated before employees/contractors were permitted access to children; include aggregate counts of pending, incomplete, delayed, exception, and adverse-result cases.
+4. Aggregate findings from post-August 2024 monitoring visits and any re-inspections, including identified background-check deficiencies and corrective actions.
+5. Records documenting the Florida background-check access obstacle identified after the audit period, including its scope, affected provider/facility counts, interim safeguards, resolution, and any remaining exceptions.
+6. Current monitoring policies, checklists, data fields, dashboards, and quality-assurance procedures for unlicensed providers; include the responsible office and frequency of oversight.
+7. Any independent validation, audit testing, or OIG follow-up determining whether the corrective actions work in practice.
+
+Please provide aggregate or redacted program-level records only. Do not disclose child identities, employee names, fingerprint data, criminal-history records, facility-level security vulnerabilities, or sensitive operational details. If aggregate data are not maintained for a requested field, please state that fact rather than create a new analysis.
+
+Official report: https://www.oig.hhs.gov/reports/all/2026/the-office-of-refugee-resettlement-needs-to-improve-its-monitoring-of-unlicensed-unaccompanied-alien-children-program-care-providers-compliance-with-background-check-requirements/
+Recommendation tracker: https://www.oig.hhs.gov/reports/recommendations/tracker/?hhs-agency=all&search=A-06-24-07001&view-mode=report-grouped
