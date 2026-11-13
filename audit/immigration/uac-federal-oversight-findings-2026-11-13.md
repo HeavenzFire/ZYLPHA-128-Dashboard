@@ -576,3 +576,22 @@ Sources:
 - Recommendation 4: https://www.oversight.gov/reports/audit/ice-cannot-effectively-monitor-location-and-status-all-unaccompanied-alien-children-3
 - OIG-24-46 recommendation 1: https://www.oversight.gov/reports/audit/management-alert-ice-cannot-monitor-all-unaccompanied-migrant-children-released-dhs-0
 - OIG-24-46 recommendation 2: https://www.oversight.gov/reports/audit/management-alert-ice-cannot-monitor-all-unaccompanied-migrant-children-released-dhs-1
+
+
+## 27. Public ACF "Data Dictionary and NIEM Mapping" is not a current, authoritative UC Portal schema
+
+A publicly catalogued ACF resource titled *Data Dictionary and NIEM Mapping* (catalog identifier thi4-sxsx) links to an Excel workbook hosted by ACF. The ACF media page identifies the file as i_datadictionaryandniemmapping_d01_0.xlsx and lists a publication date of November 13, 2020. The workbook's own Notes tab dates its Information Viewpoint to **October 3, 2011** and explicitly says:
+- it is a **work in progress**;
+- the first version **has not been vetted**; and
+- it is a **representative list, not a complete list**.
+
+The workbook contains generic human-services data concepts such as address pedigree, address verification date/source, case status, outcome summary, risk-assessment result, screening results, referral, investigation results, source-system identifier, and system point of contact. Those concepts are relevant to the questions this audit needs answered, but the workbook does not establish that these are current, deployed UC Portal fields or that the 2025/2026 ICE initiative consumes them.
+
+**Audit significance:** do not cite this workbook as the current UC Portal data dictionary or proof of live schema. It is an old, explicitly incomplete conceptual/NIEM mapping artifact. Its existence makes the records request more specific: request the current UC Portal production data dictionary, database/API schema, interface-control documents, version history, field-level lineage, and a mapping between deployed fields and any HHS/ICE exchange formats. Ask the agency to identify which fields are live, deprecated, optional, required, or not implemented.
+
+Sources:
+- Data.gov catalog record (lists dataset last updated September 6, 2025): https://catalog.data.gov/dataset/data-dictionary-and-niem-mapping
+- ACF media page (links workbook; publication date November 13, 2020): https://acf.gov/media/14300
+- Workbook: https://acf.gov/sites/default/files/documents/i_datadictionaryandniemmapping_d01_0.xlsx
+
+**Evidence limitation:** the Data.gov catalog metadata says the resource was last updated September 6, 2025, while the ACF media page's publication date and workbook's own notes show older source material. This appears to be a metadata refresh or catalog modification, not evidence that the workbook itself was revised in 2025. The original workbook is explicitly marked draft/incomplete. Do not treat metadata modified date as workbook revision date.
