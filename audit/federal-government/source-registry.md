@@ -9,6 +9,9 @@ These are official starting points. A portal's existence does not mean its full 
 | GAO-24-107146 | Historical recommendation snapshot | https://www.gao.gov/assets/880/871005.pdf | Scope, report date, status definitions, page references |
 | Oversight.gov | Inspector-general reports and recommendations | https://www.oversight.gov/reports/recommendations | OIG, report/recommendation ID, dates, filters |
 | USAspending.gov | Awards, obligations, outlays, recipients | https://www.usaspending.gov/ | Query, export timestamp, award IDs, schema |
+| USAspending API v2 | Agency-year award summaries, award-category totals, budgetary resources, award searches, transactions | https://api.usaspending.gov/docs/endpoints | Endpoint, filters, agency code, fiscal year, source vintage, pagination, schema, amount basis |
+| USAspending top-tier agency reference | Current agency identifiers and codes | https://api.usaspending.gov/api/v2/references/toptier_agencies/ | Capture agency_id, toptier_code, name, abbreviation, active fiscal year/period; build historical code crosswalk before annual aggregation |
+| USAspending About the Data | Data provenance, reporting coverage, thresholds, known limitations | https://www.usaspending.gov/data/about-the-data-download.pdf | Document update date, page, source system, threshold, reporting lag, historical limitations |
 | FOIA.gov agency directory | Correct FOIA component and submission method | https://www.foia.gov/agency-search.html | Component, submission URL, request ID |
 | FOIA.gov reports | Annual/quarterly processing datasets | https://www.foia.gov/reports.html | Fiscal year, dataset version, schema |
 | Federal Register | Rules and official notices | https://www.federalregister.gov/ | Document/docket ID, publication/effective date |
