@@ -81,3 +81,21 @@ node src/claim-audit.mjs compare measure-a.json measure-b.json
 The comparison gate blocks arithmetic if unit, period, cohort/geography, measurement class, unique-person semantics, or denominator differ. It also blocks direct point arithmetic for audit samples and projections until an uncertainty-propagation implementation exists. Temporal mismatch is a hard blocker, not a warning.
 
 The sample and projection gate is intentionally conservative: v0.1 records confidence metadata but does not yet implement statistical interval propagation. It therefore refuses subtraction/ratios for those classes rather than producing false precision.
+
+
+## HHS period summarization
+
+The HHS normalizer preserves daily rows as observations. The summarizer then applies metric-specific rules:
+
+- Daily flow metrics (CBP placements, transfers out, ORR discharges) are summed only if every calendar date in the requested window is present for that metric. Any gap blocks the total.
+- Daily stock metrics (children in CBP custody, children in HHS care) are represented only by the value on the requested end date. Stock values are never summed.
+- Flow totals are labeled as event counts and are not asserted to be unique children across the full period.
+- The summary emits a separate typed measure for each metric and carries raw-source hash and retrieval timestamp forward.
+
+Example:
+
+~~~sh
+node src/public-ingest-cli.mjs hhs-summarize ./derived/hhs-uac-normalized.json 2026-10-01 2026-10-28 ./derived/hhs-uac-2026-10-window.json
+~~~
+
+The public series currently has missing calendar dates in its visible daily history. The strict flow gate will therefore block a naive full-month total rather than silently treating missing days as zero.
