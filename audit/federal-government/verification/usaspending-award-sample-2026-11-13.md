@@ -52,8 +52,38 @@ These calculations do not establish why the reported obligations changed. They d
 8. **No delivery/quality inference.** Obligations show recorded federal award funding actions; they do not prove that goods/services were delivered, accepted, effective, or free of waste.
 
 Documentation:
-- [USAspending API v2 endpoint reference](https://api.usaspending.gov/docs/endpoints) (the API documentation states endpoints do not require authorization; the site announces v1 endpoints are deprecated).
-- [USAspending About the Data (updated October 6, 2026)](https://www.usaspending.gov/data/about-the-data-download.pdf).
+- [USAspending API v2 endpoint reference](https://api.usaspending.gov/docs/endpoints) (the API documentation states endpoints do not require authorization and documents both the agency `obligations_by_award_category` and `budgetary_resources` GET endpoints).
+- [USAspending About the Data](https://www.usaspending.gov/data/about-the-data-download.pdf) (document states “Last updated November 19, 2025”).
+
+## 5. Award-category cross-check and agency-level reconciliation lead
+
+A second endpoint, `/api/v2/agency/{toptier_code}/obligations_by_award_category/?fiscal_year={year}`, returned the same six award-obligation totals as the agency overview endpoint and disaggregated them into contracts, IDVs, grants, loans, direct payments, and other. All six category requests returned HTTP 200. The category values and request URLs are in `usaspending-category-budgetary-sample-2026-11-13.csv`.
+
+For FY2025, the separate `/api/v2/agency/{toptier_code}/budgetary_resources/?fiscal_year=2025` endpoint returned the following agency-level account/budgetary summary:
+
+| Agency | Award obligations | Agency total obligations | Agency total outlays | Agency budgetary resources |
+|---|---:|---:|---:|---:|
+| DoD | $536.89B | $1,451.32B | $1,342.21B | $2,213.23B |
+| HHS | $2,024.16B | $2,794.35B | $2,722.17B | $3,129.73B |
+| VA | $288.17B | $412.39B | $404.94B | $458.78B |
+
+Analyst subtraction gives an **unreconciled difference** between agency total obligations and award obligations of $914.43B (DoD), $770.19B (HHS), and $124.23B (VA). This difference is an audit lead, not a finding of unreported or missing spending. USAspending's data documentation distinguishes:
+- File A/B account data, which include award and non-award spending;
+- File C, which provides the financial aspect of awards;
+- Files D1/D2, which provide procurement and financial-assistance award attributes.
+
+The same documentation explains that records can be unlinked between agency financial systems and governmentwide award systems. Until the agency/account data are reconciled to File C and the relevant award datasets, the difference cannot be assigned entirely to non-award spending, missing awards, or any error category.
+
+## 6. Additional source limitations established from the USAspending disclosure
+
+- Prime award data are available from FY2001; Advanced Search begins at FY2008.
+- The disclosure states that reporting requirements changed over time and data quality is generally higher in more recent fiscal years.
+- Prime award transactions with obligation value of $25,000 and above must be reported under 31 U.S.C. § 6101 note.
+- Agency financial-system data (award and non-award spending) are available beginning FY2017 Q2. Before FY2022, outlay data were optional and may be incomplete.
+- DoD and U.S. Army Corps of Engineers procurement data have a 90-day publication delay in FPDS; this affects USAspending Files C and D1, not Files A, B, or D2.
+- Subaward data have their own $30,000 reporting threshold and documented duplication/inconsistency risks. Do not sum prime awards and subawards without deduplication and an explicit analytical purpose.
+
+## 7. Next audit steps
 
 ## 5. Next audit steps
 
@@ -65,12 +95,14 @@ Documentation:
 6. Normalize to constant dollars only after selecting and documenting a public deflator series and base year.
 7. Keep the full source query, filters, response payload, timestamps, schema version, and SHA-256 of any preserved raw response.
 
-## 6. Evidence classification
+## 8. Evidence classification
 
 - **Source-verified / extracted:** six agency-year award-obligation summaries, with complete API responses and direct source URLs.
 - **Analyst calculation:** three nominal endpoint changes and percentages in Section 3.
 - **Not established:** government-wide totals, causal explanations, inflation-adjusted trends, delivery outcomes, improper payments, questioned costs, fraud, or misconduct.
 
-## 7. CSV and ledger validation
+## 9. CSV and ledger validation
 
 The six-record sample CSV was parsed after retrieval: 6 data rows, 15 columns, and consistent row width. The evidence register was also normalized to a valid 10-column CSV; seven inherited rows (HF-FED-004, HF-FED-008, and HF-FED-011 through HF-FED-015) had unquoted commas in their final field and were repaired by quoting every field. No source values were changed by that repair.
+
+The expanded category/budgetary CSV contains 45 data rows (42 award-category/total rows and 3 FY2025 agency budgetary summaries), each with a source URL and retrieval date.
