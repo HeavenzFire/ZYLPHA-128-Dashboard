@@ -110,3 +110,16 @@ test("creates an acquisition receipt from exact raw bytes", () => {
   assert.equal(receipt.artifact_sha256.length, 64);
   assert.equal(receipt.publication_date, null);
 });
+
+test("acquisition receipts retain publisher and both source URLs", () => {
+  const bytes = Buffer.from("raw bytes");
+  const receipt = createAcquisitionReceipt(
+    { source_id: "HHS", publisher: "HHS/ORR", landing_url: "https://example.gov/dataset", download_url: "https://example.gov/data.json" },
+    bytes,
+    "2026-11-13T21:00:00Z",
+    null
+  );
+  assert.equal(receipt.agency, "HHS/ORR");
+  assert.equal(receipt.source_url, "https://example.gov/dataset");
+  assert.equal(receipt.artifact_url, "https://example.gov/data.json");
+});
