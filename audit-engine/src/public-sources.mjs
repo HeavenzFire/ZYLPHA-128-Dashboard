@@ -1,7 +1,7 @@
 export const PUBLIC_SOURCES = Object.freeze({
   hhs_uac_daily: {
     source_id: "HHS-ORR-UAC-DAILY",
-    publisher: "U.S. Department of Health and Human Services — Office of Refugee Resettlement",
+    publisher: "HHS/ACF/ORR",
     title: "HHS Unaccompanied Alien Children Program",
     dataset_id: "ehpz-xc9n",
     landing_url: "https://healthdata.gov/National/HHS-Unaccompanied-Alien-Children-Program/ehpz-xc9n",
