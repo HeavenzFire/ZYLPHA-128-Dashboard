@@ -17,11 +17,16 @@
 ## Work products
 - [FOIA transparency baseline (Phase C)](verification/foia-transparency-baseline-2026-11-13.md)
 - [FOIA FY2010–FY2025 archive inventory](verification/foia-archive-inventory.csv)
+- [USAspending award-obligation validation sample (Phase D)](verification/usaspending-award-sample-2026-11-13.md)
+- [USAspending FY2010/FY2025 agency sample CSV](verification/usaspending-agency-sample-2010-2025.csv)
 - [Evidence register](evidence-register.csv)
 - [Workstream plan](workstreams.md)
 - [Records-request drafts](records-requests.md)
 - [Source registry](source-registry.md)
 - [Methodology and limitations](methodology.md)
+
+## Phase D spending-data validation
+- Six official USAspending API agency-year records were extracted for DoD, HHS, and VA in FY2010 and FY2025. The nominal endpoint calculations and their limitations are documented in the Phase D memo; this is not a government-wide total or representative sample.
 
 ## Phase C source baseline
 - FOIA.gov's official download page lists all-agency CSV ZIP archives for FY2010–FY2025 (16 fiscal years). Archive contents have not yet been downloaded or parsed; FY2026 is not listed on the captured page. See the Phase C memo and inventory.
