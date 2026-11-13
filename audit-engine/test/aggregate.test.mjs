@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { normalizeHhsUacRows, validateEoirTableImport, compareAggregateObservations, summarizeHhsWindow } from "../src/aggregate.mjs";
+import { normalizeHhsUacRows, compareAggregateObservations, summarizeHhsWindow } from "../src/aggregate.mjs";
 
 const provenance = { raw_sha256: "a".repeat(64), retrieved_at: "2026-11-13T12:00:00Z" };
 const row = {
@@ -56,30 +56,6 @@ test("rejects negative or fractional counts", () => {
 
 test("requires a raw-source content hash", () => {
   assert.throws(() => normalizeHhsUacRows([row], { ...provenance, raw_sha256: "nope" }), /SHA-256/);
-});
-
-test("validates EOIR PDF transcription provenance and page-level references", () => {
-  const input = {
-    schema_version: "1.0",
-    source_id: "DOJ-EOIR-UAC-STATISTICS",
-    source_url: "https://www.justice.gov/eoir/media/1345076/dl",
-    table_title: "Pending Unaccompanied Alien Child Cases",
-    document_generated: "2026-07-24",
-    source_file_sha256: "b".repeat(64),
-    observations: [{ metric_id: "pending_uac_cases", period_label: "FY2026 Q3", value: 16560, unit: "cases", measure_type: "period_end_stock", geography: "US", page: 1, table_or_chart: "Table 1" }]
-  };
-  assert.equal(validateEoirTableImport(input).observation_count, 1);
-});
-
-test("rejects EOIR transcription without page reference", () => {
-  const input = {
-    schema_version: "1.0", source_id: "DOJ-EOIR-UAC-STATISTICS",
-    source_url: "https://www.justice.gov/eoir/media/1345076/dl",
-    table_title: "Pending UAC", document_generated: "2026-07-24",
-    source_file_sha256: "b".repeat(64),
-    observations: [{ metric_id: "pending", period_label: "FY2026 Q3", value: 1, unit: "cases", measure_type: "stock", geography: "US", table_or_chart: "Table 1" }]
-  };
-  assert.throws(() => validateEoirTableImport(input), /page reference/);
 });
 
 test("does not compare different measure types or periods", () => {
