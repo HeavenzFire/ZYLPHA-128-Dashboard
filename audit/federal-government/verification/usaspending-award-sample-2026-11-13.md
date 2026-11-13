@@ -9,9 +9,9 @@
 
 This phase tests whether the official USAspending API can return comparable agency-year award-obligation summaries for an early and a recent fiscal year. We queried the documented API v2 agency endpoint for three top-tier agencies (DoD, HHS, VA), for FY2010 and FY2025:
 
-`GET /api/v2/agency/{toptier_code}/?fiscal_year={year}`
+`GET /api/v2/agency/{toptier_code}/awards/?fiscal_year={year}`
 
-Each request returned one agency record, `complete=true`, HTTP 200, no warning, and no pagination cursor. The provider schema was `1.0.0`; source vintage was 2026-11-13. Exact query URLs and retrieval timestamps are preserved in `usaspending-agency-sample-2010-2025.csv`.
+An independent review identified that the initial links pointed to the agency overview endpoint rather than the documented awards-summary endpoint. All six requests were re-run against `/awards/`; the returned obligations and transaction counts matched the original six values exactly. Each corrected request returned one record and HTTP 200. The raw response fields are `fiscal_year`, `latest_action_date`, `toptier_code`, `transaction_count`, `obligations`, and `messages`. The FY2010 responses include an explicit message that the account-data component was first collected in FY2017 Q2 and has no data for prior fiscal years, while still returning non-zero award obligations and transaction counts. The message is preserved in the CSV. The corrected URLs, retrieval date, and scrape IDs are preserved in `usaspending-agency-sample-2010-2025.csv`. Provider-only schema/vintage/completeness metadata are not represented as USAspending API fields.
 
 ## 2. Retrieved source values
 
@@ -23,10 +23,10 @@ The source describes `awards_summary.obligations` as transaction-level award obl
 | Department of Health and Human Services | $630,821,483,531.40 | 225,446 | $2,024,158,622,976.80 | 330,557 |
 | Department of Veterans Affairs | $18,732,082,329.27 | 264,463 | $288,167,067,230.52 | 559,886 |
 
-Primary API records:
-- [DoD FY2010](https://api.usaspending.gov/api/v2/agency/097/?fiscal_year=2010) · [DoD FY2025](https://api.usaspending.gov/api/v2/agency/097/?fiscal_year=2025)
-- [HHS FY2010](https://api.usaspending.gov/api/v2/agency/075/?fiscal_year=2010) · [HHS FY2025](https://api.usaspending.gov/api/v2/agency/075/?fiscal_year=2025)
-- [VA FY2010](https://api.usaspending.gov/api/v2/agency/036/?fiscal_year=2010) · [VA FY2025](https://api.usaspending.gov/api/v2/agency/036/?fiscal_year=2025)
+Primary API records (documented awards-summary endpoint):
+- [DoD FY2010](https://api.usaspending.gov/api/v2/agency/097/awards/?fiscal_year=2010) · [DoD FY2025](https://api.usaspending.gov/api/v2/agency/097/awards/?fiscal_year=2025)
+- [HHS FY2010](https://api.usaspending.gov/api/v2/agency/075/awards/?fiscal_year=2010) · [HHS FY2025](https://api.usaspending.gov/api/v2/agency/075/awards/?fiscal_year=2025)
+- [VA FY2010](https://api.usaspending.gov/api/v2/agency/036/awards/?fiscal_year=2010) · [VA FY2025](https://api.usaspending.gov/api/v2/agency/036/awards/?fiscal_year=2025)
 
 ## 3. Endpoint-to-endpoint arithmetic
 
@@ -95,7 +95,7 @@ The same documentation explains that records can be unlinked between agency fina
 
 ## 8. Evidence classification
 
-- **Source-verified / extracted:** six agency-year award-obligation summaries; 36 award-category values and six category totals; and three FY2025 agency-level budgetary summaries. Each API response returned HTTP 200 and its URL/retrieval date is in the machine-readable CSVs.
+- **Source-verified / extracted:** six documented `/awards/` agency-year summaries; 36 award-category values and six category totals; and three FY2025 agency-level budgetary summaries. Each API response returned HTTP 200 and its URL/retrieval date is in the machine-readable CSVs. FY2010 endpoint messages about the account-data component are retained verbatim.
 - **Analyst calculation:** three nominal endpoint changes and percentages in Section 3; three unreconciled differences between agency total obligations and award obligations in Section 5.
 - **Not established:** government-wide totals, a classification of the reconciliation differences, causal explanations, inflation-adjusted trends, delivery outcomes, improper payments, questioned costs, fraud, or misconduct.
 
