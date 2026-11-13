@@ -52,7 +52,7 @@ export function validateDataset(dataset) {
     assert(typeof source.source_id === "string" && source.source_id.length > 0, "Every source needs source_id.");
     assert(!sourceIds.has(source.source_id), "Duplicate source_id: " + source.source_id);
     sourceIds.add(source.source_id);
-    assert(typeof source.uri === "string" && /^https?:\/\/ /.test(source.uri), "Source " + source.source_id + " needs an HTTP(S) URI.");
+    assert(typeof source.uri === "string" && /^https?:\/\//.test(source.uri), "Source " + source.source_id + " needs an HTTP(S) URI.");
     assert(SHA_RE.test(source.sha256 || ""), "Source " + source.source_id + " needs a SHA-256 content hash.");
     assert(validDate(source.retrieved_at), "Source " + source.source_id + " needs retrieved_at.");
   }
