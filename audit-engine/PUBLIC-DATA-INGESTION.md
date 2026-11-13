@@ -24,12 +24,17 @@ The dataset has six columns: date plus five measures—CBP custody placements, C
 
 ### Ingest
 
-1. Download the JSON from the official catalog endpoint.
-2. Preserve the exact downloaded bytes as a read-only source artifact.
-3. Run:
+1. Use the built-in fetch path to download and timestamp the source in one operation:
 
 ~~~sh
-node src/public-ingest-cli.mjs hhs-json ./downloads/hhs-uac.json ./derived/hhs-uac-normalized.json
+node src/public-ingest-cli.mjs hhs-fetch ./downloads/hhs-uac-raw.json ./derived/hhs-uac-normalized.json
+~~~
+
+2. The CLI captures the retrieval timestamp immediately after the HTTP response, preserves the exact raw bytes, and writes a sibling acquisition receipt with the raw-byte SHA-256.
+3. For an artifact downloaded separately, pass its actual retrieval timestamp explicitly; the offline importer refuses to invent one:
+
+~~~sh
+node src/public-ingest-cli.mjs hhs-json ./downloads/hhs-uac-raw.json ./derived/hhs-uac-normalized.json 2026-11-13T21:32:57.508Z
 ~~~
 
 The output path must not already exist. The tool refuses overwrite to preserve provenance.
@@ -107,7 +112,7 @@ For each HHS raw download, the ingestion CLI writes two new artifacts:
 - normalized observation JSON;
 - a sibling `.receipt.json` containing source ID, agency, source URL, retrieval timestamp, byte length, publication date (null when not established), and SHA-256 of the exact raw bytes.
 
-Both output paths use exclusive-create mode and refuse overwrite. Retain the original raw download separately; the normalized artifact and receipt do not replace it.
+Both output paths use exclusive-create mode and refuse overwrite. The fetch command writes the raw artifact to the first path you supply; retain it alongside the normalized artifact and receipt.
 
 
 ## Observed source-quality conditions in the 2026-11-13 acquisition
