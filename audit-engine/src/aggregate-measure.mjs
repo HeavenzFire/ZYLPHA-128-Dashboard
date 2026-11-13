@@ -64,7 +64,7 @@ export function comparableMeasure(a, b) {
       a.population_scope.geography !== b.population_scope.geography) blockers.push("POPULATION_SCOPE_MISMATCH");
   if (a.measurement_class !== b.measurement_class) blockers.push("MEASUREMENT_CLASS_MISMATCH");
   if (a.is_unique_person_count !== b.is_unique_person_count) blockers.push("PERSON_DEDUPLICATION_MISMATCH");
-  if (a.metric_name !== b.metric_name) warnings.push("METRIC_LABELS_DIFFER");
+  if (a.metric_name !== b.metric_name) blockers.push("METRIC_DEFINITION_MISMATCH");
   if (a.denominator_definition !== b.denominator_definition) blockers.push("DENOMINATOR_DEFINITION_MISMATCH");
   if (a.measurement_class === "audit_sample" || a.measurement_class === "statistical_projection" || a.measurement_class === "research_estimate") {
     blockers.push("UNCERTAINTY_PROPAGATION_REQUIRED");
