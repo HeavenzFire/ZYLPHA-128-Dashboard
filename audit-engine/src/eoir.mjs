@@ -37,11 +37,23 @@ const DEFINITIONS = Object.freeze({
   }
 });
 
+function expectedPeriod(periodLabel) {
+  const annual = /^FY(20\\d{2})$/.exec(periodLabel);
+  if (annual) {
+    const year = Number(annual[1]);
+    return { start_date: (year - 1) + "-10-01", end_date: year + "-09-30", calendar_type: "US_FEDERAL_FY" };
+  }
+  if (periodLabel === "FY2026 (Third Quarter)") return { start_date: "2025-10-01", end_date: "2026-06-30", calendar_type: "US_FEDERAL_FY_QUARTER" };
+  return null;
+}
+
 function validatePeriod(row, index) {
   assert(row.period && validDate(row.period.start_date) && validDate(row.period.end_date), "Invalid period dates at observation " + index);
   assert(row.period.start_date <= row.period.end_date, "Reversed period at observation " + index);
   assert(["US_FEDERAL_FY", "US_FEDERAL_FY_QUARTER"].includes(row.period.calendar_type), "Unsupported EOIR calendar type at observation " + index);
   assert(typeof row.period_label === "string" && row.period_label.trim(), "period_label required at observation " + index);
+  const expected = expectedPeriod(row.period_label);
+  assert(expected && JSON.stringify(row.period) === JSON.stringify(expected), "Period label/date contract mismatch at observation " + index);
 }
 
 export function normalizeEoirTranscription(input, pdfBytes) {
@@ -66,6 +78,8 @@ export function normalizeEoirTranscription(input, pdfBytes) {
     assert(Number.isSafeInteger(row.value) && row.value >= 0, "Invalid non-negative integer at observation " + index);
     assert(row.unit === definition.unit, "Unit mismatch for " + row.metric_id);
     assert(row.measure_type === definition.measure_type, "Measure type mismatch for " + row.metric_id);
+    if (input.source_key === "eoir_uac_pending") assert(row.measure_type === "period_end_stock", "Pending UAC table must be a period-end stock.");
+    if (input.source_key === "eoir_uac_outcomes" && row.metric_id !== "pending_total") assert(row.period_label === "FY2026 (Third Quarter)", "Outcome table currently supports FY2026 Third Quarter only.");
     assert(Number.isInteger(row.page) && row.page >= 1, "PDF page reference required at observation " + index);
     assert(typeof row.table_or_chart === "string" && row.table_or_chart.trim(), "PDF table/chart reference required at observation " + index);
     assert(row.page === 1, "Page reference exceeds the registered one-page EOIR PDF at observation " + index);
