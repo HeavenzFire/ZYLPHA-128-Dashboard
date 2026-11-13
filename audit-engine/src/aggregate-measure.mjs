@@ -88,8 +88,9 @@ export function createAcquisitionReceipt(source, rawBytes, retrievedAt, publicat
   return {
     receipt_version: "1.0",
     source_id: source.source_id,
-    agency: source.agency,
-    source_url: source.url,
+    agency: source.agency || source.publisher,
+    source_url: source.url || source.landing_url,
+    artifact_url: source.artifact_url || source.download_url,
     artifact_sha256: createHash("sha256").update(rawBytes).digest("hex"),
     artifact_bytes: rawBytes.length,
     retrieved_at: retrievedAt,
