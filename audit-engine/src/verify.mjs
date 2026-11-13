@@ -158,7 +158,6 @@ export function buildEvidenceManifest(dataset) {
     dataset_sha256: sha256(dataset),
     source_hashes: dataset.sources.map(s => ({ source_id: s.source_id, sha256: s.sha256 })).sort((a,b) => a.source_id.localeCompare(b.source_id)),
     event_count: dataset.events.length,
-    generated_at: new Date().toISOString(),
     integrity_note: "SHA-256 detects content changes; it is not a digital signature, proof of source authenticity, or proof that source data are true."
   };
 }
