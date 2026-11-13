@@ -9,6 +9,7 @@ function measure(overrides = {}) {
     agency: "HHS/ORR",
     metric_name: "Unaccompanied Children Discharged to Sponsors",
     unit_of_analysis: "discharge_event",
+    unit: "events",
     is_unique_person_count: false,
     time_window: { start_date: "2022-10-01", end_date: "2023-09-30", calendar_type: "US_FEDERAL_FY" },
     value: 100,
@@ -78,4 +79,15 @@ test("permits arithmetic only when metadata contract matches", () => {
   assert.equal(result.comparable, true);
   assert.equal(result.arithmetic.difference, 20);
   assert.equal(result.arithmetic.ratio, 1.25);
+});
+
+test("blocks different displayed units even when unit of analysis label matches", () => {
+  const result = comparableMeasure(measure(), measure({ unit: "children" }));
+  assert.ok(result.blockers.includes("MEASURE_UNIT_MISMATCH"));
+});
+
+test("rejects malformed publication dates", () => {
+  const m = measure();
+  m.provenance.publication_date = "2024-99-99";
+  assert.throws(() => validateAggregateMeasure(m), /publication_date/);
 });
