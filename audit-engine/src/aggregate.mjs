@@ -2,7 +2,7 @@ import { createHash } from "node:crypto";
 import { getPublicSource } from "./public-sources.mjs";
 
 const SHA_RE = /^[a-f0-9]{64}$/i;
-const DATE_RE = /^\\d{4}-\\d{2}-\\d{2}$/;
+const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 
 export function sha256Text(value) {
   return createHash("sha256").update(value).digest("hex");
