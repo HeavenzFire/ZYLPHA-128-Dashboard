@@ -30,8 +30,23 @@ test("preserves sparse historical schemas and records missing metric coverage", 
   assert.equal(result.observations.some(x => x.metric_id === "children_placed_in_cbp_custody_"), false);
 });
 
-test("rejects duplicate dates in daily series", () => {
-  assert.throws(() => normalizeHhsUacRows([row, row], provenance), /Duplicate HHS date/);
+test("preserves duplicate source dates and flags them for downstream reconciliation", () => {
+  const result = normalizeHhsUacRows([row, row], provenance);
+  assert.equal(result.row_count, 2);
+  assert.equal(result.unique_date_count, 1);
+  assert.deepEqual(result.duplicate_dates, [{ date: "2026-10-28", row_count: 2 }]);
+  const summary = summarizeHhsWindow(result, "2026-10-28", "2026-10-28");
+  const flow = summary.measures.find(item => item.metric_id === "children_placed_in_cbp_custody_");
+  const stock = summary.measures.find(item => item.metric_id === "children_in_hhs_care");
+  assert.equal(flow.status, "BLOCKED_DUPLICATE_DAILY_OBSERVATIONS");
+  assert.equal(stock.status, "BLOCKED_AMBIGUOUS_ENDPOINT_SNAPSHOT");
+});
+
+test("treats null metric cells as missing, never as zero", () => {
+  const sparse = { ...row, children_in_hhs_care: null };
+  const result = normalizeHhsUacRows([sparse], provenance);
+  assert.equal(result.metric_field_coverage.children_in_hhs_care, 0);
+  assert.equal(result.observations.some(item => item.metric_id === "children_in_hhs_care"), false);
 });
 
 test("rejects negative or fractional counts", () => {
