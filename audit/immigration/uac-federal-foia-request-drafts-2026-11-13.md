@@ -364,3 +364,23 @@ Please provide:
 Please provide existing records in aggregate or redacted form only. Do not disclose child-level identifiers, sponsor identities or addresses, biometric records, credentials, or active investigative information.
 
 Official source: https://www.oig.dhs.gov/sites/default/files/assets/2025-03/OIG-25-21-Mar25.pdf
+
+
+### C-1. EOIR FY2026 UAC case pipeline and aggregate crosswalk to ICE's 145,000 claim
+
+EOIR's public FY2026 third-quarter UAC statistics report 16,560 pending UAC cases and 8,610 initial case decisions/completions, including 4,838 removal decisions (4,023 in absentia), 3,065 dismissals/terminations, 654 voluntary departures, 49 relief grants, 4 withdrawals, and 0 other. EOIR's median UAC pending time is 2,398 days and median completion time is 1,084 days. The published UAC decision series covers I-862 initial case completions only and excludes specified case categories.
+
+Please provide existing aggregate records from February 1, 2025 through the date this request is processed that:
+1. Reconcile EOIR UAC cases with the ICE/DHS 145,000 located-children initiative, using privacy-protected aggregate matching only.
+2. Distinguish children/cases with a pending case, scheduled hearing, appearance, failure to appear, in-absentia order, other removal order, dismissal/termination, voluntary departure, relief granted, appeal, reopened case, or other documented disposition.
+3. Identify the population definition used for the EOIR UAC statistical series, the case-level classification rules, and how records are handled when a respondent reaches age 18 or a case is transferred/reopened.
+4. Provide the source data extract date, data dictionary, known exclusions, and any quality-control or deduplication procedures for the FY2026 UAC statistics.
+5. Provide aggregate counts of records matched, unmatched, ambiguous, duplicated, or corrected when comparing EOIR case data to ICE EARM/initiative data and ORR records.
+
+Do not provide child names, A-numbers, dates of birth, sponsor identities/addresses, or individual case histories. Please provide aggregate counts and methodology only. If EOIR does not maintain a crosswalk or matching field, state that fact rather than creating a new analysis.
+
+Official sources:
+- https://www.justice.gov/eoir/workload-and-adjudication-statistics
+- https://www.justice.gov/eoir/media/1344946/dl?inline
+- https://www.justice.gov/eoir/media/1344956/dl?inline
+- https://www.justice.gov/eoir/media/1344951/dl?inline
