@@ -17,7 +17,7 @@ try {
   } else if (command === "hhs-summarize" && inputPath && arg3 && arg4 && arg5) {
     const normalized = JSON.parse(await readFile(inputPath, "utf8"));
     const result = summarizeHhsWindow(normalized, arg3, arg4);
-    await writeFile(arg5, JSON.stringify(result, null, 2) + "\\n", { flag: "wx" });
+    await writeFile(arg5, JSON.stringify(result, null, 2) + "\n", { flag: "wx" });
     console.log(JSON.stringify({ status: result.status, output: arg5, measure_results: result.measures.map(x => ({ metric_id: x.metric_id, status: x.status, value: x.measure?.value })) }, null, 2));
   } else if (command === "eoir-validate" && inputPath) {
     const input = JSON.parse(await readFile(inputPath, "utf8"));
