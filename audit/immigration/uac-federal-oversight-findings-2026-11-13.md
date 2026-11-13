@@ -217,3 +217,85 @@ Official HHS page: https://www.hhs.gov/programs/social-services/unaccompanied-ch
 If a specific child is currently missing outside ORR custody or is believed to be in immediate danger, report to local law enforcement immediately and contact NCMEC at **1-800-843-5678**. NCMEC says there is no waiting period for law enforcement to take a missing-child report; law-enforcement entry into NCIC does not automatically create an NCMEC report.
 
 NCMEC guidance: https://ncmec.org/theissues/cmfc and https://ncmec.org/gethelpnow/isyourchildmissing
+
+
+## 13. What the ICE Joint Initiative actually directed — operational reconstruction
+
+The four-page ICE field-implementation document allows a more exact reconstruction of what the agency planned to do. It is not merely a general child-welfare tracing plan.
+
+### Selection and prioritization
+
+ICE said it assembled UAC information from multiple sources into a Power BI application and sorted the population into three priority groups:
+
+- **"Flight Risk":** children with an in-absentia final removal order; children ORR could not contact after reunification/release; children who ran away from ORR facilities; and children released to sponsors not related by blood, including "super sponsors" (defined in the memo as an individual, address, or organization that sponsored more than three children).
+- **"Public Safety":** categories including adults who fraudulently claimed to be UACs at entry, children ICE characterized as having gang/terrorist ties or activities, and children with arrests or serious criminal backgrounds.
+- **"Border Security":** children with executable orders of removal, including voluntary departure, withdrawal, or removal orders.
+
+These are the initiative's own administrative prioritization labels, not proof that a child in a category committed an offense, was trafficked, or was unsafe. Sponsor relationship alone is not evidence of abuse.
+
+### Field execution and systems
+
+The memo directed that:
+- HSI support ERO; ERO officers experienced with UAC cases would lead locating and immigration-document actions.
+- HSI and ERO field offices coordinate locally; HSI could prepare target packets and criminal checks, while ERO controlled immigration actions.
+- HSI would verify whether a child was registered in school.
+- HSI could coordinate with U.S. Attorney's Offices for warrants and with the U.S. Marshals Service on existing warrants.
+- HSI/ERO should document any contact with a child and/or sponsor in a UAC Field Contact Documentation Form by 5 p.m. daily.
+- HSI used its ICM system and a UAC Joint Initiative program code; ERO used EAGLE for enforcement actions and EARM for case-status updates.
+- DHS's Center for Countering Human Trafficking would provide investigative and victim-protection expertise, process Continued Presence requests for identified trafficking victims, and maintain a leadership dashboard from daily updates.
+- In exigent circumstances, that Center could assist with facial-recognition queries if the field office lacked access.
+
+The memo expressly instructed field teams to pursue possible criminal charges and applicable immigration enforcement, including execution of final removal orders where possible. The document lists potential sponsor offenses for investigation, including false statements, smuggling/harboring, wire fraud, forced labor, sex trafficking, and conspiracy. Listing a possible charge is not evidence that a person was charged or convicted.
+
+Primary document (public copy): https://wp-cpr.s3.amazonaws.com/uploads/2025/05/ICE-HSI-Cooperation-2025-Unaccompanied-Children.pdf
+
+### What this proves and does not prove
+
+**It proves the initiative's written design** included locating, school-registration checks, sponsor/household contact, criminal intelligence/investigations, immigration enforcement, field-contact documentation, and leadership reporting.
+
+**It does not prove** how consistently field offices executed the plan, how many unique children were actually located, whether a child was directly contacted, whether a welfare assessment was completed, whether a trafficking concern was substantiated, or what happened after a contact. The public memo has no outcome table.
+
+The National Immigration Project reports that it obtained this memo and a February 10, 2025 field-office coordination email through a FOIA request. It also reports practitioners' accounts of children experiencing ICE "wellness checks" as fear-inducing. That is an attributed advocacy/legal-practitioner account, not an independently established nationwide incidence estimate. The email reportedly required each field office to designate 1–2 officers. This prior production suggests the next request should seek later implementation versions and records created under the same program identifier.
+
+Source: https://nipnlg.org/work/resources/end-sijs-backlog-coalition-foia-request-produces-ice-memos-unaccompanied-alien
+
+## 14. Correct the "291,000 lost" claim — two different OIG snapshots
+
+The August 19, 2024 DHS OIG management alert OIG-24-46 reported that as of May 2024 ICE had not served Notices to Appear on more than **291,000** UACs, meaning those children did not yet have an immigration court date. It separately reported more than **32,000** missed court appearances from FY2019–FY2023. It did not conclude that 291,000 children were physically missing.
+
+The March 25, 2025 final audit OIG-25-21 used a later snapshot: more than **233,000** NTAs had not been served as of January 2025, and more than **43,000** children with served NTAs had failed to appear as of October 2024. The report still did not characterize all these children as physically missing.
+
+Therefore:
+- 291,000 = unserved NTA snapshot as of May 2024 (interim management alert).
+- 233,000 = unserved NTA snapshot as of January 2025 (final audit).
+- 32,000+ = missed hearings reported for FY2019–FY2023 (interim alert).
+- 43,000+ = missed hearings reported as of October 2024 in the final audit.
+- 448,000+ = transfers from ICE to HHS in FY2019–FY2023.
+
+These are time-specific administrative counts, not additive missing-child totals. The 145,000 located claim must be crosswalked to a defined cohort and cannot be subtracted from any of these figures.
+
+Sources:
+- OIG-24-46: https://www.oig.dhs.gov/sites/default/files/assets/2024-08/OIG-24-46-Aug24.pdf
+- OIG-25-21: https://www.oig.dhs.gov/sites/default/files/assets/2025-03/OIG-25-21-Mar25.pdf
+
+## 15. Public HHS daily dataset — useful but does not solve post-release tracing
+
+As of this audit pass, HealthData.gov exposes the HHS/ORR "HHS Unaccompanied Alien Children Program" dataset, ID **ehpz-xc9n**, updated **October 28, 2026**. It contains 1,379 daily aggregate rows and six fields: date; children apprehended/placed in CBP custody; children in CBP custody; children transferred out of CBP custody; children in HHS care; and children discharged from HHS care.
+
+The visible October 27, 2026 row shows 1,678 children in HHS care and 9 discharged from HHS care that day. This is a snapshot of current intake/custody/discharge flows, not a count of children missing after sponsor release. It contains no public child-level identity or post-release location/outcome field.
+
+Dataset page: https://healthdata.gov/National/HHS-Unaccompanied-Alien-Children-Program/ehpz-xc9n
+API / CSV links are listed in the Data.gov metadata: https://catalog.data.gov/dataset/hhs-unaccompanied-alien-children-program
+ORR data contact listed in the catalog: UC.Data@acf.hhs.gov
+
+The public dataset should be archived and analyzed as a separate custody-flow series. Do not treat cumulative discharges as children currently missing; do not equate the daily stock with the FY2019–FY2023 audit cohort.
+
+## 16. Revised records priorities
+
+1. **ICE initiative execution:** all releasable versions of 2025-ICFO-22246; field-office coordination email; data dictionary for Power BI; blank field-contact form and instructions; aggregate contact counts by contact type; definition of "located"; records showing direct child contact and safety assessment versus sponsor-only/address-only contact; monthly unique-child outcomes; and records-retention/closeout policy.
+2. **Program safeguards:** written criteria and supervisory review for the "Flight Risk," "Public Safety," and "Border Security" groups; safeguards for non-relative sponsors; procedures to avoid treating immigration status, sponsor relationship, or an unsubstantiated flag as evidence of exploitation.
+3. **Outcome audit:** aggregate number of unique children directly contacted; children not contacted; cases referred to ORR/child protection/law enforcement; confirmed victimization; no-find/unresolved outcomes; children placed back in ORR care; and final dispositions. Separate child safety outcomes from immigration enforcement outcomes.
+4. **HHS and DOJ reconciliation:** crosswalk ORR post-release call-center data, sponsor-change reports, ICE field records, and EOIR proceedings without producing a public child-level roster.
+5. **Independent validation:** DHS OIG's verification of each closed OIG-25-21 recommendation and any follow-up audit testing.
+
+No public dataset or document reviewed here identifies the current location of individual children in the 448,000+ cohort. That requires authorized case-level reconciliation by agencies or guardians and cannot be inferred from public aggregate statistics.
