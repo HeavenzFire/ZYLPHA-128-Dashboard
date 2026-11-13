@@ -21,6 +21,11 @@
 - [Source registry](source-registry.md)
 - [Methodology and limitations](methodology.md)
 
+## Phase E — Verified VA Community Care payment-control finding
+- [VA OIG 23-00748-28 case study: $648.7m contract modification error and $910.7m dental reimbursement differential](verification/va-community-care-payment-finding-2026-11-13.md)
+- [Machine-readable VA Community Care monetary findings and source-status reconciliation](verification/va-community-care-payment-findings-2026-11-13.csv)
+- VA OIG identified a $648,662,846 payment effect from an erroneous Optum dental fee-schedule modification; the report also identified a $910.7m aggregate difference between VHA reimbursements and TPA payments to community dental providers. Recovery amount is not established; see memo for status and limitations.
+
 ## Phase A initial findings
 - GAO report GAO-24-107146 reported 5,480 open recommendations as of March 2024, from a population of recommendations issued since FY2001. This is a historical snapshot, not a 2010–2026 count.
 - Oversight.gov provides a live inspector-general recommendations database. Its total must be timestamped and must not be added to GAO totals because populations and status systems differ.
