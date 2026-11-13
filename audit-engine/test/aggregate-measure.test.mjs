@@ -128,3 +128,37 @@ test("blocks differently named metric definitions", () => {
   const result = comparableMeasure(measure(), measure({ metric_name: "Different administrative event" }));
   assert.ok(result.blockers.includes("METRIC_DEFINITION_MISMATCH"));
 });
+
+test("blocks cross-agency arithmetic between ORR discharge events and EOIR pending cases", () => {
+  const orrDischarges = measure({
+    measure_id: "ORR-FY2023-DISCHARGES",
+    metric_name: "Children discharged from ORR care",
+    unit_of_analysis: "orr_discharge_event",
+    unit: "children",
+    is_unique_person_count: false,
+    measurement_class: "administrative_event_count",
+    time_window: { start_date: "2022-10-01", end_date: "2023-09-30", calendar_type: "US_FEDERAL_FY" },
+    denominator_definition: "All recorded ORR discharge events during FY2023",
+    population_scope: { cohort_definition: "Children discharged from ORR care during FY2023", geography: "US" }
+  });
+  const eoirPending = measure({
+    measure_id: "EOIR-FY2026Q3-PENDING",
+    source_id: "DOJ-EOIR-UAC-PENDING",
+    agency: "DOJ/EOIR",
+    metric_name: "Pending UAC immigration court cases",
+    unit_of_analysis: "immigration_court_case",
+    unit: "cases",
+    is_unique_person_count: false,
+    measurement_class: "administrative_snapshot",
+    time_window: { start_date: "2025-10-01", end_date: "2026-06-30", calendar_type: "US_FEDERAL_FY" },
+    denominator_definition: "Pending immigration court cases at FY2026 Q3 end",
+    population_scope: { cohort_definition: "UAC cases pending in EOIR at FY2026 Q3 end", geography: "US" }
+  });
+  const result = comparableMeasure(orrDischarges, eoirPending);
+  assert.equal(result.comparable, false);
+  assert.equal(result.arithmetic, null);
+  assert.ok(result.blockers.includes("UNIT_OF_ANALYSIS_MISMATCH"));
+  assert.ok(result.blockers.includes("MEASURE_UNIT_MISMATCH"));
+  assert.ok(result.blockers.includes("TEMPORAL_MISMATCH"));
+  assert.ok(result.blockers.includes("MEASUREMENT_CLASS_MISMATCH"));
+});
