@@ -150,7 +150,7 @@ test("blocks cross-agency arithmetic between ORR discharge events and EOIR pendi
     unit: "cases",
     is_unique_person_count: false,
     measurement_class: "administrative_snapshot",
-    time_window: { start_date: "2025-10-01", end_date: "2026-06-30", calendar_type: "US_FEDERAL_FY" },
+    time_window: { start_date: "2025-10-01", end_date: "2026-06-30", calendar_type: "US_FEDERAL_FY_QUARTER" },
     denominator_definition: "Pending immigration court cases at FY2026 Q3 end",
     population_scope: { cohort_definition: "UAC cases pending in EOIR at FY2026 Q3 end", geography: "US" }
   });
