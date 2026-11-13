@@ -11,7 +11,7 @@ export const MEASUREMENT_CLASSES = new Set([
 ]);
 
 const SHA_RE = /^[a-f0-9]{64}$/i;
-const ISO_DATE_RE = /^\\d{4}-\\d{2}-\\d{2}$/;
+const ISO_DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 
 function assert(ok, message) {
   if (!ok) throw new TypeError(message);
