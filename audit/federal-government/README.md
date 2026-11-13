@@ -19,6 +19,7 @@
 - [FOIA FY2010–FY2025 archive inventory](verification/foia-archive-inventory.csv)
 - [USAspending award-obligation validation sample (Phase D)](verification/usaspending-award-sample-2026-11-13.md)
 - [USAspending FY2010/FY2025 agency sample CSV](verification/usaspending-agency-sample-2010-2025.csv)
+- [USAspending award-category and agency-budgetary cross-check CSV](verification/usaspending-category-budgetary-sample-2026-11-13.csv)
 - [Evidence register](evidence-register.csv)
 - [Workstream plan](workstreams.md)
 - [Records-request drafts](records-requests.md)
