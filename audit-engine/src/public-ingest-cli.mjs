@@ -63,11 +63,11 @@ try {
     const input = JSON.parse(await readFile(inputPath, "utf8"));
     const pdfBytes = await readFile(arg3);
     const result = normalizeEoirTranscription(input, pdfBytes);
-    await writeFile(arg4, JSON.stringify(result, null, 2) + "\\n", { flag: "wx" });
+    await writeFile(arg4, JSON.stringify(result, null, 2) + "\n", { flag: "wx" });
     const source = getPublicSource(input.source_key);
     const receipt = createAcquisitionReceipt({ source_id: source.source_id, publisher: source.publisher, landing_url: source.landing_url, download_url: source.download_url }, pdfBytes, input.retrieved_at, source.document_generated);
     const receiptPath = arg4 + ".receipt.json";
-    await writeFile(receiptPath, JSON.stringify(receipt, null, 2) + "\\n", { flag: "wx" });
+    await writeFile(receiptPath, JSON.stringify(receipt, null, 2) + "\n", { flag: "wx" });
     console.log(JSON.stringify({ status: result.source.verification_status, output: arg4, receipt: receiptPath, observations: result.observation_count, integrity_checks: result.integrity_checks }, null, 2));
   } else {
     console.error("Usage: node src/public-ingest-cli.mjs hhs-fetch <new-raw.json> <new-normalized.json> | hhs-json <download.json> <new-normalized.json> <retrieved-at-ISO> | hhs-summarize <normalized.json> <start-date> <end-date> <new-output.json> | eoir-import <transcription.json> <source.pdf> <new-normalized.json>");
